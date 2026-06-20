@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0077b5,#005582);
+    color:white;
+    padding:80px 0;
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.profile-img img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    font-size:1.2rem;
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:white;
+    color:#0077b5;
+    padding:12px 24px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 0;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0077b5;
+    font-size:2rem;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#0077b5;
+    margin-bottom:5px;
+}
+
+.card span{
+    font-weight:bold;
+    display:block;
+    margin-bottom:10px;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.skill-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skill-list span{
+    background:#0077b5;
+    color:white;
+    padding:10px 18px;
+    border-radius:25px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    .hero-content{
+        text-align:center;
+        flex-direction:column;
+    }
+
+    .hero-text h1{
+        font-size:2.2rem;
+    }
+
+    .profile-img img{
+        width:180px;
+        height:180px;
+    }
+}
