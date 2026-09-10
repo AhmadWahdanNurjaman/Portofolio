@@ -318,3 +318,103 @@ footer { text-align: center; padding: 3rem 1.5rem; font-size: 0.85rem; color: va
 
 @media (max-width: 900px) { .bento-home { grid-template-columns: repeat(2, 1fr); } .bento-hero { grid-column: span 2; grid-row: span 2; padding: 2rem; } .bento-image { grid-column: span 2; grid-row: span 1; min-height: 300px; } .stat-wide { grid-column: span 2; } }
 @media (max-width: 768px) { .navbar { flex-direction: column; gap: 1rem; padding: 1.5rem; border-radius: 24px; top: 10px; margin: 10px; } .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.5rem; } .company-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; } .about-grid { grid-template-columns: 1fr; } .bento-hero h1 { font-size: 2.2rem; } }
+/* EDITORIAL / MAGAZINE LAYOUT */
+.editorial-item {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.editorial-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Untuk membuat layout selang-seling (kiri-kanan) */
+.editorial-item:nth-child(even) .editorial-img {
+  order: 2;
+}
+
+.editorial-img {
+  height: 450px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.editorial-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.editorial-item:hover .editorial-img img {
+  transform: scale(1.05);
+}
+
+.editorial-text .exp-date {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+.editorial-text h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+.editorial-text h4 {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+.editorial-text ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+}
+.editorial-text ul li { margin-bottom: 0.5rem; }
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  .editorial-item, .editorial-item:nth-child(even) .editorial-img {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .editorial-item:nth-child(even) .editorial-img {
+    order: 0;
+  }
+  .editorial-img { height: 300px; }
+  .editorial-text h3 { font-size: 1.8rem; }
+}
+/* PLACEHOLDER IKON UNTUK EXPERIENCE TANPA FOTO */
+.editorial-img-placeholder {
+  height: 100%;
+  min-height: 450px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1C1C1C 0%, #2a2a2a 100%);
+  color: rgba(255,255,255,0.1);
+  font-size: 8rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Saat di HP, tinggi ikon menyesuaikan */
+@media (max-width: 768px) {
+  .editorial-img-placeholder {
+    min-height: 250px;
+    font-size: 5rem;
+  }
+}
