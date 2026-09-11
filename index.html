@@ -41,7 +41,12 @@
     <section id="home" class="tab-content active hero-new">
       
       <div class="hero-main reveal tilt-card">
-        <img src="assets/profile.jpg" alt="Ahmad Wahdan" class="hero-bg-img" onerror="this.src='https://via.placeholder.com/1200x600/1C1C1C/4F46E5?text=Profile'">
+        <img src="assets/daynn.jpg" alt="Ahmad Wahdan" class="hero-bg-img" onerror="this.src='https://via.placeholder.com/1200x600/1C1C1C/4F46E5?text=Profile'">
+              <!-- Foto dan Nama Nurjaman (Overlay) -->
+      <div class="hero-photo-wrap">
+        <img src="assets/daynn.jpg" alt="Ahmad Wahdan" onerror="this.onerror=null; this.src='assets/profile.jpg'" style="height: 100% !important; width: auto !important; max-width: 100% !important; max-height: 70vh !important; object-fit: contain !important; object-position: top center !important; filter: none !important;">
+        <h1 class="name-overlay">Nurjaman</h1>
+      </div>
         <div class="hero-overlay"></div>
         <div class="hero-text">
           <span class="badge" data-key="hero_badge">Welcome to my portfolio</span>
@@ -171,7 +176,7 @@
         <!-- 3. PROF COFFEE TIGADE -->
         <div class="editorial-item reveal">
           <div class="editorial-img">
-            <img src="assets/Profcoffee1.jpg" alt="Prof Coffee" onclick="openModal('modal-gallery', 'assets/Profcoffee1.jpg')">
+            <img src="assets/profcoffee1.jpg" alt="Prof Coffee" onclick="openModal('modal-gallery', 'assets/profcoffee1.jpg')">
           </div>
           <div class="editorial-text">
             <span class="exp-date">Oct 2025 – Feb 2026</span>
@@ -439,7 +444,6 @@
   <!-- DYNAMIC GALLERY MODAL -->
   <div id="modal-gallery" class="modal"><div class="modal-content" style="max-width: 800px;"><span class="close-modal">&times;</span><img id="gallery-img" src="" alt="Gallery Image" style="width:100%; border-radius:12px; margin-top:10px;"></div></div>
 
-  <footer><p>&copy; 2026 Ahmad Wahdan Nurjaman. Built with VS Code & Hosted on GitHub Pages.</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
