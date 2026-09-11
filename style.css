@@ -418,3 +418,23 @@ footer { text-align: center; padding: 3rem 1.5rem; font-size: 0.85rem; color: va
     font-size: 5rem;
   }
 }
+/* PERBAIKAN FOTO HOME AGAR UTUH & TIDAK ZOOM */
+.hero-photo-wrap {
+    height: auto !important; /* Hapus paksaan tinggi 75% */
+    max-height: 65vh !important; /* Batasi tinggi maksimal fotomu agar kepala & kaki terlihat */
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 2rem 0 !important; /* Beri jarak atas dan bawah */
+}
+
+.hero-photo-wrap img {
+    height: 100% !important;
+    width: auto !important;
+    max-width: 100% !important;
+    max-height: 65vh !important; /* Fotomu akan mengecil agar muat sempurna */
+    object-fit: contain !important; /* Mencegah terpotong */
+    object-position: center center !important; /* Fokus ke tengah foto */
+    filter: none !important;
+}
