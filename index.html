@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ahmad Wahdan Nurjaman | Creative Portfolio</title>
   
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Ahmad Wahdan Nurjaman - English Literature graduate, Customer Support Specialist, and Tech enthusiast. Explore my experience, education, and skills.">
+  <meta property="og:title" content="Ahmad Wahdan Nurjaman | Creative Portfolio" />
+  <meta property="og:description" content="English Literature graduate with hands-on experience in Customer Support, Client Relations, and Operational Administration." />
+  <meta property="og:type" content="website" />
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,12 +46,14 @@
     <section id="home" class="tab-content active hero-new">
       
       <div class="hero-main reveal tilt-card">
-        <img src="assets/daynn.jpg" alt="Ahmad Wahdan" class="hero-bg-img" onerror="this.src='https://via.placeholder.com/1200x600/1C1C1C/4F46E5?text=Profile'">
-              <!-- Foto dan Nama Nurjaman (Overlay) -->
-      <div class="hero-photo-wrap">
-        <img src="assets/daynn.jpg" alt="Ahmad Wahdan" onerror="this.onerror=null; this.src='assets/profile.jpg'" style="height: 100% !important; width: auto !important; max-width: 100% !important; max-height: 70vh !important; object-fit: contain !important; object-position: top center !important; filter: none !important;">
-        <h1 class="name-overlay">Nurjaman</h1>
-      </div>
+        <img src="assets/daynn.jpg" alt="Ahmad Wahdan Background" class="hero-bg-img" onerror="this.src='https://via.placeholder.com/1200x600/1C1C1C/4F46E5?text=Profile'">
+        
+        <!-- Foto dan Nama Nurjaman (Overlay) -->
+        <div class="hero-photo-wrap">
+          <img src="assets/daynn.jpg" alt="Ahmad Wahdan" onerror="this.onerror=null; this.src='assets/profile.jpg'">
+          <h1 class="name-overlay">Nurjaman</h1>
+        </div>
+        
         <div class="hero-overlay"></div>
         <div class="hero-text">
           <span class="badge" data-key="hero_badge">Welcome to my portfolio</span>
@@ -143,7 +151,7 @@
         <!-- 2. PASCALAB.ID -->
         <div class="editorial-item reveal">
           <div class="editorial-img">
-            <img src="assets/talent1revisi.jpg" alt="Talent Model" onclick="openModal('modal-gallery', 'assets/talent1revisi.jpg')">
+            <img src="assets/talent1revisi.jpg" alt="Pascalab.id Talent Model" onclick="openModal('modal-gallery', 'assets/talent1revisi.jpg')">
           </div>
           <div class="editorial-text">
             <span class="exp-date">12 Jun 2025</span>
@@ -155,9 +163,9 @@
               <li data-key="pasca_p3">Worked closely with photographers and stylists to visually convey product value to the target audience.</li>
             </ul>
             <div class="mini-gallery" style="margin-top: 1rem;">
-              <img src="assets/talent2revisi.jpg" alt="Talent Model 2" onclick="openModal('modal-gallery', 'assets/talent2revisi.jpg')">
-              <img src="assets/talent3revisi.jpg" alt="Talent Model 3" onclick="openModal('modal-gallery', 'assets/talent3revisi.jpg')">
-              <img src="assets/talent4revisi.jpg" alt="Talent Model 4" onclick="openModal('modal-gallery', 'assets/talent4revisi.jpg')">
+              <img src="assets/talent2revisi.jpg" alt="Talent Model Photo 2" onclick="openModal('modal-gallery', 'assets/talent2revisi.jpg')">
+              <img src="assets/talent3revisi.jpg" alt="Talent Model Photo 3" onclick="openModal('modal-gallery', 'assets/talent3revisi.jpg')">
+              <img src="assets/talent4revisi.jpg" alt="Talent Model Photo 4" onclick="openModal('modal-gallery', 'assets/talent4revisi.jpg')">
             </div>
           </div>
         </div>
@@ -165,7 +173,7 @@
         <!-- 3. PROF COFFEE TIGADE -->
         <div class="editorial-item reveal">
           <div class="editorial-img">
-            <img src="assets/profcoffee1.jpg" alt="Prof Coffee" onclick="openModal('modal-gallery', 'assets/profcoffee1.jpg')">
+            <img src="assets/profcoffee1.jpg" alt="Prof Coffee Tigade" onclick="openModal('modal-gallery', 'assets/profcoffee1.jpg')">
           </div>
           <div class="editorial-text">
             <span class="exp-date">Oct 2025 – Feb 2026</span>
@@ -177,9 +185,9 @@
               <li data-key="prof_p3">Actively contributed promotional ideas and event concepts to boost customer engagement and retention.</li>
             </ul>
             <div class="mini-gallery" style="margin-top: 1rem;">
-              <img src="assets/profcoffee2.jpg" alt="Prof Coffee 2" onclick="openModal('modal-gallery', 'assets/profcoffee2.jpg')">
-              <img src="assets/profcoffee3.jpg" alt="Prof Coffee 3" onclick="openModal('modal-gallery', 'assets/profcoffee3.jpg')">
-              <img src="assets/profcoffee4.jpg" alt="Prof Coffee 4" onclick="openModal('modal-gallery', 'assets/profcoffee4.jpg')">
+              <img src="assets/profcoffee2.jpg" alt="Prof Coffee Photo 2" onclick="openModal('modal-gallery', 'assets/profcoffee2.jpg')">
+              <img src="assets/profcoffee3.jpg" alt="Prof Coffee Photo 3" onclick="openModal('modal-gallery', 'assets/profcoffee3.jpg')">
+              <img src="assets/profcoffee4.jpg" alt="Prof Coffee Photo 4" onclick="openModal('modal-gallery', 'assets/profcoffee4.jpg')">
             </div>
           </div>
         </div>
@@ -215,7 +223,7 @@
               <li data-key="ccu_p2">Managed participant administration, task delegation, and on-site problem-solving to ensure the event met its objectives.</li>
             </ul>
             <div class="mini-gallery" style="margin-top: 1rem;">
-              <img src="assets/ccu2.jpg" alt="CCU Event 2" onclick="openModal('modal-gallery', 'assets/ccu2.jpg')">
+              <img src="assets/ccu2.jpg" alt="CCU Event Photo 2" onclick="openModal('modal-gallery', 'assets/ccu2.jpg')">
             </div>
           </div>
         </div>
@@ -325,10 +333,23 @@
   </main>
 
   <!-- MODALS -->
-  <div id="modal-hotel-cert" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h3>Four Points by Sheraton - Internship Certificate</h3><img src="https://via.placeholder.com/700x400/2C3E50/FFFFFF?text=Certificate" alt="Certificate" /><p data-key="modal_cert_text">Certificate of completion for F&B Banquet Internship (Feb 2024 - Apr 2024).</p></div></div>
+  <div id="modal-hotel-cert" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-hotel-title">
+    <div class="modal-content">
+      <span class="close-modal" role="button" tabindex="0">&times;</span>
+      <h3 id="modal-hotel-title">Four Points by Sheraton - Internship Certificate</h3>
+      <img src="https://via.placeholder.com/700x400/2C3E50/FFFFFF?text=Certificate" alt="Certificate" />
+      <p data-key="modal_cert_text">Certificate of completion for F&B Banquet Internship (Feb 2024 - Apr 2024).</p>
+    </div>
+  </div>
   
   <!-- DYNAMIC GALLERY MODAL -->
-  <div id="modal-gallery" class="modal"><div class="modal-content" style="max-width: 800px;"><span class="close-modal">&times;</span><img id="gallery-img" src="" alt="Gallery Image" style="width:100%; border-radius:12px; margin-top:10px;"></div></div>
+  <div id="modal-gallery" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-gallery-title">
+    <div class="modal-content" style="max-width: 800px;">
+      <span class="close-modal" role="button" tabindex="0">&times;</span>
+      <h3 id="modal-gallery-title" class="sr-only">Image Gallery</h3>
+      <img id="gallery-img" src="" alt="Gallery Image" style="width:100%; border-radius:12px; margin-top:10px;">
+    </div>
+  </div>
 
   <footer><p>&copy; 2026 Ahmad Wahdan Nurjaman. Built with VS Code & Hosted on GitHub Pages.</p></footer>
 
