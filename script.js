@@ -6,7 +6,6 @@ const translations = {
     hero_badge: "Welcome to my portfolio",
     hero_desc: "English Literature graduate with hands-on experience in Customer Support, Client Relations, and Operational Administration. Actively exploring Web Development & AI Workflow integrations.",
     btn_cv: "Download CV", btn_contact: "Get in Touch",
-    stat_customers: "Customers Served / Shift", stat_gpa: "GPA at Unpas", stat_team: "Team Members Led (CCU Event)",
     about_title: "A Journey of Continuous Learning", about_subtitle: "From English Literature to Tech Support and Beyond.",
     about_p1: "I didn't start this journey with a completely clear goal. I was just trying to find a place where I could grow. My journey began with English Literature at Universitas Pasundan. For years, I studied literature, communication, writing, analysis, and various perspectives on humanity and culture. At the time, I might not have realized it, but much of what I learned eventually became an important part of my professional journey.",
     about_p2: "After graduating, my journey took me through various work environments. I worked in hospitality, served customers as a barista, supported operational and administrative activities, until finally working in customer support at a tech company. Each experience gave me a different perspective.",
@@ -57,7 +56,6 @@ const translations = {
     hero_badge: "Selamat datang di portofolio saya",
     hero_desc: "Lulusan S1 Sastra Inggris dengan pengalaman di bidang Layanan Pelanggan, Hubungan Klien, dan Administrasi Operasional. Adaptif, teliti, serta aktif mempelajari Web Development & integrasi Workflow AI.",
     btn_cv: "Unduh CV", btn_contact: "Hubungi Saya",
-    stat_customers: "Pelanggan Dilayani / Shift", stat_gpa: "IPK Universitas Pasundan", stat_team: "Anggota Tim Dipimpin (CCU)",
     about_title: "Perjalanan Pembelajaran Tanpa Henti", about_subtitle: "Dari Sastra Inggris menuju Tech Support dan seterusnya.",
     about_p1: "Saya tidak memulai perjalanan ini dengan tujuan yang benar-benar jelas. Saya hanya sedang berusaha menemukan tempat di mana saya bisa berkembang. Perjalanan saya dimulai dari Sastra Inggris di Universitas Pasundan. Selama bertahun-tahun, saya mempelajari kesusastraan, komunikasi, penulisan, analisis, serta berbagai perspektif tentang manusia dan budaya. Saat itu saya mungkin belum menyadari, tetapi banyak hal yang saya pelajari akhirnya menjadi bagian penting dalam perjalanan profesional saya.",
     about_p2: "Setelah lulus, perjalanan saya membawa saya ke berbagai lingkungan kerja. Saya pernah bekerja di bidang hospitality, melayani pelanggan sebagai barista, mendukung kegiatan operasional dan administrasi, hingga akhirnya bekerja di bidang customer support pada perusahaan teknologi. Setiap pengalaman memberikan saya sudut pandang yang berbeda.",
@@ -114,7 +112,6 @@ document.querySelectorAll('.nav-item, .nav-trigger').forEach(trigger => {
     document.getElementById(targetTab).classList.add('active');
     const activeNav = document.querySelector(`.nav-item[data-tab="${targetTab}"]`);
     if(activeNav) activeNav.classList.add('active');
-    if (targetTab === 'home') { countersStarted = false; startCounters(); }
     setTimeout(() => { revealOnScroll(); initTilt(); }, 100);
   });
 });
@@ -156,23 +153,6 @@ function deletingEffect() {
 }
 typingEffect();
 
-let countersStarted = false;
-function startCounters() {
-  if (countersStarted) return;
-  countersStarted = true;
-  document.querySelectorAll('.counter').forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText;
-      const inc = target / 50;
-      if (count < target) { counter.innerText = Math.ceil(count + inc); setTimeout(updateCount, 30); }
-      else counter.innerText = target;
-    };
-    updateCount();
-  });
-}
-window.addEventListener('load', startCounters);
-
 function showSopDetail(step) {
   const detailBox = document.getElementById('sop-detail');
   const sopDetails = {
@@ -199,7 +179,6 @@ function openModal(modalId, imgSrc) {
   modal.style.display = 'flex';
 }
 
-// Fixed syntax error here
 document.querySelectorAll('.close-modal').forEach(closeBtn => {
   closeBtn.addEventListener('click', () => {
     closeBtn.closest('.modal').style.display = 'none';
