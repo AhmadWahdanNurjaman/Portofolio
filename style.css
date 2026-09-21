@@ -7,19 +7,21 @@
 body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
 h1, h2, h3, h4, .brand-name { font-family: 'Plus Jakarta Sans', sans-serif; }
 
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
 .navbar { display: flex; justify-content: space-between; align-items: center; background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); padding: 0.8rem 2rem; position: sticky; top: 20px; z-index: 1000; margin: 20px auto; max-width: 1100px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.5); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
 .nav-brand { 
   font-weight: 800; 
   font-size: 1.2rem; 
   color: var(--primary); 
-  margin-right: 3rem; /* TAMBAHKAN INI: Memberi jarak antara logo Wahdan dengan menu Beranda */
+  margin-right: 3rem; 
 }
 .dot { color: var(--accent); }
 .nav-links { 
   display: flex; 
   list-style: none; 
-  gap: 0.8rem; /* Ubah dari 1rem menjadi 0.8rem agar menu tidak terlalu berjauhan */
-  flex-wrap: wrap; /* TAMBAHKAN INI: Supaya menu turun ke bawah jika layar terlalu kecil */
+  gap: 0.8rem; 
+  flex-wrap: wrap; 
   justify-content: center;
 }
 .nav-item { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 0.9rem; padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease; cursor: pointer; }
@@ -73,6 +75,41 @@ h1, h2, h3, h4, .brand-name { font-family: 'Plus Jakarta Sans', sans-serif; }
   z-index: 1;
 }
 
+/* FIX: Properly position hero photo overlay so it doesn't break flex layout */
+.hero-photo-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none; /* Allows clicks to pass through to text if they overlap */
+}
+
+.hero-photo-wrap img {
+  max-height: 90%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+}
+
+.name-overlay {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .hero-text {
   position: relative;
   z-index: 2;
@@ -87,7 +124,7 @@ h1, h2, h3, h4, .brand-name { font-family: 'Plus Jakarta Sans', sans-serif; }
 
 .hero-shortcuts {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Changed from 3 to 2 columns to eliminate empty space */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 1.5rem;
 }
 
@@ -136,18 +173,11 @@ h1, h2, h3, h4, .brand-name { font-family: 'Plus Jakarta Sans', sans-serif; }
 .shortcut-arrow { color: var(--text-muted); transition: transform 0.3s ease; }
 .shortcut-card:hover .shortcut-arrow { transform: translateX(5px); color: var(--accent); }
 
-@media (max-width: 768px) {
-  .hero-main { min-height: 350px; padding: 2rem; }
-  .hero-text h1 { font-size: 2rem; }
-  .hero-shortcuts { grid-template-columns: 1fr; }
-}
 .badge { background: var(--accent); color: #fff; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; width: fit-content; margin-bottom: 1.5rem; }
-.bento-hero h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 0.5rem; }
 .typing-container { font-size: 1.2rem; color: var(--accent); min-height: 1.8rem; margin-bottom: 1.5rem; font-weight: 600; }
 .cursor { animation: blink 0.7s infinite; }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 .hero-desc { color: #aaa; max-width: 600px; margin-bottom: 2rem; }
-.hero-btns { display: flex; gap: 1rem; }
 
 .btn { padding: 0.8rem 1.5rem; border-radius: 12px; font-weight: 600; cursor: pointer; border: none; transition: 0.3s; font-family: 'Inter', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; }
 .btn-primary { background: var(--accent); color: #fff; }
@@ -169,18 +199,6 @@ h1, h2, h3, h4, .brand-name { font-family: 'Plus Jakarta Sans', sans-serif; }
 .fact-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
 .fact-item h4 { color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 1px; }
 .fact-item p { color: var(--primary); font-size: 1rem; font-weight: 700; }
-
-.experience-timeline { display: flex; flex-direction: column; gap: 1.5rem; }
-.timeline-item { display: flex; gap: 1.5rem; background: var(--card-bg); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border-color); transition: transform 0.3s ease, box-shadow 0.3s ease; transform-style: preserve-3d; }
-.timeline-badge { background: var(--accent-light); color: var(--accent); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
-.timeline-content { width: 100%; }
-.company-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
-.company-header h3 { color: var(--primary); font-size: 1.1rem; }
-.company-header .date { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; background: var(--bg-color); padding: 0.2rem 0.6rem; border-radius: 20px; }
-.timeline-content h4 { color: var(--accent); font-size: 0.95rem; margin-bottom: 1rem; }
-.timeline-content ul { padding-left: 1.2rem; color: var(--text-main); margin-bottom: 1rem; }
-.timeline-content ul li { margin-bottom: 0.5rem; font-size: 0.9rem; }
-.timeline-content ul strong { color: var(--primary); font-weight: 700; }
 
 .mini-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px; margin-top: 1rem; }
 .mini-gallery img { width: 100%; height: 100px; object-fit: cover; border-radius: 12px; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid var(--border-color); }
@@ -225,7 +243,7 @@ h1, h2, h3, h4, .brand-name { font-family: 'Plus Jakarta Sans', sans-serif; }
 
 .contact-info { 
   display: grid; 
-  grid-template-columns: repeat(2, 1fr); /* Membuat 2 kolom rapi */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 1.5rem; 
 }
 
@@ -256,12 +274,12 @@ h1, h2, h3, h4, .brand-name { font-family: 'Plus Jakarta Sans', sans-serif; }
   display: flex; 
   align-items: center; 
   justify-content: center; 
-  flex-shrink: 0; /* Agar ikon tidak terdorong saat teks panjang */
+  flex-shrink: 0; 
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .c-item div {
-  min-width: 0; /* Mencegah teks keluar dari kotak */
+  min-width: 0; 
 }
 
 .c-item h4 { 
@@ -277,21 +295,11 @@ h1, h2, h3, h4, .brand-name { font-family: 'Plus Jakarta Sans', sans-serif; }
   text-decoration: none; 
   font-size: 0.95rem; 
   font-weight: 600;
-  word-break: break-word; /* Memotong email/link yang terlalu panjang agar rapi */
+  word-break: break-word; 
 }
 
 .c-item a:hover { 
   color: var(--accent); 
-}
-
-/* Tambahan untuk Responsif di HP */
-@media (max-width: 768px) {
-  .contact-info {
-    grid-template-columns: 1fr; /* Menjadi 1 kolom saat dibuka di HP */
-  }
-  .contact-card {
-    padding: 2rem 1.5rem;
-  }
 }
 
 .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; justify-content: center; align-items: center; padding: 2rem; }
@@ -305,8 +313,6 @@ footer { text-align: center; padding: 3rem 1.5rem; font-size: 0.85rem; color: va
 .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
 .reveal.active { opacity: 1; transform: translateY(0); }
 
-@media (max-width: 900px) { .bento-home { grid-template-columns: repeat(2, 1fr); } .bento-hero { grid-column: span 2; grid-row: span 2; padding: 2rem; } .bento-image { grid-column: span 2; grid-row: span 1; min-height: 300px; } .stat-wide { grid-column: span 2; } }
-@media (max-width: 768px) { .navbar { flex-direction: column; gap: 1rem; padding: 1.5rem; border-radius: 24px; top: 10px; margin: 10px; } .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.5rem; } .company-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; } .about-grid { grid-template-columns: 1fr; } .bento-hero h1 { font-size: 2.2rem; } }
 /* EDITORIAL / MAGAZINE LAYOUT */
 .editorial-item {
   display: grid;
@@ -323,7 +329,6 @@ footer { text-align: center; padding: 3rem 1.5rem; font-size: 0.85rem; color: va
   padding-bottom: 0;
 }
 
-/* Untuk membuat layout selang-seling (kiri-kanan) */
 .editorial-item:nth-child(even) .editorial-img {
   order: 2;
 }
@@ -373,19 +378,6 @@ footer { text-align: center; padding: 3rem 1.5rem; font-size: 0.85rem; color: va
 }
 .editorial-text ul li { margin-bottom: 0.5rem; }
 
-/* Responsif untuk HP */
-@media (max-width: 768px) {
-  .editorial-item, .editorial-item:nth-child(even) .editorial-img {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  .editorial-item:nth-child(even) .editorial-img {
-    order: 0;
-  }
-  .editorial-img { height: 300px; }
-  .editorial-text h3 { font-size: 1.8rem; }
-}
-/* PLACEHOLDER IKON UNTUK EXPERIENCE TANPA FOTO */
 .editorial-img-placeholder {
   height: 100%;
   min-height: 450px;
@@ -400,30 +392,46 @@ footer { text-align: center; padding: 3rem 1.5rem; font-size: 0.85rem; color: va
   overflow: hidden;
 }
 
-/* Saat di HP, tinggi ikon menyesuaikan */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
+  .navbar { flex-direction: column; gap: 1rem; padding: 1.5rem; border-radius: 24px; top: 10px; margin: 10px; } 
+  .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.5rem; } 
+  .company-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; } 
+  .about-grid { grid-template-columns: 1fr; } 
+  
+  .hero-main { min-height: 350px; padding: 2rem; }
+  .hero-text h1 { font-size: 2rem; }
+  .hero-shortcuts { grid-template-columns: 1fr; }
+  
+  .hero-photo-wrap {
+    width: 100%;
+    max-width: none;
+    opacity: 0.3; /* Fade behind text so text remains readable on mobile */
+  }
+  .name-overlay {
+    font-size: 2.5rem;
+    right: 1rem;
+  }
+  
+  .editorial-item, .editorial-item:nth-child(even) .editorial-img {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .editorial-item:nth-child(even) .editorial-img {
+    order: 0;
+  }
+  .editorial-img { height: 300px; }
+  .editorial-text h3 { font-size: 1.8rem; }
+  
   .editorial-img-placeholder {
     min-height: 250px;
     font-size: 5rem;
   }
-}
-/* PERBAIKAN FOTO HOME AGAR UTUH & TIDAK ZOOM */
-.hero-photo-wrap {
-    height: auto !important; /* Hapus paksaan tinggi 75% */
-    max-height: 65vh !important; /* Batasi tinggi maksimal fotomu agar kepala & kaki terlihat */
-    width: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin: 2rem 0 !important; /* Beri jarak atas dan bawah */
-}
-
-.hero-photo-wrap img {
-    height: 100% !important;
-    width: auto !important;
-    max-width: 100% !important;
-    max-height: 65vh !important; /* Fotomu akan mengecil agar muat sempurna */
-    object-fit: contain !important; /* Mencegah terpotong */
-    object-position: center center !important; /* Fokus ke tengah foto */
-    filter: none !important;
+  
+  .contact-info {
+    grid-template-columns: 1fr; 
+  }
+  .contact-card {
+    padding: 2rem 1.5rem;
+  }
 }
