@@ -26,7 +26,6 @@
       <li><a href="#" class="nav-item" data-tab="about"><i class="fa-solid fa-user"></i> <span data-key="nav_about">About</span></a></li>
       <li><a href="#" class="nav-item" data-tab="experience"><i class="fa-solid fa-briefcase"></i> <span data-key="nav_exp">Experience</span></a></li>
       <li><a href="#" class="nav-item" data-tab="education"><i class="fa-solid fa-school"></i> <span data-key="nav_education">Education</span></a></li>
-      <li><a href="#" class="nav-item" data-tab="projects"><i class="fa-solid fa-folder-open"></i> <span data-key="nav_projects">Projects</span></a></li>
       <li><a href="#" class="nav-item" data-tab="skills"><i class="fa-solid fa-gears"></i> <span data-key="nav_skills">Skills</span></a></li>
       <li><a href="#" class="nav-item" data-tab="contact"><i class="fa-solid fa-envelope"></i> <span data-key="nav_contact">Contact</span></a></li>
     </ul>
@@ -66,16 +65,6 @@
           </div>
           <i class="fa-solid fa-arrow-right shortcut-arrow"></i>
         </a>
-
-        <!-- Tombol 2: View Projects -->
-        <button class="shortcut-card nav-trigger reveal tilt-card" data-target="projects">
-          <div class="shortcut-icon"><i class="fa-solid fa-folder-open"></i></div>
-          <div class="shortcut-info">
-            <h3 data-key="nav_projects">Projects</h3>
-            <p data-key="shortcut_proj_desc">View my work</p>
-          </div>
-          <i class="fa-solid fa-arrow-right shortcut-arrow"></i>
-        </button>
 
         <!-- Tombol 3: Contact Me -->
         <button class="shortcut-card nav-trigger reveal tilt-card" data-target="contact">
@@ -249,6 +238,7 @@
 
       </div>
     </section>
+    
     <!-- TAB 4: EDUCATION (GRID LAYOUT) -->
     <section id="education" class="tab-content">
       <div class="section-header reveal">
@@ -290,107 +280,6 @@
         </div>
       </div>
     </section> <!-- INI PENUTUP TAB 4: EDUCATION -->
-
-        <!-- TAB 5: PROJECTS -->
-    <section id="projects" class="tab-content">
-      <div class="section-header reveal">
-        <h2 data-key="proj_title">Projects & Portfolio Case Studies</h2>
-        <p data-key="proj_subtitle">Featured technical web development, academic writing, and digital documentation.</p>
-      </div>
-      <div class="projects-grid">
-        
-        <!-- PROJECT 1: BALI -->
-        <div class="project-card reveal tilt-card">
-          <div class="project-img-holder"><img src="assets/bali1.jpg" alt="Field Study Bali" onerror="this.src='https://via.placeholder.com/600x350/2563eb/FFFFFF?text=Field+Study+Bali'"></div>
-          <div class="project-body">
-            <h3 data-key="proj_bali_title">Field Study Bali</h3>
-            <p data-key="proj_bali_desc">Academic field study regarding the impact of the tourism industry on socio-cultural aspects in Bali.</p>
-            <div class="project-tags"><span>Research</span><span>Sociology</span><span>Tourism</span></div>
-            <button class="btn btn-sm btn-primary modal-trigger" data-modal="modal-bali"><i class="fa-solid fa-eye"></i> <span data-key="btn_details">View Details</span></button>
-          </div>
-        </div>
-
-        <!-- PROJECT 2: PROF COFFEE WEB -->
-        <div class="project-card reveal tilt-card">
-          <div class="project-img-holder"><img src="assets/profcoffee1.jpg" alt="Prof Coffee Website" onerror="this.src='https://via.placeholder.com/600x350/1e293b/FFFFFF?text=Prof+Coffee+Web'"></div>
-          <div class="project-body">
-            <h3 data-key="proj_web_title">Prof Coffee Memories Website</h3>
-            <p data-key="proj_web_desc">An interactive HTML/CSS/JS website documenting the journey, memories, and operational dynamics while working at Prof Coffee Tigade.</p>
-            <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
-            <button class="btn btn-sm btn-primary modal-trigger" data-modal="modal-proj-web"><i class="fa-solid fa-eye"></i> <span data-key="btn_details">View Details</span></button>
-          </div>
-        </div>
-
-        <!-- PROJECT 3: ACADEMIC JOURNAL -->
-        <div class="project-card reveal tilt-card">
-          <div class="project-img-holder"><img src="https://via.placeholder.com/600x350/334155/FFFFFF?text=Academic+Journal" alt="Journal"></div>
-          <div class="project-body">
-            <h3 data-key="proj_journal_title">Academic Journal Draft</h3>
-            <p data-key="proj_journal_desc">A draft of a scientific journal in Literature/Tourism based on qualitative research.</p>
-            <div class="project-tags"><span>Academic Writing</span><span>Qualitative Research</span><span>English</span></div>
-            <button class="btn btn-sm btn-primary modal-trigger" data-modal="modal-proj-journal"><i class="fa-solid fa-file-lines"></i> <span data-key="btn_details">View Abstract</span></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TAB 6: SKILLS -->
-    <section id="skills" class="tab-content">
-      <div class="section-header reveal">
-        <h2 data-key="skills_title">Competencies, Tech & AI Learning</h2>
-        <p data-key="skills_subtitle">Combining soft-skills excellence with modern tech tools and AI workflows.</p>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-category reveal tilt-card">
-          <h3><i class="fa-solid fa-headset"></i> Customer & Client Relations</h3>
-          <ul><li>Customer Support & Helpdesk</li><li>Complaint Handling & Resolution</li><li>Client Engagement & Satisfaction</li><li>Verbal & Written Communication</li></ul>
-        </div>
-        <div class="skill-category reveal tilt-card">
-          <h3><i class="fa-solid fa-folder-tree"></i> Operations & Data Admin</h3>
-          <ul><li>Daily Sales Recapitulation & Reporting</li><li>POS & Inventory Management</li><li>Data Entry & Processing</li><li>Microsoft Office Suite</li></ul>
-        </div>
-        <div class="skill-category reveal tilt-card">
-          <h3><i class="fa-solid fa-laptop-code"></i> Technical & Web Systems</h3>
-          <ul><li>WHMCS (Web Hosting Management)</li><li>Virtualization & Server Basics (Proxmox, Linux, VPS)</li><li>HTML5, CSS3, VS Code & Git/GitHub</li></ul>
-        </div>
-        <div class="skill-category highlight-category reveal tilt-card">
-          <h3><i class="fa-solid fa-robot"></i> AI Workflow & Future Interests</h3>
-          <p data-key="ai_learning_text">Actively learning to integrate AI tools for daily productivity, workflow optimization, and exploring entry-level Marketing & Client Success strategies.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- TAB 7: CONTACT -->
-    <section id="contact" class="tab-content">
-      <div class="section-header reveal">
-        <h2 data-key="contact_title">Get In Touch</h2>
-        <p data-key="contact_subtitle">Feel free to connect for opportunities or collaborations.</p>
-      </div>
-      <div class="contact-card reveal">
-        <div class="contact-info">
-          <div class="c-item"><i class="fa-solid fa-envelope"></i><div><h4>Email</h4><p>ahmadwahdannurjaman16@gmail.com</p></div></div>
-          <div class="c-item"><i class="fa-brands fa-linkedin"></i><div><h4>LinkedIn</h4><p><a href="https://linkedin.com/in/ahmad-wahdan-nurjaman" target="_blank">linkedin.com/in/ahmad-wahdan-nurjaman</a></p></div></div>
-          <div class="c-item"><i class="fa-solid fa-phone"></i><div><h4>Phone / WhatsApp</h4><p>+62 831 8164 2526</p></div></div>
-          <div class="c-item"><i class="fa-solid fa-location-dot"></i><div><h4>Location</h4><p>Cimahi, West Java, Indonesia</p></div></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- MODALS -->
-  <div id="modal-hotel-cert" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h3>Four Points by Sheraton - Internship Certificate</h3><img src="https://via.placeholder.com/700x400/2C3E50/FFFFFF?text=Certificate" alt="Certificate" /><p data-key="modal_cert_text">Certificate of completion for F&B Banquet Internship (Feb 2024 - Apr 2024).</p></div></div>
-  <div id="modal-bali" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h3>Field Study Bali</h3><img src="assets/bali1.jpg" alt="Bali"><p data-key="modal_bali_text">Documenting the socio-cultural dynamics of the tourism industry in Bali through academic field research.</p></div></div>
-  <div id="modal-proj-web" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h3>Prof Coffee Memories Website</h3><p data-key="modal_web_text">An interactive platform built to archive operational memories, menu highlights, and community moments of Prof Coffee.</p></div></div>
-  <div id="modal-proj-journal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h3>Academic Journal Draft</h3><p data-key="modal_journal_text">Focusing on literary analysis, critical thinking, and academic presentation prepared during studies at Universitas Pasundan.</p></div></div>
-  
-  <!-- DYNAMIC GALLERY MODAL -->
-  <div id="modal-gallery" class="modal"><div class="modal-content" style="max-width: 800px;"><span class="close-modal">&times;</span><img id="gallery-img" src="" alt="Gallery Image" style="width:100%; border-radius:12px; margin-top:10px;"></div></div>
-
-  <footer><p>&copy; 2026 Ahmad Wahdan Nurjaman. Built with VS Code & Hosted on GitHub Pages.</p></footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
 
     <!-- TAB 6: SKILLS -->
     <section id="skills" class="tab-content">
@@ -437,12 +326,11 @@
 
   <!-- MODALS -->
   <div id="modal-hotel-cert" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h3>Four Points by Sheraton - Internship Certificate</h3><img src="https://via.placeholder.com/700x400/2C3E50/FFFFFF?text=Certificate" alt="Certificate" /><p data-key="modal_cert_text">Certificate of completion for F&B Banquet Internship (Feb 2024 - Apr 2024).</p></div></div>
-  <div id="modal-bali" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h3>Field Study Bali</h3><img src="assets/bali1.jpg" alt="Bali"><p data-key="modal_bali_text">Documenting the socio-cultural dynamics of the tourism industry in Bali through academic field research.</p></div></div>
-  <div id="modal-proj-web" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h3>Prof Coffee Memories Website</h3><p data-key="modal_web_text">An interactive platform built to archive operational memories, menu highlights, and community moments of Prof Coffee.</p></div></div>
-  <div id="modal-proj-journal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h3>Academic Journal Draft</h3><p data-key="modal_journal_text">Focusing on literary analysis, critical thinking, and academic presentation prepared during studies at Universitas Pasundan.</p></div></div>
   
   <!-- DYNAMIC GALLERY MODAL -->
   <div id="modal-gallery" class="modal"><div class="modal-content" style="max-width: 800px;"><span class="close-modal">&times;</span><img id="gallery-img" src="" alt="Gallery Image" style="width:100%; border-radius:12px; margin-top:10px;"></div></div>
+
+  <footer><p>&copy; 2026 Ahmad Wahdan Nurjaman. Built with VS Code & Hosted on GitHub Pages.</p></footer>
 
   <script src="script.js"></script>
 </body>
