@@ -1,9 +1,8 @@
 const translations = {
   EN: {    
     shortcut_cv_desc: "Get my resume (PDF)",
-    shortcut_proj_desc: "View my work",
     shortcut_cont_desc: "Let's connect",
-    nav_home: "Home", nav_about: "About", nav_exp: "Experience", nav_education: "Education", nav_projects: "Projects", nav_skills: "Skills", nav_contact: "Contact",
+    nav_home: "Home", nav_about: "About", nav_exp: "Experience", nav_education: "Education", nav_skills: "Skills", nav_contact: "Contact",
     hero_badge: "Welcome to my portfolio",
     hero_desc: "English Literature graduate with hands-on experience in Customer Support, Client Relations, and Operational Administration. Actively exploring Web Development & AI Workflow integrations.",
     btn_cv: "Download CV", btn_contact: "Get in Touch",
@@ -46,24 +45,15 @@ const translations = {
     edu_sma_name: "SMA Pasundan 1 Cimahi", edu_sma_role: "Social Science Major (IPS)",
     edu_smp_name: "SMP Negeri 10 Cimahi", edu_smp_role: "Junior High School",
     edu_sd_name: "SDN Karang Mekar Mandiri 1 Cimahi", edu_sd_role: "Elementary School",
-    proj_title: "Projects & Portfolio Case Studies", proj_subtitle: "Featured technical web development, academic writing, and digital documentation.",
-    proj_bali_title: "Field Study Bali", proj_bali_desc: "Academic field study regarding the impact of the tourism industry on socio-cultural aspects in Bali.",
-    proj_web_title: "Prof Coffee Memories Website", proj_web_desc: "An interactive HTML/CSS/JS website documenting the journey, memories, and operational dynamics while working at Prof Coffee Tigade.",
-    proj_journal_title: "Academic Journal Draft", proj_journal_desc: "A draft of a scientific journal in Literature/Tourism based on qualitative research.",
-    btn_details: "View Details / Abstract",
     skills_title: "Competencies, Tech & AI Learning", skills_subtitle: "Combining soft-skills excellence with modern tech tools and AI workflows.",
     ai_learning_text: "Actively learning to integrate AI tools for daily productivity, workflow optimization, and exploring entry-level Marketing & Client Success strategies.",
     contact_title: "Get In Touch", contact_subtitle: "Feel free to connect for opportunities or collaborations.",
-    modal_cert_text: "Certificate of completion for F&B Banquet Internship (Feb 2024 - Apr 2024).",
-    modal_bali_text: "Documenting the socio-cultural dynamics of the tourism industry in Bali through academic field research.",
-    modal_web_text: "An interactive platform built to archive operational memories, menu highlights, and community moments of Prof Coffee.",
-    modal_journal_text: "Focusing on literary analysis, critical thinking, and academic presentation prepared during studies at Universitas Pasundan."
+    modal_cert_text: "Certificate of completion for F&B Banquet Internship (Feb 2024 - Apr 2024)."
   },
   ID: {
     shortcut_cv_desc: "Unduh resume saya (PDF)",
-    shortcut_proj_desc: "Lihat karyaku",
     shortcut_cont_desc: "Mari terhubung",
-    nav_home: "Beranda", nav_about: "Tentang", nav_exp: "Pengalaman", nav_education: "Pendidikan", nav_projects: "Proyek", nav_skills: "Keahlian", nav_contact: "Kontak",
+    nav_home: "Beranda", nav_about: "Tentang", nav_exp: "Pengalaman", nav_education: "Pendidikan", nav_skills: "Keahlian", nav_contact: "Kontak",
     hero_badge: "Selamat datang di portofolio saya",
     hero_desc: "Lulusan S1 Sastra Inggris dengan pengalaman di bidang Layanan Pelanggan, Hubungan Klien, dan Administrasi Operasional. Adaptif, teliti, serta aktif mempelajari Web Development & integrasi Workflow AI.",
     btn_cv: "Unduh CV", btn_contact: "Hubungi Saya",
@@ -106,18 +96,10 @@ const translations = {
     edu_sma_name: "SMA Pasundan 1 Cimahi", edu_sma_role: "Jurusan IPS",
     edu_smp_name: "SMP Negeri 10 Cimahi", edu_smp_role: "Sekolah Menengah Pertama",
     edu_sd_name: "SDN Karang Mekar Mandiri 1 Cimahi", edu_sd_role: "Sekolah Dasar",
-    proj_title: "Proyek & Studi Kasus", proj_subtitle: "Proyek pengembangan web teknis, penulisan akademis, dan dokumentasi digital.",
-    proj_bali_title: "Field Study Bali", proj_bali_desc: "Studi lapangan akademik mengenai dampak industri pariwisata terhadap aspek sosial-budaya di Bali.",
-    proj_web_title: "Prof Coffee Memories Website", proj_web_desc: "Website interaktif berbasis HTML/CSS/JS yang mendokumentasikan perjalanan, kenangan, serta dinamika operasional selama bekerja di PROF COFFEE TIGADE.",
-    proj_journal_title: "Academic Journal Draft", proj_journal_desc: "Draft penulisan jurnal ilmiah bidang Sastra/Pariwisata berbasis penelitian kualitatif.",
-    btn_details: "Lihat Detail / Abstrak",
     skills_title: "Kompetensi, Teknologi & Pembelajaran AI", skills_subtitle: "Menggabungkan keunggulan soft-skills dengan tools teknologi modern.",
     ai_learning_text: "Aktif mempelajari pemanfaatan tools AI untuk efisiensi kerja harian, optimasi alur kerja, serta mengeksplorasi strategi Marketing & Client Success.",
     contact_title: "Hubungi Saya", contact_subtitle: "Silakan terhubung untuk peluang kerja sama atau diskusi.",
-    modal_cert_text: "Sertifikat penyelesaian magang F&B Banquet (Feb 2024 - Apr 2024).",
-    modal_bali_text: "Mendokumentasikan dinamika sosial-budaya industri pariwisata di Bali melalui riset lapangan akademik.",
-    modal_web_text: "Platform interaktif yang dibangun untuk mengarsipkan kenangan operasional, menu, dan momen komunitas Prof Coffee.",
-    modal_journal_text: "Fokus pada analisis sastra, pemikiran kritis, dan presentasi akademis yang disusun selama studi di Universitas Pasundan."
+    modal_cert_text: "Sertifikat penyelesaian magang F&B Banquet (Feb 2024 - Apr 2024)."
   }
 };
 
