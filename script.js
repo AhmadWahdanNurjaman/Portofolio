@@ -2,18 +2,31 @@ const translations = {
   EN: {    
     shortcut_cv_desc: "Download my resume (PDF)",
     shortcut_cont_desc: "Let's connect",
-    nav_home: "Home", nav_about: "About", nav_exp: "Experience", nav_education: "Education", nav_skills: "Skills", nav_contact: "Contact",
+    nav_home: "Home", nav_about: "About", nav_exp: "Experience", nav_education: "Education", nav_certs: "Certifications", nav_skills: "Skills", nav_contact: "Contact",
     hero_badge: "Welcome to my portfolio",
-    hero_desc: "English Literature graduate with hands-on experience in Customer Support, Client Relations, and Operational Administration. Actively exploring Web Development & AI Workflow integrations.",
+    hero_desc: "English Literature graduate with hands-on experience in Customer Support, Client Relations, Marketing, and Operational Administration, backed by a strong hospitality service background.",
     btn_cv: "Download CV", btn_contact: "Get in Touch",
     about_title: "A Journey of Continuous Learning", about_subtitle: "From English Literature to Tech Support and Beyond.",
+    about_identity: "English Literature Graduate",
+    about_quote: "Still learning, still growing.",
+    about_journey_title: "My Journey",
+    about_journey_subtitle: "The experiences, lessons, and people who shaped me.",
+    about_stage_1: "Education",
+    about_stage_2: "Hospitality",
+    about_stage_3: "Customer Service & Operations",
+    about_stage_4: "Technology",
+    about_stage_5: "Continuous Learning",
+    about_cta_title: "Always Learning",
+    about_cta_text: "New skills. New opportunities. Same curiosity.",
+    about_cta_btn: "View My Experience",
+    facts_title: "Quick Facts",
     about_p1: "I didn't start this journey with a completely clear goal. I was just trying to find a place where I could grow. My journey began with English Literature at Universitas Pasundan. For years, I studied literature, communication, writing, analysis, and various perspectives on humanity and culture. At the time, I might not have realized it, but much of what I learned eventually became an important part of my professional journey.",
     about_p2: "After graduating, my journey took me through various work environments. I worked in hospitality, served customers as a barista, supported operational and administrative activities, until finally working in customer support at a tech company. Each experience gave me a different perspective.",
     about_p3: "Hospitality taught me to understand people. Customer service taught me to listen and respond. Administration taught me to be organized and detail-oriented. Technical support taught me to look at a problem from a different angle.",
     about_p4: "In the midst of this journey, I became interested in technology. Not because I suddenly wanted to become a programmer, but because I wanted to understand how things behind the scenes could be used to make work easier and more effective. That curiosity led me to start learning Web, UI/UX, and Artificial Intelligence. I am still learning, still experimenting, and there is still much I want to understand. I don't consider myself an expert in these fields yet, and to me, that's okay. Learning is part of the journey.",
     about_p5: "Currently, I continue to develop my experience in Customer Service, Administration, Marketing, and Hospitality, while expanding my capabilities in technology as an additional skill set. I might still be figuring out where this journey will take me. But I know one thing: I enjoy the process of learning, working with others, solving problems, and turning what I've learned into something useful. And perhaps, this portfolio is just one chapter of that journey.",
     fact_bg: "Background", fact_bg_val: "English Literature",
-    fact_focus: "Current Focus", fact_focus_val: "Tech Support & AI Workflows",
+    fact_focus: "Current Focus", fact_focus_val: "Customer Support, Marketing & Administration",
     fact_strength: "Core Strength", fact_strength_val: "Empathy + Tech Troubleshooting", 
     fact_location: "Location", fact_location_val: "Cimahi, West Java",
     exp_title: "Professional & Organizational Experience", exp_subtitle: "A proven track record in technical support, hospitality, operations, and leadership.",
@@ -24,10 +37,10 @@ const translations = {
     sda_sop_title: "Interactive SOP Ticket Handling Workflow",
     sop_s1: "Ticket Received", sop_s2: "Diagnosis / WHMCS", sop_s3: "Resolution / Escalation",
     sop_click_hint: "Click any step above to view operational detail.",
-    pasca_role: "Creative Talent / Model",
-    pasca_p1: "Collaborated with the creative team to produce visual content (photo & video shoots) for local fashion brand marketing campaigns.",
-    pasca_p2: "Modeled product catalogs (lifestyle & casual wear) emphasizing consistent brand imagery.",
-    pasca_p3: "Worked closely with photographers and stylists to visually convey product value to the target audience.",
+    pasca_role: "Marketing & Brand Content Talent",
+    pasca_p1: "Contributed to brand marketing campaigns for a local fashion label through photo and video content collaborations with the creative team.",
+    pasca_p2: "Represented product catalogs (lifestyle & casual wear) to support consistent brand imagery and marketing goals.",
+    pasca_p3: "Partnered with photographers and stylists to communicate product value and brand identity to the target audience.",
     prof_role: "Barista & Operational Support",
     prof_p1: "Served <strong>80–100 customers per shift</strong> in high-volume environments while maintaining top-tier hospitality and order accuracy.",
     prof_p2: "Operated POS systems, conducted accurate daily sales recapitulations, and monitored inventory.",
@@ -47,11 +60,23 @@ const translations = {
     edu_sma_name: "SMA Pasundan 1 Cimahi", edu_sma_role: "Social Science Major (IPS)",
     edu_smp_name: "SMP Negeri 10 Cimahi", edu_smp_role: "Junior High School",
     edu_sd_name: "SDN Karang Mekar Mandiri 1 Cimahi", edu_sd_role: "Elementary School",
+    cert_title: "Certifications",
+    cert_subtitle: "Certificates and learning experiences that support my professional journey.",
+    cert_view_btn: "View Certificate",
+    cert_issued_by: "Issued by",
+    cert1_title: "Certificate of Attendance – Coffee Mixology & Sequence of Service",
+    cert1_venue: "favehotel Hyper Square - Bandung",
+    cert2_title: "Certificate of Completion – Hotel Operation Lesson",
+    cert2_venue: "Courtyard by Marriott Bandung Dago",
+    cert3_title: "Certificate of Completion – MICE Operation Lesson",
+    cert3_venue: "Courtyard by Marriott Bandung Dago",
+    cert4_title: "Certificate of Attendance – Barista Class",
+    cert4_venue: "favehotel Hyper Square - Bandung",
     skills_title: "Competencies, Tech & AI Learning", skills_subtitle: "Combining soft-skills excellence with modern tech tools and AI workflows.",
     skills_cat_1: "Customer & Client Relations",
     skills_cat_2: "Operations & Data Admin",
     skills_cat_3: "Technical & Web Systems",
-    skills_cat_4: "AI Workflow & Future Interests",
+    skills_cat_4: "Also Exploring:",
     skills_li_1: "Customer Support & Helpdesk",
     skills_li_2: "Complaint Handling & Resolution",
     skills_li_3: "Client Engagement & Satisfaction",
@@ -63,7 +88,7 @@ const translations = {
     skills_li_9: "WHMCS (Web Hosting Management)",
     skills_li_10: "Virtualization & Server Basics (Proxmox, Linux, VPS)",
     skills_li_11: "HTML5, CSS3, VS Code & Git/GitHub",
-    ai_learning_text: "Actively learning to integrate AI tools for daily productivity, workflow optimization, and exploring entry-level Marketing & Client Success strategies.",
+    ai_learning_text: "Actively learning to integrate AI tools for daily productivity and workflow optimization.",
     contact_title: "Get In Touch", contact_subtitle: "Feel free to connect for opportunities or collaborations.",
     c_label_email: "Email",
     c_label_linkedin: "LinkedIn",
@@ -76,58 +101,83 @@ const translations = {
     footer_text: "&copy; 2026 Ahmad Wahdan Nurjaman. Built with VS Code & Hosted on GitHub Pages."
   },
   ID: {
-    shortcut_cv_desc: "Unduh resume saya (PDF)",
+    shortcut_cv_desc: "Unduh CV saya (PDF)",
     shortcut_cont_desc: "Mari terhubung",
-    nav_home: "Beranda", nav_about: "Tentang", nav_exp: "Pengalaman", nav_education: "Pendidikan", nav_skills: "Keahlian", nav_contact: "Kontak",
+    nav_home: "Beranda", nav_about: "Tentang", nav_exp: "Pengalaman", nav_education: "Pendidikan", nav_certs: "Sertifikat", nav_skills: "Keahlian", nav_contact: "Kontak",
     hero_badge: "Selamat datang di portofolio saya",
-    hero_desc: "Lulusan S1 Sastra Inggris dengan pengalaman praktis di bidang Customer Support, Hubungan Klien, dan Administrasi Operasional. Aktif mengeksplorasi pengembangan Web & integrasi Workflow AI.",
+    hero_desc: "Lulusan S1 Sastra Inggris dengan pengalaman praktis di bidang Customer Support, Hubungan Klien, Marketing, dan Administrasi Operasional, didukung latar belakang hospitality yang kuat.",
     btn_cv: "Unduh CV", btn_contact: "Hubungi Saya",
     about_title: "Perjalanan Pembelajaran Tanpa Henti", about_subtitle: "Dari Sastra Inggris menuju Tech Support dan Selanjutnya.",
+    about_identity: "Lulusan Sastra Inggris",
+    about_quote: "Masih belajar, masih berkembang.",
+    about_journey_title: "Perjalanan Saya",
+    about_journey_subtitle: "Pengalaman, pelajaran, dan orang-orang yang membentuk perjalanan saya.",
+    about_stage_1: "Pendidikan",
+    about_stage_2: "Perhotelan",
+    about_stage_3: "Layanan Pelanggan & Operasional",
+    about_stage_4: "Teknologi",
+    about_stage_5: "Pembelajaran Berkelanjutan",
+    about_cta_title: "Selalu Belajar",
+    about_cta_text: "Keterampilan baru. Peluang baru. Rasa ingin tahu yang sama.",
+    about_cta_btn: "Lihat Pengalaman Saya",
+    facts_title: "Info Singkat",
     about_p1: "Saya tidak memulai perjalanan ini dengan tujuan yang benar-benar jelas. Saya hanya sedang berusaha menemukan tempat di mana saya bisa berkembang. Perjalanan saya dimulai dari Sastra Inggris di Universitas Pasundan. Selama bertahun-tahun, saya mempelajari kesusastraan, komunikasi, penulisan, analisis, serta berbagai perspektif tentang manusia dan budaya. Saat itu saya mungkin belum menyadari, tetapi banyak hal yang saya pelajari akhirnya menjadi bagian penting dalam perjalanan profesional saya.",
     about_p2: "Setelah lulus, perjalanan saya membawa saya ke berbagai lingkungan kerja. Saya pernah bekerja di bidang hospitality, melayani pelanggan sebagai barista, mendukung kegiatan operasional dan administrasi, hingga akhirnya bekerja di bidang customer support pada perusahaan teknologi. Setiap pengalaman memberikan saya sudut pandang yang berbeda.",
     about_p3: "Hospitality mengajarkan saya untuk memahami orang. Customer service mengajarkan saya untuk mendengarkan dan merespons. Administrasi mengajarkan saya untuk terorganisir dan memperhatikan detail. Technical support mengajarkan saya untuk melihat sebuah masalah dari sudut pandang yang berbeda.",
     about_p4: "Di tengah perjalanan tersebut, saya mulai tertarik pada teknologi. Bukan karena saya tiba-tiba ingin menjadi programmer, tetapi karena saya ingin memahami bagaimana sesuatu di balik layar dapat digunakan untuk membuat pekerjaan menjadi lebih mudah dan efektif. Rasa penasaran itu membawa saya untuk mulai mempelajari Web, UI/UX, dan Artificial Intelligence. Saya masih belajar, masih mencoba berbagai hal, dan masih banyak yang ingin saya pahami. Saya belum menganggap diri saya sebagai seorang ahli di bidang tersebut, dan bagi saya itu bukan masalah. Belajar adalah bagian dari perjalanan.",
     about_p5: "Saat ini, saya terus mengembangkan pengalaman di bidang Customer Service, Administrasi, Marketing, dan Hospitality, sembari memperluas kemampuan saya di bidang teknologi sebagai keahlian tambahan. Saya mungkin masih mencari tahu ke mana perjalanan ini akan membawa saya. Tetapi saya tahu satu hal: saya menikmati proses belajar, bekerja dengan orang lain, memecahkan masalah, dan mengubah apa yang saya pelajari menjadi sesuatu yang bermanfaat. Dan mungkin, portofolio ini hanyalah salah satu bab dari perjalanan tersebut.",
     fact_bg: "Latar Belakang", fact_bg_val: "Sastra Inggris",
-    fact_focus: "Fokus Saat Ini", fact_focus_val: "Dukungan Teknis & Alur Kerja AI",
+    fact_focus: "Fokus Saat Ini", fact_focus_val: "Customer Support, Marketing & Administrasi",
     fact_strength: "Kekuatan Utama", fact_strength_val: "Empati + Troubleshooting Teknis", 
     fact_location: "Lokasi", fact_location_val: "Cimahi, Jawa Barat",
-    exp_title: "Pengalaman Kerja & Organisasi", exp_subtitle: "Rekam jejak terbukti dalam dukungan teknis, hospitality, operasional, dan kepemimpinan.",
+    exp_title: "Pengalaman Kerja & Organisasi", exp_subtitle: "Pengalaman nyata di bidang dukungan teknis, hospitality, operasional, dan kepemimpinan.",
     sda_role: "Customer & Operational Support",
-    sda_p1: "Menjaga <strong>waktu respons awal di bawah 1 menit</strong> untuk tiket dan komunikasi klien, memastikan kepatuhan SLA yang tinggi.",
+    sda_p1: "Menjaga <strong>waktu respons awal di bawah 1 menit</strong> untuk tiket dan komunikasi klien, demi memenuhi standar SLA yang tinggi.",
     sda_p2: "Melakukan troubleshooting sistematis menggunakan WHMCS, mencatat kendala secara akurat, dan memantau progres tiket.",
     sda_p3: "Berkoordinasi dengan tim teknis internal untuk penyelesaian masalah server dan hosting secara cepat.",
     sda_sop_title: "Alur Interaktif SOP Penanganan Tiket",
     sop_s1: "Tiket Diterima", sop_s2: "Diagnosis / WHMCS", sop_s3: "Resolusi / Eskalasi",
     sop_click_hint: "Klik langkah mana pun di atas untuk melihat detail operasional.",
-    pasca_role: "Creative Talent / Model",
-    pasca_p1: "Bekerja sama dengan tim kreatif dalam memproduksi konten visual (pemotretan & syuting video) untuk kampanye pemasaran brand fashion lokal.",
-    pasca_p2: "Memperagakan katalog produk pakaian (lifestyle & casual wear) dengan menekankan brand image yang konsisten.",
-    pasca_p3: "Berkolaborasi dengan fotografer dan stylist untuk menyampaikan nilai produk secara visual kepada audiens.",
+    pasca_role: "Talent Marketing & Konten Brand",
+    pasca_p1: "Berkontribusi pada kampanye pemasaran brand fashion lokal melalui kolaborasi konten foto & video bersama tim kreatif.",
+    pasca_p2: "Mewakili katalog produk (lifestyle & casual wear) untuk mendukung konsistensi brand image dan tujuan pemasaran.",
+    pasca_p3: "Berkolaborasi dengan fotografer dan stylist untuk menyampaikan nilai produk dan identitas brand kepada audiens.",
     prof_role: "Barista & Operational Support",
-    prof_p1: "Melayani <strong>80–100 pelanggan per shift</strong> di lingkungan yang padat sambil menjaga standar keramahtamanan prima dan akurasi pesanan.",
+    prof_p1: "Melayani <strong>80–100 pelanggan per shift</strong> di lingkungan kerja yang padat sambil tetap menjaga pelayanan prima dan akurasi pesanan.",
     prof_p2: "Mengoperasikan sistem POS, melakukan rekapitulasi penjualan harian secara akurat, dan memantau persediaan stok.",
-    prof_p3: "Aktif memberikan ide promosi dan konsep acara untuk meningkatkan keterikatan dan retensi pelanggan.",
+    prof_p3: "Aktif memberikan ide promosi dan konsep acara untuk meningkatkan keterlibatan dan retensi pelanggan.",
     btn_view_cert: "Lihat Sertifikat Magang",
     hotel_role: "F&B Banquet Intern",
-    hotel_p1: "Memberikan layanan tamu berstandar tinggi selama acara corporate dan pernikahan.",
+    hotel_p1: "Memberikan layanan tamu berkualitas tinggi selama acara corporate dan pernikahan.",
     hotel_p2: "Menjaga koordinasi yang lancar sesuai standar keramahtamahan internasional.",
     ccu_role: "Ketua Pelaksana (Cross Cultural Understanding)",
-    ccu_p1: "Memimpin dan mengkoordinasikan <strong>tim beranggotakan 15 orang</strong> untuk mengeksekusi acara Cross Cultural Understanding (CCU).",
+    ccu_p1: "Memimpin dan mengkoordinasikan <strong>tim beranggotakan 15 orang</strong> untuk menyelenggarakan acara Cross Cultural Understanding (CCU).",
     ccu_p2: "Mengelola administrasi peserta, pembagian tugas, dan penyelesaian masalah lapangan agar acara berjalan sesuai tujuan.",
     vac_role: "Staf Admin (Vaksinasi Covid-19)",
     vac_p1: "Melakukan verifikasi dan pengolahan data peserta secara akurat pada Program Vaksinasi Covid-19.",
     vac_p2: "Memastikan dokumen dan data tersusun rapi serta berkoordinasi dengan tim medis.",
-    edu_title: "Riwayat Pendidikan", edu_subtitle: "Perjalanan akademis dari pendidikan dasar hingga universitas.",
+    edu_title: "Riwayat Pendidikan", edu_subtitle: "Perjalanan akademis saya dari pendidikan dasar hingga universitas.",
     edu_univ_role: "S1 Sastra Inggris (IPK 3.30)",
     edu_sma_name: "SMA Pasundan 1 Cimahi", edu_sma_role: "Jurusan Ilmu Pengetahuan Sosial (IPS)",
     edu_smp_name: "SMP Negeri 10 Cimahi", edu_smp_role: "Sekolah Menengah Pertama",
     edu_sd_name: "SDN Karang Mekar Mandiri 1 Cimahi", edu_sd_role: "Sekolah Dasar",
+    cert_title: "Sertifikat",
+    cert_subtitle: "Sertifikat dan pengalaman belajar yang mendukung perjalanan profesional saya.",
+    cert_view_btn: "Lihat Sertifikat",
+    cert_issued_by: "Diterbitkan oleh",
+    cert1_title: "Certificate of Attendance – Coffee Mixology & Sequence of Service",
+    cert1_venue: "favehotel Hyper Square - Bandung",
+    cert2_title: "Certificate of Completion – Hotel Operation Lesson",
+    cert2_venue: "Courtyard by Marriott Bandung Dago",
+    cert3_title: "Certificate of Completion – MICE Operation Lesson",
+    cert3_venue: "Courtyard by Marriott Bandung Dago",
+    cert4_title: "Certificate of Attendance – Barista Class",
+    cert4_venue: "favehotel Hyper Square - Bandung",
     skills_title: "Kompetensi, Teknologi & Pembelajaran AI", skills_subtitle: "Menggabungkan keunggulan soft-skills dengan tools teknologi modern dan alur kerja AI.",
     skills_cat_1: "Hubungan Pelanggan & Klien",
     skills_cat_2: "Operasional & Administrasi Data",
     skills_cat_3: "Sistem Teknis & Web",
-    skills_cat_4: "Alur Kerja AI & Minat Pengembangan",
+    skills_cat_4: "Sedang Dieksplorasi:",
     skills_li_1: "Customer Support & Helpdesk",
     skills_li_2: "Penanganan Keluhan & Resolusi",
     skills_li_3: "Keterlibatan & Kepuasan Klien",
@@ -139,7 +189,7 @@ const translations = {
     skills_li_9: "WHMCS (Manajemen Web Hosting)",
     skills_li_10: "Dasar Virtualisasi & Server (Proxmox, Linux, VPS)",
     skills_li_11: "HTML5, CSS3, VS Code & Git/GitHub",
-    ai_learning_text: "Aktif mempelajari pemanfaatan tools AI untuk efisiensi kerja harian, optimasi alur kerja, serta mengeksplorasi strategi Marketing & Client Success.",
+    ai_learning_text: "Aktif mempelajari pemanfaatan tools AI untuk efisiensi kerja harian dan optimasi alur kerja.",
     contact_title: "Hubungi Saya", contact_subtitle: "Jangan ragu untuk terhubung untuk peluang atau kolaborasi.",
     c_label_email: "Email",
     c_label_linkedin: "LinkedIn",
@@ -188,8 +238,8 @@ function updateLanguage() {
   });
 }
 
-const wordsEN = ["Customer Support Specialist", "Client Relations Associate", "Operational Support Specialist"];
-const wordsID = ["Spesialis Dukungan Pelanggan", "Spesialis Hubungan Klien", "Spesialis Dukungan Operasional"];
+const wordsEN = ["Customer Support Specialist", "Client Relations Associate", "Marketing & Administration Support", "Operational Support Specialist"];
+const wordsID = ["Spesialis Dukungan Pelanggan", "Spesialis Hubungan Klien", "Staf Marketing & Administrasi", "Spesialis Dukungan Operasional"];
 let i = 0; let timer;
 
 function getTypingWords() {
@@ -260,10 +310,27 @@ document.querySelectorAll('.close-modal').forEach(closeBtn => {
   closeBtn.addEventListener('click', () => {
     closeBtn.closest('.modal').style.display = 'none';
   });
+  // Keyboard accessibility: close-modal has role="button" and tabindex="0",
+  // so Enter/Space should activate it like a real button.
+  closeBtn.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+      e.preventDefault();
+      closeBtn.closest('.modal').style.display = 'none';
+    }
+  });
 });
 
 window.addEventListener('click', (e) => {
   if (e.target.classList.contains('modal')) e.target.style.display = 'none';
+});
+
+// Escape key closes any open modal
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal').forEach(modal => {
+      if (modal.style.display === 'flex') modal.style.display = 'none';
+    });
+  }
 });
 
 function revealOnScroll() {
