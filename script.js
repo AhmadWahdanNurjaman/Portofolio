@@ -1,6 +1,6 @@
 const translations = {
   EN: {    
-    shortcut_cv_desc: "Get my resume (PDF)",
+    shortcut_cv_desc: "Download my resume (PDF)",
     shortcut_cont_desc: "Let's connect",
     nav_home: "Home", nav_about: "About", nav_exp: "Experience", nav_education: "Education", nav_skills: "Skills", nav_contact: "Contact",
     hero_badge: "Welcome to my portfolio",
@@ -12,7 +12,10 @@ const translations = {
     about_p3: "Hospitality taught me to understand people. Customer service taught me to listen and respond. Administration taught me to be organized and detail-oriented. Technical support taught me to look at a problem from a different angle.",
     about_p4: "In the midst of this journey, I became interested in technology. Not because I suddenly wanted to become a programmer, but because I wanted to understand how things behind the scenes could be used to make work easier and more effective. That curiosity led me to start learning Web, UI/UX, and Artificial Intelligence. I am still learning, still experimenting, and there is still much I want to understand. I don't consider myself an expert in these fields yet, and to me, that's okay. Learning is part of the journey.",
     about_p5: "Currently, I continue to develop my experience in Customer Service, Administration, Marketing, and Hospitality, while expanding my capabilities in technology as an additional skill set. I might still be figuring out where this journey will take me. But I know one thing: I enjoy the process of learning, working with others, solving problems, and turning what I've learned into something useful. And perhaps, this portfolio is just one chapter of that journey.",
-    fact_bg: "Background", fact_focus: "Current Focus",     fact_strength: "Core Strength", fact_strength_val: "Client Relations & Operations", fact_location: "Location",
+    fact_bg: "Background", fact_bg_val: "English Literature",
+    fact_focus: "Current Focus", fact_focus_val: "Tech Support & AI Workflows",
+    fact_strength: "Core Strength", fact_strength_val: "Empathy + Tech Troubleshooting", 
+    fact_location: "Location", fact_location_val: "Cimahi, West Java",
     exp_title: "Professional & Organizational Experience", exp_subtitle: "A proven track record in technical support, hospitality, operations, and leadership.",
     sda_role: "Customer & Operational Support",
     sda_p1: "Maintained a strict <strong>under 1-minute initial response time</strong> for client tickets and communications, ensuring high SLA compliance.",
@@ -45,44 +48,70 @@ const translations = {
     edu_smp_name: "SMP Negeri 10 Cimahi", edu_smp_role: "Junior High School",
     edu_sd_name: "SDN Karang Mekar Mandiri 1 Cimahi", edu_sd_role: "Elementary School",
     skills_title: "Competencies, Tech & AI Learning", skills_subtitle: "Combining soft-skills excellence with modern tech tools and AI workflows.",
+    skills_cat_1: "Customer & Client Relations",
+    skills_cat_2: "Operations & Data Admin",
+    skills_cat_3: "Technical & Web Systems",
+    skills_cat_4: "AI Workflow & Future Interests",
+    skills_li_1: "Customer Support & Helpdesk",
+    skills_li_2: "Complaint Handling & Resolution",
+    skills_li_3: "Client Engagement & Satisfaction",
+    skills_li_4: "Verbal & Written Communication",
+    skills_li_5: "Daily Sales Recapitulation & Reporting",
+    skills_li_6: "POS & Inventory Management",
+    skills_li_7: "Data Entry & Processing",
+    skills_li_8: "Microsoft Office Suite",
+    skills_li_9: "WHMCS (Web Hosting Management)",
+    skills_li_10: "Virtualization & Server Basics (Proxmox, Linux, VPS)",
+    skills_li_11: "HTML5, CSS3, VS Code & Git/GitHub",
     ai_learning_text: "Actively learning to integrate AI tools for daily productivity, workflow optimization, and exploring entry-level Marketing & Client Success strategies.",
     contact_title: "Get In Touch", contact_subtitle: "Feel free to connect for opportunities or collaborations.",
-    modal_cert_text: "Certificate of completion for F&B Banquet Internship (Feb 2024 - Apr 2024)."
+    c_label_email: "Email",
+    c_label_linkedin: "LinkedIn",
+    c_label_phone: "Phone / WhatsApp",
+    c_label_location: "Location",
+    c_val_location: "Cimahi, West Java, Indonesia",
+    modal_hotel_title: "Four Points by Sheraton - Internship Certificate",
+    modal_gallery_title: "Image Gallery",
+    modal_cert_text: "Certificate of completion for F&B Banquet Internship (Feb 2024 - Apr 2024).",
+    footer_text: "&copy; 2026 Ahmad Wahdan Nurjaman. Built with VS Code & Hosted on GitHub Pages."
   },
   ID: {
     shortcut_cv_desc: "Unduh resume saya (PDF)",
     shortcut_cont_desc: "Mari terhubung",
     nav_home: "Beranda", nav_about: "Tentang", nav_exp: "Pengalaman", nav_education: "Pendidikan", nav_skills: "Keahlian", nav_contact: "Kontak",
     hero_badge: "Selamat datang di portofolio saya",
-    hero_desc: "Lulusan S1 Sastra Inggris dengan pengalaman di bidang Layanan Pelanggan, Hubungan Klien, dan Administrasi Operasional. Adaptif, teliti, serta aktif mempelajari Web Development & integrasi Workflow AI.",
+    hero_desc: "Lulusan S1 Sastra Inggris dengan pengalaman praktis di bidang Customer Support, Hubungan Klien, dan Administrasi Operasional. Aktif mengeksplorasi pengembangan Web & integrasi Workflow AI.",
     btn_cv: "Unduh CV", btn_contact: "Hubungi Saya",
-    about_title: "Perjalanan Pembelajaran Tanpa Henti", about_subtitle: "Dari Sastra Inggris menuju Tech Support dan seterusnya.",
+    about_title: "Perjalanan Pembelajaran Tanpa Henti", about_subtitle: "Dari Sastra Inggris menuju Tech Support dan Selanjutnya.",
     about_p1: "Saya tidak memulai perjalanan ini dengan tujuan yang benar-benar jelas. Saya hanya sedang berusaha menemukan tempat di mana saya bisa berkembang. Perjalanan saya dimulai dari Sastra Inggris di Universitas Pasundan. Selama bertahun-tahun, saya mempelajari kesusastraan, komunikasi, penulisan, analisis, serta berbagai perspektif tentang manusia dan budaya. Saat itu saya mungkin belum menyadari, tetapi banyak hal yang saya pelajari akhirnya menjadi bagian penting dalam perjalanan profesional saya.",
     about_p2: "Setelah lulus, perjalanan saya membawa saya ke berbagai lingkungan kerja. Saya pernah bekerja di bidang hospitality, melayani pelanggan sebagai barista, mendukung kegiatan operasional dan administrasi, hingga akhirnya bekerja di bidang customer support pada perusahaan teknologi. Setiap pengalaman memberikan saya sudut pandang yang berbeda.",
     about_p3: "Hospitality mengajarkan saya untuk memahami orang. Customer service mengajarkan saya untuk mendengarkan dan merespons. Administrasi mengajarkan saya untuk terorganisir dan memperhatikan detail. Technical support mengajarkan saya untuk melihat sebuah masalah dari sudut pandang yang berbeda.",
     about_p4: "Di tengah perjalanan tersebut, saya mulai tertarik pada teknologi. Bukan karena saya tiba-tiba ingin menjadi programmer, tetapi karena saya ingin memahami bagaimana sesuatu di balik layar dapat digunakan untuk membuat pekerjaan menjadi lebih mudah dan efektif. Rasa penasaran itu membawa saya untuk mulai mempelajari Web, UI/UX, dan Artificial Intelligence. Saya masih belajar, masih mencoba berbagai hal, dan masih banyak yang ingin saya pahami. Saya belum menganggap diri saya sebagai seorang ahli di bidang tersebut, dan bagi saya itu bukan masalah. Belajar adalah bagian dari perjalanan.",
     about_p5: "Saat ini, saya terus mengembangkan pengalaman di bidang Customer Service, Administrasi, Marketing, dan Hospitality, sembari memperluas kemampuan saya di bidang teknologi sebagai keahlian tambahan. Saya mungkin masih mencari tahu ke mana perjalanan ini akan membawa saya. Tetapi saya tahu satu hal: saya menikmati proses belajar, bekerja dengan orang lain, memecahkan masalah, dan mengubah apa yang saya pelajari menjadi sesuatu yang bermanfaat. Dan mungkin, portofolio ini hanyalah salah satu bab dari perjalanan tersebut.",
-        fact_bg: "Latar Belakang", fact_focus: "Fokus Saat Ini", fact_strength: "Kekuatan Utama", fact_strength_val: "Relasi Klien & Operasional", fact_location: "Lokasi",
+    fact_bg: "Latar Belakang", fact_bg_val: "Sastra Inggris",
+    fact_focus: "Fokus Saat Ini", fact_focus_val: "Dukungan Teknis & Alur Kerja AI",
+    fact_strength: "Kekuatan Utama", fact_strength_val: "Empati + Troubleshooting Teknis", 
+    fact_location: "Lokasi", fact_location_val: "Cimahi, Jawa Barat",
     exp_title: "Pengalaman Kerja & Organisasi", exp_subtitle: "Rekam jejak terbukti dalam dukungan teknis, hospitality, operasional, dan kepemimpinan.",
     sda_role: "Customer & Operational Support",
     sda_p1: "Menjaga <strong>waktu respons awal di bawah 1 menit</strong> untuk tiket dan komunikasi klien, memastikan kepatuhan SLA yang tinggi.",
     sda_p2: "Melakukan troubleshooting sistematis menggunakan WHMCS, mencatat kendala secara akurat, dan memantau progres tiket.",
     sda_p3: "Berkoordinasi dengan tim teknis internal untuk penyelesaian masalah server dan hosting secara cepat.",
-    sda_sop_title: "Simulasi Alur SOP Penanganan Tiket",
+    sda_sop_title: "Alur Interaktif SOP Penanganan Tiket",
     sop_s1: "Tiket Diterima", sop_s2: "Diagnosis / WHMCS", sop_s3: "Resolusi / Eskalasi",
-    sop_click_hint: "Klik salah satu langkah di atas untuk melihat detail operasional.",
+    sop_click_hint: "Klik langkah mana pun di atas untuk melihat detail operasional.",
     pasca_role: "Creative Talent / Model",
-    pasca_p1: "Bekerja sama dengan tim kreatif memproduksi konten visual (photo & video shoot) untuk kampanye pemasaran brand fashion lokal.",
+    pasca_p1: "Bekerja sama dengan tim kreatif dalam memproduksi konten visual (pemotretan & syuting video) untuk kampanye pemasaran brand fashion lokal.",
     pasca_p2: "Memperagakan katalog produk pakaian (lifestyle & casual wear) dengan menekankan brand image yang konsisten.",
     pasca_p3: "Berkolaborasi dengan fotografer dan stylist untuk menyampaikan nilai produk secara visual kepada audiens.",
     prof_role: "Barista & Operational Support",
-    prof_p1: "Melayani <strong>80–100 pelanggan per shift</strong> di lingkungan yang padat sambil menjaga kualitas layanan dan akurasi pesanan.",
+    prof_p1: "Melayani <strong>80–100 pelanggan per shift</strong> di lingkungan yang padat sambil menjaga standar keramahtamanan prima dan akurasi pesanan.",
     prof_p2: "Mengoperasikan sistem POS, melakukan rekapitulasi penjualan harian secara akurat, dan memantau persediaan stok.",
     prof_p3: "Aktif memberikan ide promosi dan konsep acara untuk meningkatkan keterikatan dan retensi pelanggan.",
     btn_view_cert: "Lihat Sertifikat Magang",
     hotel_role: "F&B Banquet Intern",
-    hotel_p1: "Melayani tamu pada kegiatan acara corporate dan pernikahan berstandar internasional.",
-    hotel_p2: "Menjaga koordinasi dan kualitas pelayanan sesuai standar hospitality hotel bintang 4.",
+    hotel_p1: "Memberikan layanan tamu berstandar tinggi selama acara corporate dan pernikahan.",
+    hotel_p2: "Menjaga koordinasi yang lancar sesuai standar keramahtamahan internasional.",
     ccu_role: "Ketua Pelaksana (Cross Cultural Understanding)",
     ccu_p1: "Memimpin dan mengkoordinasikan <strong>tim beranggotakan 15 orang</strong> untuk mengeksekusi acara Cross Cultural Understanding (CCU).",
     ccu_p2: "Mengelola administrasi peserta, pembagian tugas, dan penyelesaian masalah lapangan agar acara berjalan sesuai tujuan.",
@@ -91,13 +120,36 @@ const translations = {
     vac_p2: "Memastikan dokumen dan data tersusun rapi serta berkoordinasi dengan tim medis.",
     edu_title: "Riwayat Pendidikan", edu_subtitle: "Perjalanan akademis dari pendidikan dasar hingga universitas.",
     edu_univ_role: "S1 Sastra Inggris (IPK 3.30)",
-    edu_sma_name: "SMA Pasundan 1 Cimahi", edu_sma_role: "Jurusan IPS",
+    edu_sma_name: "SMA Pasundan 1 Cimahi", edu_sma_role: "Jurusan Ilmu Pengetahuan Sosial (IPS)",
     edu_smp_name: "SMP Negeri 10 Cimahi", edu_smp_role: "Sekolah Menengah Pertama",
     edu_sd_name: "SDN Karang Mekar Mandiri 1 Cimahi", edu_sd_role: "Sekolah Dasar",
-    skills_title: "Kompetensi, Teknologi & Pembelajaran AI", skills_subtitle: "Menggabungkan keunggulan soft-skills dengan tools teknologi modern.",
+    skills_title: "Kompetensi, Teknologi & Pembelajaran AI", skills_subtitle: "Menggabungkan keunggulan soft-skills dengan tools teknologi modern dan alur kerja AI.",
+    skills_cat_1: "Hubungan Pelanggan & Klien",
+    skills_cat_2: "Operasional & Administrasi Data",
+    skills_cat_3: "Sistem Teknis & Web",
+    skills_cat_4: "Alur Kerja AI & Minat Pengembangan",
+    skills_li_1: "Customer Support & Helpdesk",
+    skills_li_2: "Penanganan Keluhan & Resolusi",
+    skills_li_3: "Keterlibatan & Kepuasan Klien",
+    skills_li_4: "Komunikasi Verbal & Tertulis",
+    skills_li_5: "Rekapitulasi Penjualan Harian & Pelaporan",
+    skills_li_6: "Manajemen POS & Inventaris",
+    skills_li_7: "Entri & Pemrosesan Data",
+    skills_li_8: "Microsoft Office Suite",
+    skills_li_9: "WHMCS (Manajemen Web Hosting)",
+    skills_li_10: "Dasar Virtualisasi & Server (Proxmox, Linux, VPS)",
+    skills_li_11: "HTML5, CSS3, VS Code & Git/GitHub",
     ai_learning_text: "Aktif mempelajari pemanfaatan tools AI untuk efisiensi kerja harian, optimasi alur kerja, serta mengeksplorasi strategi Marketing & Client Success.",
-    contact_title: "Hubungi Saya", contact_subtitle: "Silakan terhubung untuk peluang kerja sama atau diskusi.",
-    modal_cert_text: "Sertifikat penyelesaian magang F&B Banquet (Feb 2024 - Apr 2024)."
+    contact_title: "Hubungi Saya", contact_subtitle: "Jangan ragu untuk terhubung untuk peluang atau kolaborasi.",
+    c_label_email: "Email",
+    c_label_linkedin: "LinkedIn",
+    c_label_phone: "Telepon / WhatsApp",
+    c_label_location: "Lokasi",
+    c_val_location: "Cimahi, Jawa Barat, Indonesia",
+    modal_hotel_title: "Four Points by Sheraton - Sertifikat Magang",
+    modal_gallery_title: "Galeri Gambar",
+    modal_cert_text: "Sertifikat penyelesaian magang F&B Banquet (Feb 2024 - Apr 2024).",
+    footer_text: "&copy; 2026 Ahmad Wahdan Nurjaman. Dibuat dengan VS Code & Dihosting di GitHub Pages."
   }
 };
 
@@ -122,6 +174,11 @@ langBtn.addEventListener('click', () => {
   currentLang = currentLang === 'EN' ? 'ID' : 'EN';
   langText.textContent = currentLang === 'EN' ? 'ID' : 'EN';
   updateLanguage();
+  // Restart typing effect on language change
+  clearTimeout(timer);
+  document.getElementById('typing-text').innerHTML = '';
+  i = 0;
+  typingEffect();
 });
 
 function updateLanguage() {
@@ -131,22 +188,42 @@ function updateLanguage() {
   });
 }
 
-const words = ["Customer Support Specialist", "Client Relations Associate", "Operational Support Specialist"];
+const wordsEN = ["Customer Support Specialist", "Client Relations Associate", "Operational Support Specialist"];
+const wordsID = ["Spesialis Dukungan Pelanggan", "Spesialis Hubungan Klien", "Spesialis Dukungan Operasional"];
 let i = 0; let timer;
+
+function getTypingWords() {
+  return currentLang === 'EN' ? wordsEN : wordsID;
+}
+
 function typingEffect() {
-  let word = words[i].split("");
+  let word = getTypingWords()[i].split("");
   var loopTyping = function() {
-    if (word.length > 0) document.getElementById('typing-text').innerHTML += word.shift();
-    else { setTimeout(deletingEffect, 2000); return false; }
+    if (word.length > 0) {
+      document.getElementById('typing-text').innerHTML += word.shift();
+    } else {
+      // Fix: Assigned timeout to the global timer variable
+      timer = setTimeout(deletingEffect, 2000);
+      return false;
+    }
     timer = setTimeout(loopTyping, 100);
   };
   loopTyping();
 }
+
 function deletingEffect() {
-  let word = words[i].split("");
+  let word = getTypingWords()[i].split("");
   var loopDeleting = function() {
-    if (word.length > 0) { word.pop(); document.getElementById('typing-text').innerHTML = word.join(""); }
-    else { if (words.length > (i + 1)) i++; else i = 0; setTimeout(typingEffect, 500); return false; }
+    if (word.length > 0) {
+      word.pop();
+      document.getElementById('typing-text').innerHTML = word.join("");
+    } else {
+      if (getTypingWords().length > (i + 1)) i++;
+      else i = 0;
+      // Fix: Assigned timeout to the global timer variable
+      timer = setTimeout(typingEffect, 500);
+      return false;
+    }
     timer = setTimeout(loopDeleting, 50);
   };
   loopDeleting();
