@@ -3,574 +3,554 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ahmad Wahdan Nurjaman | Professional Portfolio</title>
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Portfolio of Ahmad Wahdan Nurjaman - English Literature graduate with experience in Customer Support, Marketing, Administration, and Hospitality. Explore my experience, education, and skills.">
-  <meta property="og:title" content="Ahmad Wahdan Nurjaman | Professional Portfolio" />
-  <meta property="og:description" content="English Literature graduate with hands-on experience in Customer Support, Marketing, Administration, and Hospitality." />
+  <meta name="description" content="Ahmad Wahdan Nurjaman — Customer Support, Administration & Operations, and Customer Relations professional with supporting technical and digital skills." />
+  <meta name="author" content="Ahmad Wahdan Nurjaman" />
+  <meta name="theme-color" content="#1c1c1c" />
+  <meta property="og:title" content="Ahmad Wahdan Nurjaman | Customer Support & Operations" />
+  <meta property="og:description" content="Professional portfolio focused on Customer Support, Administration & Operations, and Customer Relations." />
   <meta property="og:type" content="website" />
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheets -->
+
+  <title>Ahmad Wahdan Nurjaman | Customer Support & Operations</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
+  <a class="skip-link" href="#main-content" data-key="skip_link">Skip to content</a>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-brand">
-      <span class="brand-name">Wahdan<span class="dot">.</span></span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#" class="nav-item active" data-tab="home"><i class="fa-solid fa-house"></i> <span data-key="nav_home">Home</span></a></li>
-      <li><a href="#" class="nav-item" data-tab="about"><i class="fa-solid fa-user"></i> <span data-key="nav_about">About</span></a></li>
-      <li><a href="#" class="nav-item" data-tab="experience"><i class="fa-solid fa-briefcase"></i> <span data-key="nav_exp">Experience</span></a></li>
-      <li><a href="#" class="nav-item" data-tab="education"><i class="fa-solid fa-school"></i> <span data-key="nav_education">Education</span></a></li>
-      <li><a href="#" class="nav-item" data-tab="certifications"><i class="fa-solid fa-certificate"></i> <span data-key="nav_certs">Certifications</span></a></li>
-      <li><a href="#" class="nav-item" data-tab="skills"><i class="fa-solid fa-gears"></i> <span data-key="nav_skills">Skills</span></a></li>
-      <li><a href="#" class="nav-item" data-tab="contact"><i class="fa-solid fa-envelope"></i> <span data-key="nav_contact">Contact</span></a></li>
-    </ul>
-    <div class="lang-switcher">
-      <button id="lang-toggle" class="lang-btn"><i class="fa-solid fa-globe"></i> <span id="lang-text">ID</span></button>
-    </div>
-  </nav>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Ahmad Wahdan Nurjaman home">
+        <span>Wahdan</span><strong>.</strong>
+      </a>
 
-  <main class="content-container">
+      <button class="mobile-menu-btn" id="mobile-menu-btn" type="button"
+              aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-        <!-- TAB 1: HOME (QUICK NAVIGATION) -->
-    <section id="home" class="tab-content active hero-new">
-      
-      <div class="hero-main reveal tilt-card">
-        <img src="assets/daynn.jpg" alt="Ahmad Wahdan Background" class="hero-bg-img" onerror="this.onerror=null; this.src='assets/profile.jpg'">
-        
-        <!-- Foto dan Nama Nurjaman (Overlay) -->
-        <div class="hero-photo-wrap">
-          <img src="assets/daynn.jpg" alt="Ahmad Wahdan" onerror="this.onerror=null; this.src='assets/profile.jpg'">
-          <span class="name-overlay">Nurjaman</span>
-        </div>
-        
-        <div class="hero-overlay"></div>
-        <div class="hero-text">
-          <span class="badge" data-key="hero_badge">Welcome to my portfolio</span>
-          <h1>Ahmad Wahdan Nurjaman</h1>
-          <h2 class="typing-container"><span id="typing-text"></span><span class="cursor">&nbsp;</span></h2>
-          <p class="hero-desc" data-key="hero_desc">English Literature graduate with hands-on experience in Customer Support, Client Relations, Marketing, and Operational Administration, backed by a strong hospitality service background.</p>
-        </div>
-      </div>
+      <div class="nav-panel" id="nav-panel">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active" data-section="home" data-key="nav_home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about" data-key="nav_about">About</a></li>
+          <li><a href="#experience" class="nav-link" data-section="experience" data-key="nav_experience">Experience</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills" data-key="nav_skills">Skills</a></li>
+          <li><a href="#education" class="nav-link" data-section="education" data-key="nav_education">Education</a></li>
+          <li><a href="#certifications" class="nav-link" data-section="certifications" data-key="nav_certifications">Certificates</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact" data-key="nav_contact">Contact</a></li>
+        </ul>
 
-      <div class="hero-shortcuts">
-        <!-- Tombol 1: Download CV -->
-        <a href="assets/AhmadWahdanNurjaman_Resume.pdf" download class="shortcut-card reveal tilt-card">
-          <div class="shortcut-icon"><i class="fa-solid fa-download"></i></div>
-          <div class="shortcut-info">
-            <h3 data-key="btn_cv">Download CV</h3>
-            <p data-key="shortcut_cv_desc">Download my resume (PDF)</p>
-          </div>
-          <i class="fa-solid fa-arrow-right shortcut-arrow"></i>
-        </a>
-
-        <!-- Tombol 2: Contact Me -->
-        <button class="shortcut-card nav-trigger reveal tilt-card" data-target="contact">
-          <div class="shortcut-icon"><i class="fa-solid fa-envelope"></i></div>
-          <div class="shortcut-info">
-            <h3 data-key="btn_contact">Get in Touch</h3>
-            <p data-key="shortcut_cont_desc">Let's connect</p>
-          </div>
-          <i class="fa-solid fa-arrow-right shortcut-arrow"></i>
+        <button class="language-btn" id="lang-toggle" type="button" aria-label="Switch language">
+          <i class="fa-solid fa-globe"></i>
+          <span id="lang-text">ID</span>
         </button>
       </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section id="home" class="section hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-image-layer" aria-hidden="true">
+            <img src="assets/daynn.jpg" alt="" onerror="this.onerror=null;this.src='assets/profile.jpg';" />
+          </div>
+          <div class="hero-shade" aria-hidden="true"></div>
+
+          <div class="hero-content reveal">
+            <span class="eyebrow hero-eyebrow" data-key="hero_badge">Customer Support • Operations • Customer Relations</span>
+            <p class="hero-kicker" data-key="hero_kicker">English Literature graduate with practical customer-facing and operational experience.</p>
+            <h1 id="hero-title">Ahmad Wahdan Nurjaman</h1>
+            <h2 class="hero-role">Customer Support <span>|</span> Administration &amp; Operations <span>|</span> Customer Relations</h2>
+            <p class="hero-description" data-key="hero_desc">
+              Experienced in handling customer needs, following up requests, maintaining documentation, supporting daily operations, and coordinating with internal teams. Technical and digital skills provide additional support for technology-based customer service.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#experience" data-key="hero_cta_experience">View Experience <i class="fa-solid fa-arrow-down"></i></a>
+              <a class="btn btn-light" href="assets/AhmadWahdanNurjaman_Resume.pdf" download data-key="hero_cta_cv">View CV <i class="fa-solid fa-file-arrow-down"></i></a>
+              <a class="btn btn-ghost" href="#contact" data-key="hero_cta_contact">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="hero-meta">
+              <span><i class="fa-solid fa-location-dot"></i> <span data-key="hero_location">Cimahi, West Java</span></span>
+              <span><i class="fa-solid fa-graduation-cap"></i> <span data-key="hero_degree">S1 English Literature</span></span>
+              <span><i class="fa-solid fa-language"></i> <span data-key="hero_language">English — Pre-Intermediate</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="focus-strip reveal">
+          <div>
+            <span class="strip-label" data-key="focus_label">Professional focus</span>
+            <strong data-key="focus_primary">Customer Support &amp; Customer Relations</strong>
+          </div>
+          <div>
+            <span class="strip-label" data-key="focus_secondary_label">Supporting capabilities</span>
+            <strong data-key="focus_secondary">Administration, Operations &amp; Technical Support</strong>
+          </div>
+          <div>
+            <span class="strip-label" data-key="focus_tertiary_label">Additional area</span>
+            <strong data-key="focus_tertiary">Marketing Support &amp; Customer Engagement</strong>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- TAB 2: ABOUT (REDESIGNED) -->
-    <section id="about" class="tab-content">
-      <div class="section-header reveal">
-        <h2 data-key="about_title">A Journey of Continuous Learning</h2>
-        <p data-key="about_subtitle">From English Literature to Tech Support and Beyond.</p>
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-key="about_eyebrow">Professional Summary</span>
+          <h2 id="about-title" data-key="about_title">Customer-focused experience with an operational mindset.</h2>
+          <p data-key="about_subtitle">
+            My professional path connects hospitality, customer service, administration, operations, and technology-based customer support.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="summary-card reveal">
+            <div class="card-icon"><i class="fa-solid fa-user-check"></i></div>
+            <h3 data-key="summary_title">What I bring</h3>
+            <p data-key="summary_text">
+              I have practical experience handling customer needs and issues, providing information and solutions, following up requests, maintaining records and documentation, and coordinating with internal teams.
+            </p>
+            <p data-key="summary_text_2">
+              My English Literature background supports structured communication, writing, analysis, presentation, and documentation. Technical knowledge is positioned as a supporting capability for customer and operational roles.
+            </p>
+          </article>
+
+          <div class="journey-card reveal">
+            <div class="journey-step">
+              <span>01</span>
+              <div><strong data-key="journey_1_title">Hospitality</strong><p data-key="journey_1_text">Customer interaction, service standards, teamwork, and event support.</p></div>
+            </div>
+            <div class="journey-line"></div>
+            <div class="journey-step">
+              <span>02</span>
+              <div><strong data-key="journey_2_title">Customer Service</strong><p data-key="journey_2_text">Listening, responding, handling requests, and maintaining service quality.</p></div>
+            </div>
+            <div class="journey-line"></div>
+            <div class="journey-step">
+              <span>03</span>
+              <div><strong data-key="journey_3_title">Operations &amp; Administration</strong><p data-key="journey_3_text">Documentation, data handling, reporting, coordination, and daily operational support.</p></div>
+            </div>
+            <div class="journey-line"></div>
+            <div class="journey-step">
+              <span>04</span>
+              <div><strong data-key="journey_4_title">Customer &amp; Technical Support</strong><p data-key="journey_4_text">Technology-based support, troubleshooting, ticket handling, follow-up, and technical team coordination.</p></div>
+            </div>
+          </div>
+
+          <aside class="facts-card reveal">
+            <span class="eyebrow" data-key="facts_eyebrow">Quick facts</span>
+            <div class="fact-row"><span data-key="fact_education">Education</span><strong>S1 English Literature</strong></div>
+            <div class="fact-row"><span data-key="fact_gpa">GPA</span><strong>3.30 / 4.00</strong></div>
+            <div class="fact-row"><span data-key="fact_language">Language</span><strong data-key="fact_language_value">Bahasa Indonesia — Native<br />English — Pre-Intermediate</strong></div>
+            <div class="fact-row"><span data-key="fact_location_label">Location</span><strong>Cimahi, West Java</strong></div>
+          </aside>
+        </div>
       </div>
-      
-      <div class="about-layout">
-        
-        <!-- LEFT: PROFILE -->
-        <div class="about-col about-col-profile reveal tilt-card">
-          <div class="profile-card">
-            <div class="profile-img-wrap">
-              <img src="assets/daynn.jpg" alt="Ahmad Wahdan Nurjaman">
-            </div>
-            <h3>Ahmad Wahdan Nurjaman</h3>
-            <p class="profile-role" data-key="about_identity">English Literature Graduate</p>
-            
-            <div class="profile-quote">
-              <i class="fa-solid fa-quote-left"></i>
-              <p data-key="about_quote">"Still learning, still growing."</p>
-            </div>
+    </section>
 
-            <div class="profile-facts">
-              <div class="profile-fact">
-                <span data-key="fact_bg">Background</span>
-                <span data-key="fact_bg_val">English Literature</span>
-              </div>
-              <div class="profile-fact">
-                <span data-key="fact_focus">Current Focus</span>
-                <span data-key="fact_focus_val">Customer Support, Marketing & Administration</span>
-              </div>
-              <div class="profile-fact">
-                <span data-key="fact_strength">Core Strength</span>
-                <span data-key="fact_strength_val">Empathy + Tech Troubleshooting</span>
-              </div>
-              <div class="profile-fact">
-                <span data-key="fact_location">Location</span>
-                <span data-key="fact_location_val">Cimahi, West Java</span>
-              </div>
-            </div>
-          </div>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-muted" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-key="experience_eyebrow">Experience</span>
+          <h2 id="experience-title" data-key="experience_title">Professional experience built around service and operations.</h2>
+          <p data-key="experience_subtitle">The most relevant experience is intentionally presented first for recruiter-friendly scanning.</p>
         </div>
 
-        <!-- CENTER: JOURNEY -->
-        <div class="about-col about-col-journey">
-          <div class="journey-header reveal">
-            <h3 data-key="about_journey_title">My Journey</h3>
-            <p data-key="about_journey_subtitle">The experiences, lessons, and people who shaped me.</p>
+        <!-- FLAGSHIP EXPERIENCE -->
+        <article class="featured-experience reveal">
+          <div class="featured-top">
+            <div>
+              <span class="experience-date">Jun 2026 – Sep 2026</span>
+              <h3>SDA Teknologi</h3>
+              <p class="experience-role" data-key="sda_role">Customer &amp; Operational Support</p>
+            </div>
+            <div class="response-stat">
+              <span class="stat-value">&lt;1 min</span>
+              <span class="stat-label" data-key="sda_stat_label">Initial response time</span>
+            </div>
           </div>
-          
-          <div class="timeline reveal">
-            <!-- 01 -->
-            <div class="timeline-item reveal">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content tilt-card">
-                <div class="timeline-stage">
-                  <span class="stage-num">01</span>
-                  <h4 data-key="about_stage_1">Education</h4>
-                </div>
-                <p data-key="about_p1">I didn't start this journey with a completely clear goal. I was just trying to find a place where I could grow. My journey began with English Literature at Universitas Pasundan. For years, I studied literature, communication, writing, analysis, and various perspectives on humanity and culture. At the time, I might not have realized it, but much of what I learned eventually became an important part of my professional journey.</p>
-              </div>
+
+          <div class="featured-grid">
+            <div>
+              <h4 data-key="key_responsibilities">Key responsibilities</h4>
+              <ul class="check-list">
+                <li data-key="sda_p1">Maintained an initial response time of <strong>under 1 minute</strong> for customer tickets and communications.</li>
+                <li data-key="sda_p2">Handled customer questions, service requests, and issues through multiple communication channels.</li>
+                <li data-key="sda_p3">Provided information, assistance, and solutions according to company SOPs and service standards.</li>
+                <li data-key="sda_p4">Performed systematic troubleshooting using <strong>WHMCS</strong>, including ticket logging and monitoring.</li>
+                <li data-key="sda_p5">Followed up customer requests until an appropriate resolution was reached and coordinated with internal technical teams when needed.</li>
+                <li data-key="sda_p6">Supported daily service operations and maintained records related to customer requests, issues, and resolutions.</li>
+              </ul>
             </div>
 
-            <!-- 02 -->
-            <div class="timeline-item reveal">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content tilt-card">
-                <div class="timeline-stage">
-                  <span class="stage-num">02</span>
-                  <h4 data-key="about_stage_2">Hospitality</h4>
+            <div class="case-study">
+              <div class="case-study-header">
+                <span class="eyebrow" data-key="case_eyebrow">Featured experience</span>
+                <h4 data-key="case_title">Customer Support Workflow</h4>
+                <p data-key="case_subtitle">A concise view of the support responsibilities documented in this role.</p>
+              </div>
+
+              <div class="workflow" role="list">
+                <button class="workflow-step active" type="button" data-step="step1" role="listitem">
+                  <span>01</span><strong data-key="workflow_1">Customer request</strong><i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="workflow-step" type="button" data-step="step2" role="listitem">
+                  <span>02</span><strong data-key="workflow_2">Ticket &amp; troubleshooting</strong><i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="workflow-step" type="button" data-step="step3" role="listitem">
+                  <span>03</span><strong data-key="workflow_3">Follow-up &amp; coordination</strong><i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="workflow-detail" id="workflow-detail" aria-live="polite"></div>
+
+              <div class="tool-row">
+                <span data-key="tools_label">Tools / support areas</span>
+                <div>
+                  <span>WHMCS</span><span>Server / Hosting</span><span>Technical Troubleshooting</span><span>Ticket Management</span>
                 </div>
-                <p data-key="about_p2">After graduating, my journey took me through various work environments. I worked in hospitality, served customers as a barista, supported operational and administrative activities, until finally working in customer support at a tech company. Each experience gave me a different perspective.</p>
               </div>
             </div>
-
-            <!-- 03 -->
-            <div class="timeline-item reveal">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content tilt-card">
-                <div class="timeline-stage">
-                  <span class="stage-num">03</span>
-                  <h4 data-key="about_stage_3">Customer Service & Operations</h4>
-                </div>
-                <p data-key="about_p3">Hospitality taught me to understand people. Customer service taught me to listen and respond. Administration taught me to be organized and detail-oriented. Technical support taught me to look at a problem from a different angle.</p>
-              </div>
-            </div>
-
-            <!-- 04 -->
-            <div class="timeline-item reveal">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content tilt-card">
-                <div class="timeline-stage">
-                  <span class="stage-num">04</span>
-                  <h4 data-key="about_stage_4">Technology</h4>
-                </div>
-                <p data-key="about_p4">In the midst of this journey, I became interested in technology. Not because I suddenly wanted to become a programmer, but because I wanted to understand how things behind the scenes could be used to make work easier and more effective. That curiosity led me to start learning Web, UI/UX, and Artificial Intelligence. I am still learning, still experimenting, and there is still much I want to understand. I don't consider myself an expert in these fields yet, and to me, that's okay. Learning is part of the journey.</p>
-              </div>
-            </div>
-
-            <!-- 05 -->
-            <div class="timeline-item reveal">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content tilt-card">
-                <div class="timeline-stage">
-                  <span class="stage-num">05</span>
-                  <h4 data-key="about_stage_5">Continuous Learning</h4>
-                </div>
-                <p data-key="about_p5">Currently, I continue to develop my experience in Customer Service, Administration, Marketing, and Hospitality, while expanding my capabilities in technology as an additional skill set. I might still be figuring out where this journey will take me. But I know one thing: I enjoy the process of learning, working with others, solving problems, and turning what I've learned into something useful. And perhaps, this portfolio is just one chapter of that journey.</p>
-              </div>
-            </div>
-
           </div>
+        </article>
+
+        <div class="experience-list">
+          <article class="experience-card reveal">
+            <div class="experience-index">02</div>
+            <div>
+              <span class="experience-date">Sep 2023 – Feb 2026</span>
+              <h3>Prof Coffee Tigade</h3>
+              <p class="experience-role" data-key="prof_role">Barista &amp; Operational Support</p>
+              <ul class="compact-list">
+                <li data-key="prof_p1">Served approximately <strong>80–100 customers per shift</strong> in a high-volume service environment.</li>
+                <li data-key="prof_p2">Handled customer needs, operated POS systems, performed sales recapitulation, and supported inventory monitoring.</li>
+                <li data-key="prof_p3">Contributed promotional and event ideas to support customer engagement and retention.</li>
+              </ul>
+              <div class="tag-row">
+                <span data-key="tag_customer_service">Customer Service</span>
+                <span data-key="tag_operations">Operations</span>
+                <span data-key="tag_pos">POS</span>
+                <span data-key="tag_reporting">Reporting</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-card reveal">
+            <div class="experience-index">03</div>
+            <div>
+              <span class="experience-date">Jun 2025</span>
+              <h3>Pascalab.id</h3>
+              <p class="experience-role" data-key="pasca_role">Marketing &amp; Brand Content Talent</p>
+              <ul class="compact-list">
+                <li data-key="pasca_p1">Contributed to marketing campaigns through photo and video content collaboration with the creative team.</li>
+                <li data-key="pasca_p2">Supported product catalog presentation for brand marketing needs.</li>
+                <li data-key="pasca_p3">Collaborated with photographers and stylists to communicate product value and brand identity to the target audience.</li>
+              </ul>
+              <div class="tag-row">
+                <span data-key="tag_marketing">Marketing Support</span>
+                <span data-key="tag_content">Brand Content</span>
+                <span data-key="tag_engagement">Customer Engagement</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-card reveal">
+            <div class="experience-index">04</div>
+            <div>
+              <span class="experience-date">Feb 2024 – Apr 2024</span>
+              <h3>Four Points by Sheraton — Bandung</h3>
+              <p class="experience-role" data-key="hotel_role">F&amp;B Banquet Intern</p>
+              <ul class="compact-list">
+                <li data-key="hotel_p1">Provided guest service during meetings, weddings, and corporate events.</li>
+                <li data-key="hotel_p2">Interacted with guests, supported banquet preparation and event execution, and coordinated with team members.</li>
+              </ul>
+              <button class="text-button modal-trigger" type="button" data-modal="modal-hotel-cert">
+                <i class="fa-solid fa-certificate"></i> <span data-key="btn_view_cert">View Internship Certificate</span>
+              </button>
+            </div>
+          </article>
         </div>
 
-        <!-- RIGHT: QUICK FACTS -->
-        <div class="about-col about-col-facts">
-          <div class="facts-card reveal tilt-card">
-            <h3 data-key="facts_title">Quick Facts</h3>
-            
-            <div class="fact-item">
-              <div class="fact-icon"><i class="fa-solid fa-book"></i></div>
-              <div class="fact-info">
-                <h4 data-key="fact_bg">Background</h4>
-                <p data-key="fact_bg_val">English Literature</p>
-              </div>
-            </div>
+        <div class="supporting-experience reveal">
+          <div class="supporting-heading">
+            <span class="eyebrow" data-key="org_eyebrow">Organizational experience</span>
+            <h3 data-key="org_title">Additional evidence of leadership, administration, and coordination.</h3>
+          </div>
+          <div class="org-grid">
+            <article>
+              <span class="org-date">May 2022</span>
+              <h4>Cross Cultural Understanding (CCU) — Universitas Pasundan</h4>
+              <p data-key="ccu_role">Event Coordinator / Ketua Pelaksana</p>
+              <ul class="compact-list">
+                <li data-key="ccu_p1">Led and coordinated a <strong>15-member team</strong>.</li>
+                <li data-key="ccu_p2">Managed task distribution, participant administration, documentation, and event coordination.</li>
+              </ul>
+            </article>
+            <article>
+              <span class="org-date">Jan 2021</span>
+              <h4>COVID-19 Vaccination Program — Universitas Pasundan</h4>
+              <p data-key="vac_role">Administrative Staff</p>
+              <ul class="compact-list">
+                <li data-key="vac_p1">Verified and managed participant data accurately.</li>
+                <li data-key="vac_p2">Organized participant documents and coordinated with committee members and medical teams.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="fact-item">
-              <div class="fact-icon"><i class="fa-solid fa-bullseye"></i></div>
-              <div class="fact-info">
-                <h4 data-key="fact_focus">Current Focus</h4>
-                <p data-key="fact_focus_val">Customer Support, Marketing & Administration</p>
-              </div>
-            </div>
+    <!-- SKILLS -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-key="skills_eyebrow">Core capabilities</span>
+          <h2 id="skills-title" data-key="skills_title">Skills organized around the roles I am targeting.</h2>
+          <p data-key="skills_subtitle">Customer Support and Administration &amp; Operations come first; technical and digital skills remain supporting capabilities.</p>
+        </div>
 
-            <div class="fact-item">
-              <div class="fact-icon"><i class="fa-solid fa-handshake"></i></div>
-              <div class="fact-info">
-                <h4 data-key="fact_strength">Core Strength</h4>
-                <p data-key="fact_strength_val">Empathy + Tech Troubleshooting</p>
-              </div>
-            </div>
+        <div class="skills-grid">
+          <article class="skill-card primary reveal">
+            <div class="skill-heading"><i class="fa-solid fa-headset"></i><h3 data-key="skills_cat_1">Customer Support &amp; Customer Relations</h3></div>
+            <ul>
+              <li data-key="skills_1">Customer Support</li>
+              <li data-key="skills_2">Customer Service</li>
+              <li data-key="skills_3">Helpdesk Support</li>
+              <li data-key="skills_4">Customer &amp; Complaint Handling</li>
+              <li data-key="skills_5">Customer Relations</li>
+              <li data-key="skills_6">Customer Engagement</li>
+              <li data-key="skills_7">Customer Satisfaction</li>
+              <li data-key="skills_8">Problem Solving</li>
+              <li data-key="skills_9">Verbal &amp; Written Communication</li>
+            </ul>
+          </article>
 
-            <div class="fact-item">
-              <div class="fact-icon"><i class="fa-solid fa-location-dot"></i></div>
-              <div class="fact-info">
-                <h4 data-key="fact_location">Location</h4>
-                <p data-key="fact_location_val">Cimahi, West Java</p>
-              </div>
+          <article class="skill-card primary reveal">
+            <div class="skill-heading"><i class="fa-solid fa-clipboard-check"></i><h3 data-key="skills_cat_2">Administration &amp; Operations</h3></div>
+            <ul>
+              <li data-key="skills_10">Data Entry &amp; Processing</li>
+              <li data-key="skills_11">Data Recapitulation</li>
+              <li data-key="skills_12">Reporting</li>
+              <li data-key="skills_13">Documentation</li>
+              <li data-key="skills_14">Document Management</li>
+              <li data-key="skills_15">Operational Support</li>
+              <li data-key="skills_16">Internal Coordination</li>
+              <li data-key="skills_17">Microsoft Word</li>
+              <li data-key="skills_18">Microsoft Excel</li>
+              <li data-key="skills_19">Microsoft PowerPoint</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading"><i class="fa-solid fa-bullhorn"></i><h3 data-key="skills_cat_3">Marketing &amp; Customer Engagement</h3></div>
+            <ul>
+              <li data-key="skills_20">Marketing Support</li>
+              <li data-key="skills_21">Customer Engagement &amp; Retention</li>
+              <li data-key="skills_22">Promotional Support</li>
+              <li data-key="skills_23">Event Support</li>
+              <li data-key="skills_24">Product &amp; Service Presentation</li>
+              <li data-key="skills_25">Brand Content Collaboration</li>
+            </ul>
+          </article>
+
+          <article class="skill-card supporting reveal">
+            <div class="skill-heading"><i class="fa-solid fa-server"></i><h3 data-key="skills_cat_4">Technology &amp; Digital Tools</h3></div>
+            <ul>
+              <li data-key="skills_26">WHMCS</li>
+              <li data-key="skills_27">Technical Troubleshooting</li>
+              <li data-key="skills_28">Proxmox</li>
+              <li data-key="skills_29">Linux</li>
+              <li data-key="skills_30">VPS</li>
+              <li data-key="skills_31">POS Systems</li>
+              <li data-key="skills_32">HTML5</li>
+              <li data-key="skills_33">CSS3</li>
+              <li data-key="skills_34">VS Code</li>
+              <li data-key="skills_35">Git / GitHub</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="language-card reveal">
+          <div>
+            <i class="fa-solid fa-language"></i>
+            <div>
+              <span class="eyebrow" data-key="language_eyebrow">Languages</span>
+              <h3 data-key="language_title">Professional communication</h3>
             </div>
           </div>
+          <div class="language-list">
+            <span><strong data-key="lang_id">Bahasa Indonesia</strong><em data-key="lang_id_level">Native</em></span>
+            <span><strong data-key="lang_en">English</strong><em data-key="lang_en_level">Pre-Intermediate</em></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="cta-card reveal tilt-card">
-            <h4 data-key="about_cta_title">Always Learning</h4>
-            <p data-key="about_cta_text">New skills. New opportunities. Same curiosity.</p>
-            <button class="btn btn-primary nav-trigger" data-target="experience">
-              <span data-key="about_cta_btn">View My Experience</span> <i class="fa-solid fa-arrow-right"></i>
+    <!-- EDUCATION -->
+    <section id="education" class="section section-muted" aria-labelledby="education-title">
+      <div class="container narrow">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-key="education_eyebrow">Education</span>
+          <h2 id="education-title" data-key="education_title">Bachelor of English Literature.</h2>
+          <p data-key="education_subtitle">An academic foundation in communication, writing, research, presentation, analysis, and structured documentation.</p>
+        </div>
+
+        <article class="education-card reveal">
+          <div class="education-main">
+            <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <span class="experience-date">2020 – 2025</span>
+              <h3>Universitas Pasundan — Bandung, Jawa Barat</h3>
+              <p data-key="degree_name">Bachelor of English Literature / S1 Sastra Inggris</p>
+            </div>
+          </div>
+          <div class="gpa-box">
+            <span data-key="gpa_label">GPA</span>
+            <strong>3.30 / 4.00</strong>
+          </div>
+          <div class="education-capabilities">
+            <span data-key="education_capabilities_label">Relevant capabilities</span>
+            <div class="tag-row">
+              <span data-key="edu_skill_1">English Communication</span>
+              <span data-key="edu_skill_2">Academic Writing</span>
+              <span data-key="edu_skill_3">Research</span>
+              <span data-key="edu_skill_4">Presentation</span>
+              <span data-key="edu_skill_5">Analysis</span>
+              <span data-key="edu_skill_6">Structured Communication</span>
+              <span data-key="edu_skill_7">Documentation</span>
+              <span data-key="edu_skill_8">Teamwork</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section" aria-labelledby="certifications-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-key="cert_eyebrow">Certificates</span>
+          <h2 id="certifications-title" data-key="cert_title">Supporting learning and hospitality experience.</h2>
+          <p data-key="cert_subtitle">Existing certificate records from the portfolio are preserved and presented as supporting evidence.</p>
+        </div>
+
+        <div class="cert-grid">
+          <article class="certificate-card reveal">
+            <button class="certificate-image" type="button" data-gallery="assets/sertifikat1.jpg" data-alt="Certificate of Attendance - Coffee Mixology & Sequence of Service">
+              <img src="assets/sertifikat1.jpg" alt="Certificate of Attendance - Coffee Mixology & Sequence of Service" />
             </button>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-       <!-- TAB 3: EXPERIENCE -->
-    <section id="experience" class="tab-content">
-      <div class="section-header reveal">
-        <h2 data-key="exp_title">Professional & Organizational Experience</h2>
-        <p data-key="exp_subtitle">A proven track record in technical support, hospitality, operations, and leadership.</p>
-      </div>
-
-      <div class="experience-editorial">
-
-                <!-- 1. SDA TEKNOLOGI -->
-        <div class="editorial-item reveal">
-          <div class="editorial-img-placeholder">
-            <i class="fa-solid fa-headset stat-icon"></i>
-            <span class="stat-number" data-key="sda_stat_number">&lt;1 Min</span>
-            <span class="stat-label" data-key="sda_stat_label">Avg. First Response Time</span>
-          </div>
-          <div class="editorial-text">
-            <span class="exp-date">Jun 2026 – Sep 2026</span>
-            <h3>SDA Teknologi</h3>
-            <h4 data-key="sda_role">Customer & Operational Support</h4>
-            <ul>
-              <li data-key="sda_p1">Maintained a strict <strong>under 1-minute initial response time</strong> for client tickets and communications, ensuring high SLA compliance.</li>
-              <li data-key="sda_p2">Conducted systematic troubleshooting using WHMCS, accurately logging issues and monitoring ticket progress.</li>
-              <li data-key="sda_p3">Coordinated with internal technical teams for prompt server and hosting problem resolutions.</li>
-            </ul>
-            <div class="interactive-box">
-              <span class="box-title"><i class="fa-solid fa-diagram-project"></i> <span data-key="sda_sop_title">Interactive SOP Ticket Handling Workflow</span></span>
-              <div class="sop-steps">
-                <div class="step-card" onclick="showSopDetail('step1')"><span>1</span> <p data-key="sop_s1">Ticket Received</p></div>
-                <div class="step-card" onclick="showSopDetail('step2')"><span>2</span> <p data-key="sop_s2">Diagnosis / WHMCS</p></div>
-                <div class="step-card" onclick="showSopDetail('step3')"><span>3</span> <p data-key="sop_s3">Resolution / Escalation</p></div>
-              </div>
-              <div id="sop-detail" class="sop-detail-text"><p data-key="sop_click_hint">Click any step above to view operational detail.</p></div>
+            <div class="certificate-body">
+              <h3 data-key="cert1_title">Certificate of Attendance – Coffee Mixology &amp; Sequence of Service</h3>
+              <p><span data-key="cert_issued_by">Issued by</span>: <strong data-key="cert1_venue">favehotel Hyper Square - Bandung</strong></p>
+              <button class="text-button" type="button" data-gallery="assets/sertifikat1.jpg" data-alt="Certificate of Attendance - Coffee Mixology & Sequence of Service"><i class="fa-solid fa-eye"></i> <span data-key="cert_view_btn">View Certificate</span></button>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <!-- 2. PASCALAB.ID -->
-        <div class="editorial-item reveal">
-          <div class="editorial-img">
-            <img src="assets/talent1revisi.jpg" alt="Pascalab.id Talent Model" onclick="openModal('modal-gallery', 'assets/talent1revisi.jpg')">
-          </div>
-          <div class="editorial-text">
-            <span class="exp-date">12 Jun 2025</span>
-            <h3>Pascalab.id</h3>
-            <h4 data-key="pasca_role">Marketing & Brand Content Talent</h4>
-            <ul>
-              <li data-key="pasca_p1">Contributed to brand marketing campaigns for a local fashion label through photo and video content collaborations with the creative team.</li>
-              <li data-key="pasca_p2">Represented product catalogs (lifestyle & casual wear) to support consistent brand imagery and marketing goals.</li>
-              <li data-key="pasca_p3">Partnered with photographers and stylists to communicate product value and brand identity to the target audience.</li>
-            </ul>
-            <div class="mini-gallery" style="margin-top: 1rem;">
-              <img src="assets/talent2revisi.jpg" alt="Talent Model Photo 2" onclick="openModal('modal-gallery', 'assets/talent2revisi.jpg')">
-              <img src="assets/talent3revisi.jpg" alt="Talent Model Photo 3" onclick="openModal('modal-gallery', 'assets/talent3revisi.jpg')">
-              <img src="assets/talent4revisi.jpg" alt="Talent Model Photo 4" onclick="openModal('modal-gallery', 'assets/talent4revisi.jpg')">
+          <article class="certificate-card reveal">
+            <button class="certificate-image" type="button" data-gallery="assets/sertifikat2.jpg" data-alt="Certificate of Completion - Hotel Operation Lesson">
+              <img src="assets/sertifikat2.jpg" alt="Certificate of Completion - Hotel Operation Lesson" />
+            </button>
+            <div class="certificate-body">
+              <h3 data-key="cert2_title">Certificate of Completion – Hotel Operation Lesson</h3>
+              <p><span data-key="cert_issued_by">Issued by</span>: <strong data-key="cert2_venue">Courtyard by Marriott Bandung Dago</strong></p>
+              <button class="text-button" type="button" data-gallery="assets/sertifikat2.jpg" data-alt="Certificate of Completion - Hotel Operation Lesson"><i class="fa-solid fa-eye"></i> <span data-key="cert_view_btn">View Certificate</span></button>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <!-- 3. PROF COFFEE TIGADE -->
-        <div class="editorial-item reveal">
-          <div class="editorial-img">
-            <img src="assets/profcoffee1.jpg" alt="Prof Coffee Tigade" onclick="openModal('modal-gallery', 'assets/profcoffee1.jpg')">
-          </div>
-          <div class="editorial-text">
-            <span class="exp-date">Sep 2023 – Feb 2025</span>
-            <h3>Prof Coffee Tigade</h3>
-            <h4 data-key="prof_role">Barista & Operational Support</h4>
-            <ul>
-              <li data-key="prof_p1">Served <strong>80–100 customers per shift</strong> in high-volume environments while maintaining top-tier hospitality and order accuracy.</li>
-              <li data-key="prof_p2">Operated POS systems, conducted accurate daily sales recapitulations, and monitored inventory.</li>
-              <li data-key="prof_p3">Actively contributed promotional ideas and event concepts to boost customer engagement and retention.</li>
-            </ul>
-            <div class="mini-gallery" style="margin-top: 1rem;">
-              <img src="assets/profcoffee2.jpg" alt="Prof Coffee Photo 2" onclick="openModal('modal-gallery', 'assets/profcoffee2.jpg')">
-              <img src="assets/profcoffee3.jpg" alt="Prof Coffee Photo 3" onclick="openModal('modal-gallery', 'assets/profcoffee3.jpg')">
-              <img src="assets/profcoffee4.jpg" alt="Prof Coffee Photo 4" onclick="openModal('modal-gallery', 'assets/profcoffee4.jpg')">
+          <article class="certificate-card reveal">
+            <button class="certificate-image" type="button" data-gallery="assets/sertifikat3.jpg" data-alt="Certificate of Completion - MICE Operation Lesson">
+              <img src="assets/sertifikat3.jpg" alt="Certificate of Completion - MICE Operation Lesson" />
+            </button>
+            <div class="certificate-body">
+              <h3 data-key="cert3_title">Certificate of Completion – MICE Operation Lesson</h3>
+              <p><span data-key="cert_issued_by">Issued by</span>: <strong data-key="cert3_venue">Courtyard by Marriott Bandung Dago</strong></p>
+              <button class="text-button" type="button" data-gallery="assets/sertifikat3.jpg" data-alt="Certificate of Completion - MICE Operation Lesson"><i class="fa-solid fa-eye"></i> <span data-key="cert_view_btn">View Certificate</span></button>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <!-- 4. FOUR POINTS BY SHERATON -->
-        <div class="editorial-item reveal">
-          <div class="editorial-img-placeholder">
-            <i class="fa-solid fa-hotel stat-icon"></i>
-            <span class="stat-number" data-key="hotel_stat_number">3 Months</span>
-            <span class="stat-label" data-key="hotel_stat_label">F&B Banquet Internship</span>
-          </div>
-          <div class="editorial-text">
-            <span class="exp-date">Feb 2024 – Apr 2024</span>
-            <h3>Four Points by Sheraton</h3>
-            <h4 data-key="hotel_role">F&B Banquet Intern</h4>
-            <ul>
-              <li data-key="hotel_p1">Provided high-standard guest services during corporate meetings and wedding events.</li>
-              <li data-key="hotel_p2">Maintained smooth coordination across international hospitality standards.</li>
-            </ul>
-            <button class="btn btn-sm btn-outline modal-trigger" data-modal="modal-hotel-cert" style="margin-top:1rem;"><i class="fa-solid fa-certificate"></i> <span data-key="btn_view_cert">View Internship Certificate</span></button>
-          </div>
-        </div>
-
-        <!-- 5. CCU EVENT -->
-        <div class="editorial-item reveal">
-          <div class="editorial-img">
-            <img src="assets/ccu.jpg" alt="CCU Event" onclick="openModal('modal-gallery', 'assets/ccu.jpg')">
-          </div>
-          <div class="editorial-text">
-            <span class="exp-date">May 2022</span>
-            <h3>Universitas Pasundan (CCU)</h3>
-            <h4 data-key="ccu_role">Project Lead (Cross Cultural Understanding)</h4>
-            <ul>
-              <li data-key="ccu_p1">Led and coordinated a <strong>15-member team</strong> to successfully execute the Cross Cultural Understanding (CCU) cultural event.</li>
-              <li data-key="ccu_p2">Managed participant administration, task delegation, and on-site problem-solving to ensure the event met its objectives.</li>
-            </ul>
-            <div class="mini-gallery" style="margin-top: 1rem;">
-              <img src="assets/ccu2.jpg" alt="CCU Event Photo 2" onclick="openModal('modal-gallery', 'assets/ccu2.jpg')">
+          <article class="certificate-card reveal">
+            <button class="certificate-image" type="button" data-gallery="assets/sertifikat4.jpg" data-alt="Certificate of Attendance - Barista Class">
+              <img src="assets/sertifikat4.jpg" alt="Certificate of Attendance - Barista Class" />
+            </button>
+            <div class="certificate-body">
+              <h3 data-key="cert4_title">Certificate of Attendance – Barista Class</h3>
+              <p><span data-key="cert_issued_by">Issued by</span>: <strong data-key="cert4_venue">favehotel Hyper Square - Bandung</strong></p>
+              <button class="text-button" type="button" data-gallery="assets/sertifikat4.jpg" data-alt="Certificate of Attendance - Barista Class"><i class="fa-solid fa-eye"></i> <span data-key="cert_view_btn">View Certificate</span></button>
             </div>
-          </div>
-        </div>
-
-        <!-- 6. VACCINATION PROGRAM -->
-        <div class="editorial-item reveal">
-          <div class="editorial-img">
-            <img src="assets/panitiavaksin.jpg" alt="Vaccine Committee" onclick="openModal('modal-gallery', 'assets/panitiavaksin.jpg')">
-          </div>
-          <div class="editorial-text">
-            <span class="exp-date">Jan 2021</span>
-            <h3>Universitas Pasundan (Vaccine)</h3>
-            <h4 data-key="vac_role">Admin Staff (Covid-19 Vaccination)</h4>
-            <ul>
-              <li data-key="vac_p1">Verified and processed participant data accurately during the Covid-19 Vaccination Program.</li>
-              <li data-key="vac_p2">Ensured documents and data were neatly organized and coordinated with medical teams.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    
-    <!-- TAB 4: EDUCATION (GRID LAYOUT) -->
-    <section id="education" class="tab-content">
-      <div class="section-header reveal">
-        <h2 data-key="edu_title">Educational Background</h2>
-        <p data-key="edu_subtitle">My academic journey from early education to university.</p>
-      </div>
-
-      <div class="education-grid">
-        <!-- KULIAH -->
-        <div class="edu-card reveal tilt-card">
-          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-          <span class="edu-date">2020 – 2025</span>
-          <h3>Universitas Pasundan</h3>
-          <p data-key="edu_univ_role">Bachelor of English Literature (GPA 3.30)</p>
-        </div>
-
-        <!-- SMA -->
-        <div class="edu-card reveal tilt-card">
-          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
-          <span class="edu-date">2017 – 2020</span>
-          <h3 data-key="edu_sma_name">SMA Pasundan 1 Cimahi</h3>
-          <p data-key="edu_sma_role">Social Science Major (IPS)</p>
-        </div>
-
-        <!-- SMP -->
-        <div class="edu-card reveal tilt-card">
-          <div class="edu-icon"><i class="fa-solid fa-school-circle-check"></i></div>
-          <span class="edu-date">2014 – 2017</span>
-          <h3 data-key="edu_smp_name">SMP Negeri 10 Cimahi</h3>
-          <p data-key="edu_smp_role">Junior High School</p>
-        </div>
-
-        <!-- SD -->
-        <div class="edu-card reveal tilt-card">
-          <div class="edu-icon"><i class="fa-solid fa-school-flag"></i></div>
-          <span class="edu-date">2008 – 2014</span>
-          <h3 data-key="edu_sd_name">SDN Karang Mekar Mandiri 1 Cimahi</h3>
-          <p data-key="edu_sd_role">Elementary School</p>
-        </div>
-      </div>
-    </section> <!-- INI PENUTUP TAB 4: EDUCATION -->
-
-    <!-- TAB 5: CERTIFICATIONS -->
-    <section id="certifications" class="tab-content">
-      <div class="section-header reveal">
-        <h2 data-key="cert_title">Certifications</h2>
-        <p data-key="cert_subtitle">Certificates and learning experiences that support my professional journey.</p>
-      </div>
-      <div class="certifications-grid">
-        <!-- CERT 1 -->
-        <div class="certificate-card reveal tilt-card">
-          <div class="certificate-image">
-            <img src="assets/sertifikat1.jpg" alt="Certificate of Attendance - Coffee Mixology & Sequence of Service" onclick="openModal('modal-gallery', 'assets/sertifikat1.jpg')">
-          </div>
-          <div class="certificate-content">
-            <h3 data-key="cert1_title">Certificate of Attendance – Coffee Mixology & Sequence of Service</h3>
-            <div class="certificate-meta">
-              <p><span data-key="cert_issued_by">Issued by</span>: <span data-key="cert1_venue">favehotel Hyper Square - Bandung</span></p>
-            </div>
-            <button class="btn btn-sm btn-outline" onclick="openModal('modal-gallery', 'assets/sertifikat1.jpg')"><i class="fa-solid fa-eye"></i> <span data-key="cert_view_btn">View Certificate</span></button>
-          </div>
-        </div>
-
-        <!-- CERT 2 -->
-        <div class="certificate-card reveal tilt-card">
-          <div class="certificate-image">
-            <img src="assets/sertifikat2.jpg" alt="Certificate of Completion - Hotel Operation Lesson" onclick="openModal('modal-gallery', 'assets/sertifikat2.jpg')">
-          </div>
-          <div class="certificate-content">
-            <h3 data-key="cert2_title">Certificate of Completion – Hotel Operation Lesson</h3>
-            <div class="certificate-meta">
-              <p><span data-key="cert_issued_by">Issued by</span>: <span data-key="cert2_venue">Courtyard by Marriott Bandung Dago</span></p>
-            </div>
-            <button class="btn btn-sm btn-outline" onclick="openModal('modal-gallery', 'assets/sertifikat2.jpg')"><i class="fa-solid fa-eye"></i> <span data-key="cert_view_btn">View Certificate</span></button>
-          </div>
-        </div>
-
-        <!-- CERT 3 -->
-        <div class="certificate-card reveal tilt-card">
-          <div class="certificate-image">
-            <img src="assets/sertifikat3.jpg" alt="Certificate of Completion - MICE Operation Lesson" onclick="openModal('modal-gallery', 'assets/sertifikat3.jpg')">
-          </div>
-          <div class="certificate-content">
-            <h3 data-key="cert3_title">Certificate of Completion – MICE Operation Lesson</h3>
-            <div class="certificate-meta">
-              <p><span data-key="cert_issued_by">Issued by</span>: <span data-key="cert3_venue">Courtyard by Marriott Bandung Dago</span></p>
-            </div>
-            <button class="btn btn-sm btn-outline" onclick="openModal('modal-gallery', 'assets/sertifikat3.jpg')"><i class="fa-solid fa-eye"></i> <span data-key="cert_view_btn">View Certificate</span></button>
-          </div>
-        </div>
-
-        <!-- CERT 4 -->
-        <div class="certificate-card reveal tilt-card">
-          <div class="certificate-image">
-            <img src="assets/sertifikat4.jpg" alt="Certificate of Attendance - Barista Class" onclick="openModal('modal-gallery', 'assets/sertifikat4.jpg')">
-          </div>
-          <div class="certificate-content">
-            <h3 data-key="cert4_title">Certificate of Attendance – Barista Class</h3>
-            <div class="certificate-meta">
-              <p><span data-key="cert_issued_by">Issued by</span>: <span data-key="cert4_venue">favehotel Hyper Square - Bandung</span></p>
-            </div>
-            <button class="btn btn-sm btn-outline" onclick="openModal('modal-gallery', 'assets/sertifikat4.jpg')"><i class="fa-solid fa-eye"></i> <span data-key="cert_view_btn">View Certificate</span></button>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- TAB 6: SKILLS -->
-    <section id="skills" class="tab-content">
-      <div class="section-header reveal">
-        <h2 data-key="skills_title">Competencies, Tech & AI Learning</h2>
-        <p data-key="skills_subtitle">Combining soft-skills excellence with modern tech tools and AI workflows.</p>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-category reveal tilt-card">
-          <h3><i class="fa-solid fa-headset"></i> <span data-key="skills_cat_1">Customer & Client Relations</span></h3>
-          <ul>
-            <li data-key="skills_li_1">Customer Support & Helpdesk</li>
-            <li data-key="skills_li_2">Complaint Handling & Resolution</li>
-            <li data-key="skills_li_3">Client Engagement & Satisfaction</li>
-            <li data-key="skills_li_4">Verbal & Written Communication</li>
-          </ul>
-        </div>
-        <div class="skill-category reveal tilt-card">
-          <h3><i class="fa-solid fa-folder-tree"></i> <span data-key="skills_cat_2">Operations & Data Admin</span></h3>
-          <ul>
-            <li data-key="skills_li_5">Daily Sales Recapitulation & Reporting</li>
-            <li data-key="skills_li_6">POS & Inventory Management</li>
-            <li data-key="skills_li_7">Data Entry & Processing</li>
-            <li data-key="skills_li_8">Microsoft Office Suite</li>
-          </ul>
-        </div>
-        <div class="skill-category reveal tilt-card">
-          <h3><i class="fa-solid fa-laptop-code"></i> <span data-key="skills_cat_3">Technical & Web Systems</span></h3>
-          <ul>
-            <li data-key="skills_li_9">WHMCS (Web Hosting Management)</li>
-            <li data-key="skills_li_10">Virtualization & Server Basics (Proxmox, Linux, VPS)</li>
-            <li data-key="skills_li_11">HTML5, CSS3, VS Code & Git/GitHub</li>
-          </ul>
-        </div>
-      </div>
-      <p class="skills-note"><i class="fa-solid fa-robot"></i> <span data-key="skills_cat_4">Also Exploring:</span> <span data-key="ai_learning_text">Actively learning to integrate AI tools for daily productivity and workflow optimization.</span></p>
-    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="section section-dark" aria-labelledby="contact-title">
+      <div class="container narrow">
+        <div class="contact-card reveal">
+          <span class="eyebrow eyebrow-light" data-key="contact_eyebrow">Contact</span>
+          <h2 id="contact-title" data-key="contact_title">Open to relevant opportunities.</h2>
+          <p data-key="contact_subtitle">Feel free to connect regarding Customer Support, Administration &amp; Operations, Customer Relations, or related support roles.</p>
 
-    <!-- TAB 7: CONTACT -->
-    <section id="contact" class="tab-content">
-      <div class="section-header reveal">
-        <h2 data-key="contact_title">Get In Touch</h2>
-        <p data-key="contact_subtitle">Feel free to connect for opportunities or collaborations.</p>
-      </div>
-     <div class="contact-card reveal">
-        <div class="contact-info">
-          <div class="c-item"><i class="fa-solid fa-envelope"></i><div><h4 data-key="c_label_email">Email</h4><p><a href="mailto:ahmadwahdannurjaman16@gmail.com">ahmadwahdannurjaman16@gmail.com</a></p></div></div>
-          <div class="c-item"><i class="fa-brands fa-linkedin"></i><div><h4 data-key="c_label_linkedin">LinkedIn</h4><p><a href="https://linkedin.com/in/ahmad-wahdan-nurjaman" target="_blank" rel="noopener noreferrer">linkedin.com/in/ahmad-wahdan-nurjaman</a></p></div></div>
-          <div class="c-item"><i class="fa-solid fa-phone"></i><div><h4 data-key="c_label_phone">Phone / WhatsApp</h4><p><a href="tel:+6283181642526">+62 831 8164 2526</a></p></div></div>
-          <div class="c-item"><i class="fa-solid fa-location-dot"></i><div><h4 data-key="c_label_location">Location</h4><p data-key="c_val_location">Cimahi, West Java, Indonesia</p></div></div>
+          <div class="contact-grid">
+            <a class="contact-item" href="mailto:ahmadwahdannurjaman16@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <span><small data-key="contact_email">Email</small><strong>ahmadwahdannurjaman16@gmail.com</strong></span>
+            </a>
+            <a class="contact-item" href="https://linkedin.com/in/ahmad-wahdan-nurjaman" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin"></i>
+              <span><small data-key="contact_linkedin">LinkedIn</small><strong>linkedin.com/in/ahmad-wahdan-nurjaman</strong></span>
+            </a>
+            <a class="contact-item" href="tel:+6283181642526">
+              <i class="fa-solid fa-phone"></i>
+              <span><small data-key="contact_phone">Phone / WhatsApp</small><strong>+62 831 8164 2526</strong></span>
+            </a>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span><small data-key="contact_location">Location</small><strong>Cimahi, West Java, Indonesia</strong></span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- MODALS -->
-  <div id="modal-hotel-cert" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-hotel-title">
-    <div class="modal-content">
-      <span class="close-modal" role="button" tabindex="0">&times;</span>
-      <h3 id="modal-hotel-title" data-key="modal_hotel_title">Four Points by Sheraton - Internship Certificate</h3>
-      <p data-key="modal_cert_text">Certificate of completion for F&B Banquet Internship (Feb 2024 - Apr 2024).</p>
-    </div>
-  </div>
-  
-  <!-- DYNAMIC GALLERY MODAL -->
-  <div id="modal-gallery" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-gallery-title">
-    <div class="modal-content" style="max-width: 800px;">
-      <span class="close-modal" role="button" tabindex="0">&times;</span>
-      <h3 id="modal-gallery-title" class="sr-only" data-key="modal_gallery_title">Image Gallery</h3>
-      <img id="gallery-img" src="" alt="Gallery Image" style="width:100%; border-radius:12px; margin-top:10px;">
+  <footer class="site-footer">
+    <p data-key="footer_text">&copy; 2026 Ahmad Wahdan Nurjaman. Professional portfolio.</p>
+  </footer>
+
+  <!-- CERTIFICATE / GALLERY MODAL -->
+  <div class="modal" id="gallery-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h2 id="gallery-modal-title" class="sr-only" data-key="modal_gallery_title">Certificate preview</h2>
+      <img id="gallery-image" src="" alt="" />
     </div>
   </div>
 
-  <footer><p data-key="footer_text">&copy; 2026 Ahmad Wahdan Nurjaman. Built with VS Code & Hosted on GitHub Pages.</p></footer>
+  <div class="modal" id="modal-hotel-cert" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="hotel-modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content small-modal" role="document">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <span class="eyebrow" data-key="cert_eyebrow">Certificate</span>
+      <h2 id="hotel-modal-title" data-key="modal_hotel_title">Four Points by Sheraton - Internship Certificate</h2>
+      <p data-key="modal_cert_text">Certificate of completion for F&amp;B Banquet Internship (Feb 2024 – Apr 2024).</p>
+    </div>
+  </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
