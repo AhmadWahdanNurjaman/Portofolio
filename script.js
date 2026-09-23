@@ -1,73 +1,176 @@
 const translations = {
-  EN: {    
-    shortcut_cv_desc: "Download my resume (PDF)",
-    shortcut_cont_desc: "Let's connect",
-    nav_home: "Home", nav_about: "About", nav_exp: "Experience", nav_education: "Education", nav_certs: "Certifications", nav_skills: "Skills", nav_contact: "Contact",
-    hero_badge: "Welcome to my portfolio",
-    hero_desc: "English Literature graduate with hands-on experience in Customer Support, Client Relations, Marketing, and Operational Administration, backed by a strong hospitality service background.",
-    btn_cv: "Download CV", btn_contact: "Get in Touch",
-    about_title: "A Journey of Continuous Learning", about_subtitle: "From English Literature to Tech Support and Beyond.",
-    about_identity: "English Literature Graduate",
-    about_quote: "Still learning, still growing.",
-    about_journey_title: "My Journey",
-    about_journey_subtitle: "The experiences, lessons, and people who shaped me.",
-    about_stage_1: "Education",
-    about_stage_2: "Hospitality",
-    about_stage_3: "Customer Service & Operations",
-    about_stage_4: "Technology",
-    about_stage_5: "Continuous Learning",
-    about_cta_title: "Always Learning",
-    about_cta_text: "New skills. New opportunities. Same curiosity.",
-    about_cta_btn: "View My Experience",
-    facts_title: "Quick Facts",
-    about_p1: "I didn't start this journey with a completely clear goal. I was just trying to find a place where I could grow. My journey began with English Literature at Universitas Pasundan. For years, I studied literature, communication, writing, analysis, and various perspectives on humanity and culture. At the time, I might not have realized it, but much of what I learned eventually became an important part of my professional journey.",
-    about_p2: "After graduating, my journey took me through various work environments. I worked in hospitality, served customers as a barista, supported operational and administrative activities, until finally working in customer support at a tech company. Each experience gave me a different perspective.",
-    about_p3: "Hospitality taught me to understand people. Customer service taught me to listen and respond. Administration taught me to be organized and detail-oriented. Technical support taught me to look at a problem from a different angle.",
-    about_p4: "In the midst of this journey, I became interested in technology. Not because I suddenly wanted to become a programmer, but because I wanted to understand how things behind the scenes could be used to make work easier and more effective. That curiosity led me to start learning Web, UI/UX, and Artificial Intelligence. I am still learning, still experimenting, and there is still much I want to understand. I don't consider myself an expert in these fields yet, and to me, that's okay. Learning is part of the journey.",
-    about_p5: "Currently, I continue to develop my experience in Customer Service, Administration, Marketing, and Hospitality, while expanding my capabilities in technology as an additional skill set. I might still be figuring out where this journey will take me. But I know one thing: I enjoy the process of learning, working with others, solving problems, and turning what I've learned into something useful. And perhaps, this portfolio is just one chapter of that journey.",
-    fact_bg: "Background", fact_bg_val: "English Literature",
-    fact_focus: "Current Focus", fact_focus_val: "Customer Support, Marketing & Administration",
-    fact_strength: "Core Strength", fact_strength_val: "Empathy + Tech Troubleshooting", 
-    fact_location: "Location", fact_location_val: "Cimahi, West Java",
-    exp_title: "Professional & Organizational Experience", exp_subtitle: "A proven track record in technical support, hospitality, operations, and leadership.",
+  EN: {
+    skip_link: "Skip to content",
+    nav_home: "Home",
+    nav_about: "About",
+    nav_experience: "Experience",
+    nav_skills: "Skills",
+    nav_education: "Education",
+    nav_certifications: "Certificates",
+    nav_contact: "Contact",
+
+    hero_badge: "Customer Support • Operations • Customer Relations",
+    hero_kicker: "English Literature graduate with practical customer-facing and operational experience.",
+    hero_desc: "Experienced in handling customer needs, following up requests, maintaining documentation, supporting daily operations, and coordinating with internal teams. Technical and digital skills provide additional support for technology-based customer service.",
+    hero_cta_experience: "View Experience",
+    hero_cta_cv: "View CV",
+    hero_cta_contact: "Contact Me",
+    hero_location: "Cimahi, West Java",
+    hero_degree: "S1 English Literature",
+    hero_language: "English — Pre-Intermediate",
+
+    focus_label: "Professional focus",
+    focus_primary: "Customer Support & Customer Relations",
+    focus_secondary_label: "Supporting capabilities",
+    focus_secondary: "Administration, Operations & Technical Support",
+    focus_tertiary_label: "Additional area",
+    focus_tertiary: "Marketing Support & Customer Engagement",
+
+    about_eyebrow: "Professional Summary",
+    about_title: "Customer-focused experience with an operational mindset.",
+    about_subtitle: "My professional path connects hospitality, customer service, administration, operations, and technology-based customer support.",
+    summary_title: "What I bring",
+    summary_text: "I have practical experience handling customer needs and issues, providing information and solutions, following up requests, maintaining records and documentation, and coordinating with internal teams.",
+    summary_text_2: "My English Literature background supports structured communication, writing, analysis, presentation, and documentation. Technical knowledge is positioned as a supporting capability for customer and operational roles.",
+    journey_1_title: "Hospitality",
+    journey_1_text: "Customer interaction, service standards, teamwork, and event support.",
+    journey_2_title: "Customer Service",
+    journey_2_text: "Listening, responding, handling requests, and maintaining service quality.",
+    journey_3_title: "Operations & Administration",
+    journey_3_text: "Documentation, data handling, reporting, coordination, and daily operational support.",
+    journey_4_title: "Customer & Technical Support",
+    journey_4_text: "Technology-based support, troubleshooting, ticket handling, follow-up, and technical team coordination.",
+    facts_eyebrow: "Quick facts",
+    fact_education: "Education",
+    fact_gpa: "GPA",
+    fact_language: "Languages",
+    fact_language_value: "Bahasa Indonesia — Native<br>English — Pre-Intermediate",
+    fact_location_label: "Location",
+
+    experience_eyebrow: "Experience",
+    experience_title: "Professional experience built around service and operations.",
+    experience_subtitle: "The most relevant experience is intentionally presented first for recruiter-friendly scanning.",
     sda_role: "Customer & Operational Support",
-    sda_stat_number: "&lt;1 Min",
-    sda_stat_label: "Avg. First Response Time",
-    sda_p1: "Maintained a strict <strong>under 1-minute initial response time</strong> for client tickets and communications, ensuring high SLA compliance.",
-    sda_p2: "Conducted systematic troubleshooting using WHMCS, accurately logging issues and monitoring ticket progress.",
-    sda_p3: "Coordinated with internal technical teams for prompt server and hosting problem resolutions.",
-    sda_sop_title: "Interactive SOP Ticket Handling Workflow",
-    sop_s1: "Ticket Received", sop_s2: "Diagnosis / WHMCS", sop_s3: "Resolution / Escalation",
-    sop_click_hint: "Click any step above to view operational detail.",
-    pasca_role: "Marketing & Brand Content Talent",
-    pasca_p1: "Contributed to brand marketing campaigns for a local fashion label through photo and video content collaborations with the creative team.",
-    pasca_p2: "Represented product catalogs (lifestyle & casual wear) to support consistent brand imagery and marketing goals.",
-    pasca_p3: "Partnered with photographers and stylists to communicate product value and brand identity to the target audience.",
+    sda_stat_label: "Initial response time",
+    key_responsibilities: "Key responsibilities",
+    sda_p1: "Maintained an initial response time of <strong>under 1 minute</strong> for customer tickets and communications.",
+    sda_p2: "Handled customer questions, service requests, and issues through multiple communication channels.",
+    sda_p3: "Provided information, assistance, and solutions according to company SOPs and service standards.",
+    sda_p4: "Performed systematic troubleshooting using <strong>WHMCS</strong>, including ticket logging and monitoring.",
+    sda_p5: "Followed up customer requests until an appropriate resolution was reached and coordinated with internal technical teams when needed.",
+    sda_p6: "Supported daily service operations and maintained records related to customer requests, issues, and resolutions.",
+
+    case_eyebrow: "Featured experience",
+    case_title: "Customer Support Workflow",
+    case_subtitle: "A concise view of the support responsibilities documented in this role.",
+    workflow_1: "Customer request",
+    workflow_2: "Ticket & troubleshooting",
+    workflow_3: "Follow-up & coordination",
+    tools_label: "Tools / support areas",
+
     prof_role: "Barista & Operational Support",
-    prof_p1: "Served <strong>80–100 customers per shift</strong> in high-volume environments while maintaining top-tier hospitality and order accuracy.",
-    prof_p2: "Operated POS systems, conducted accurate daily sales recapitulations, and monitored inventory.",
-    prof_p3: "Actively contributed promotional ideas and event concepts to boost customer engagement and retention.",
-    btn_view_cert: "View Internship Certificate",
+    prof_p1: "Served approximately <strong>80–100 customers per shift</strong> in a high-volume service environment.",
+    prof_p2: "Handled customer needs, operated POS systems, performed sales recapitulation, and supported inventory monitoring.",
+    prof_p3: "Contributed promotional and event ideas to support customer engagement and retention.",
+    tag_customer_service: "Customer Service",
+    tag_operations: "Operations",
+    tag_pos: "POS",
+    tag_reporting: "Reporting",
+
+    pasca_role: "Marketing & Brand Content Talent",
+    pasca_p1: "Contributed to marketing campaigns through photo and video content collaboration with the creative team.",
+    pasca_p2: "Supported product catalog presentation for brand marketing needs.",
+    pasca_p3: "Collaborated with photographers and stylists to communicate product value and brand identity to the target audience.",
+    tag_marketing: "Marketing Support",
+    tag_content: "Brand Content",
+    tag_engagement: "Customer Engagement",
+
     hotel_role: "F&B Banquet Intern",
-    hotel_stat_number: "3 Months",
-    hotel_stat_label: "F&B Banquet Internship",
-    hotel_p1: "Provided high-standard guest services during corporate meetings and wedding events.",
-    hotel_p2: "Maintained smooth coordination across international hospitality standards.",
-    ccu_role: "Project Lead (Cross Cultural Understanding)",
-    ccu_p1: "Led and coordinated a <strong>15-member team</strong> to successfully execute the Cross Cultural Understanding (CCU) cultural event.",
-    ccu_p2: "Managed participant administration, task delegation, and on-site problem-solving to ensure the event met its objectives.",
-    vac_role: "Admin Staff (Covid-19 Vaccination)",
-    vac_p1: "Verified and processed participant data accurately during the Covid-19 Vaccination Program.",
-    vac_p2: "Ensured documents and data were neatly organized and coordinated with medical teams.",
-    edu_title: "Educational Background", edu_subtitle: "My academic journey from early education to university.",
-    edu_univ_role: "Bachelor of English Literature (GPA 3.30)",
-    edu_sma_name: "SMA Pasundan 1 Cimahi", edu_sma_role: "Social Science Major (IPS)",
-    edu_smp_name: "SMP Negeri 10 Cimahi", edu_smp_role: "Junior High School",
-    edu_sd_name: "SDN Karang Mekar Mandiri 1 Cimahi", edu_sd_role: "Elementary School",
-    cert_title: "Certifications",
-    cert_subtitle: "Certificates and learning experiences that support my professional journey.",
+    hotel_p1: "Provided guest service during meetings, weddings, and corporate events.",
+    hotel_p2: "Interacted with guests, supported banquet preparation and event execution, and coordinated with team members.",
+    btn_view_cert: "View Internship Certificate",
+
+    org_eyebrow: "Organizational experience",
+    org_title: "Additional evidence of leadership, administration, and coordination.",
+    ccu_role: "Event Coordinator / Ketua Pelaksana",
+    ccu_p1: "Led and coordinated a <strong>15-member team</strong>.",
+    ccu_p2: "Managed task distribution, participant administration, documentation, and event coordination.",
+    vac_role: "Administrative Staff",
+    vac_p1: "Verified and managed participant data accurately.",
+    vac_p2: "Organized participant documents and coordinated with committee members and medical teams.",
+
+    skills_eyebrow: "Core capabilities",
+    skills_title: "Skills organized around the roles I am targeting.",
+    skills_subtitle: "Customer Support and Administration & Operations come first; technical and digital skills remain supporting capabilities.",
+    skills_cat_1: "Customer Support & Customer Relations",
+    skills_cat_2: "Administration & Operations",
+    skills_cat_3: "Marketing & Customer Engagement",
+    skills_cat_4: "Technology & Digital Tools",
+
+    skills_1: "Customer Support",
+    skills_2: "Customer Service",
+    skills_3: "Helpdesk Support",
+    skills_4: "Customer & Complaint Handling",
+    skills_5: "Customer Relations",
+    skills_6: "Customer Engagement",
+    skills_7: "Customer Satisfaction",
+    skills_8: "Problem Solving",
+    skills_9: "Verbal & Written Communication",
+    skills_10: "Data Entry & Processing",
+    skills_11: "Data Recapitulation",
+    skills_12: "Reporting",
+    skills_13: "Documentation",
+    skills_14: "Document Management",
+    skills_15: "Operational Support",
+    skills_16: "Internal Coordination",
+    skills_17: "Microsoft Word",
+    skills_18: "Microsoft Excel",
+    skills_19: "Microsoft PowerPoint",
+    skills_20: "Marketing Support",
+    skills_21: "Customer Engagement & Retention",
+    skills_22: "Promotional Support",
+    skills_23: "Event Support",
+    skills_24: "Product & Service Presentation",
+    skills_25: "Brand Content Collaboration",
+    skills_26: "WHMCS",
+    skills_27: "Technical Troubleshooting",
+    skills_28: "Proxmox",
+    skills_29: "Linux",
+    skills_30: "VPS",
+    skills_31: "POS Systems",
+    skills_32: "HTML5",
+    skills_33: "CSS3",
+    skills_34: "VS Code",
+    skills_35: "Git / GitHub",
+
+    language_eyebrow: "Languages",
+    language_title: "Professional communication",
+    lang_id: "Bahasa Indonesia",
+    lang_id_level: "Native",
+    lang_en: "English",
+    lang_en_level: "Pre-Intermediate",
+
+    education_eyebrow: "Education",
+    education_title: "Bachelor of English Literature.",
+    education_subtitle: "An academic foundation in communication, writing, research, presentation, analysis, and structured documentation.",
+    degree_name: "Bachelor of English Literature / S1 Sastra Inggris",
+    gpa_label: "GPA",
+    education_capabilities_label: "Relevant capabilities",
+    edu_skill_1: "English Communication",
+    edu_skill_2: "Academic Writing",
+    edu_skill_3: "Research",
+    edu_skill_4: "Presentation",
+    edu_skill_5: "Analysis",
+    edu_skill_6: "Structured Communication",
+    edu_skill_7: "Documentation",
+    edu_skill_8: "Teamwork",
+
+    cert_eyebrow: "Certificates",
+    cert_title: "Supporting learning and hospitality experience.",
+    cert_subtitle: "Existing certificate records from the portfolio are preserved and presented as supporting evidence.",
     cert_view_btn: "View Certificate",
     cert_issued_by: "Issued by",
+
     cert1_title: "Certificate of Attendance – Coffee Mixology & Sequence of Service",
     cert1_venue: "favehotel Hyper Square - Bandung",
     cert2_title: "Certificate of Completion – Hotel Operation Lesson",
@@ -76,103 +179,198 @@ const translations = {
     cert3_venue: "Courtyard by Marriott Bandung Dago",
     cert4_title: "Certificate of Attendance – Barista Class",
     cert4_venue: "favehotel Hyper Square - Bandung",
-    skills_title: "Competencies, Tech & AI Learning", skills_subtitle: "Combining soft-skills excellence with modern tech tools and AI workflows.",
-    skills_cat_1: "Customer & Client Relations",
-    skills_cat_2: "Operations & Data Admin",
-    skills_cat_3: "Technical & Web Systems",
-    skills_cat_4: "Also Exploring:",
-    skills_li_1: "Customer Support & Helpdesk",
-    skills_li_2: "Complaint Handling & Resolution",
-    skills_li_3: "Client Engagement & Satisfaction",
-    skills_li_4: "Verbal & Written Communication",
-    skills_li_5: "Daily Sales Recapitulation & Reporting",
-    skills_li_6: "POS & Inventory Management",
-    skills_li_7: "Data Entry & Processing",
-    skills_li_8: "Microsoft Office Suite",
-    skills_li_9: "WHMCS (Web Hosting Management)",
-    skills_li_10: "Virtualization & Server Basics (Proxmox, Linux, VPS)",
-    skills_li_11: "HTML5, CSS3, VS Code & Git/GitHub",
-    ai_learning_text: "Actively learning to integrate AI tools for daily productivity and workflow optimization.",
-    contact_title: "Get In Touch", contact_subtitle: "Feel free to connect for opportunities or collaborations.",
-    c_label_email: "Email",
-    c_label_linkedin: "LinkedIn",
-    c_label_phone: "Phone / WhatsApp",
-    c_label_location: "Location",
-    c_val_location: "Cimahi, West Java, Indonesia",
+
+    contact_eyebrow: "Contact",
+    contact_title: "Open to relevant opportunities.",
+    contact_subtitle: "Feel free to connect regarding Customer Support, Administration & Operations, Customer Relations, or related support roles.",
+    contact_email: "Email",
+    contact_linkedin: "LinkedIn",
+    contact_phone: "Phone / WhatsApp",
+    contact_location: "Location",
+
+    modal_gallery_title: "Certificate preview",
     modal_hotel_title: "Four Points by Sheraton - Internship Certificate",
-    modal_gallery_title: "Image Gallery",
-    modal_cert_text: "Certificate of completion for F&B Banquet Internship (Feb 2024 - Apr 2024).",
-    footer_text: "&copy; 2026 Ahmad Wahdan Nurjaman. Built with VS Code & Hosted on GitHub Pages."
+    modal_cert_text: "Certificate of completion for F&B Banquet Internship (Feb 2024 – Apr 2024).",
+
+    footer_text: "© 2026 Ahmad Wahdan Nurjaman. Professional portfolio."
   },
+
   ID: {
-    shortcut_cv_desc: "Unduh CV saya (PDF)",
-    shortcut_cont_desc: "Mari terhubung",
-    nav_home: "Beranda", nav_about: "Tentang", nav_exp: "Pengalaman", nav_education: "Pendidikan", nav_certs: "Sertifikat", nav_skills: "Keahlian", nav_contact: "Kontak",
-    hero_badge: "Selamat datang di portofolio saya",
-    hero_desc: "Lulusan S1 Sastra Inggris dengan pengalaman praktis di bidang Customer Support, Hubungan Klien, Marketing, dan Administrasi Operasional, didukung latar belakang hospitality yang kuat.",
-    btn_cv: "Unduh CV", btn_contact: "Hubungi Saya",
-    about_title: "Perjalanan Pembelajaran Tanpa Henti", about_subtitle: "Dari Sastra Inggris menuju Tech Support dan Selanjutnya.",
-    about_identity: "Lulusan Sastra Inggris",
-    about_quote: "Masih belajar, masih berkembang.",
-    about_journey_title: "Perjalanan Saya",
-    about_journey_subtitle: "Pengalaman, pelajaran, dan orang-orang yang membentuk perjalanan saya.",
-    about_stage_1: "Pendidikan",
-    about_stage_2: "Perhotelan",
-    about_stage_3: "Layanan Pelanggan & Operasional",
-    about_stage_4: "Teknologi",
-    about_stage_5: "Pembelajaran Berkelanjutan",
-    about_cta_title: "Selalu Belajar",
-    about_cta_text: "Keterampilan baru. Peluang baru. Rasa ingin tahu yang sama.",
-    about_cta_btn: "Lihat Pengalaman Saya",
-    facts_title: "Info Singkat",
-    about_p1: "Saya tidak memulai perjalanan ini dengan tujuan yang benar-benar jelas. Saya hanya sedang berusaha menemukan tempat di mana saya bisa berkembang. Perjalanan saya dimulai dari Sastra Inggris di Universitas Pasundan. Selama bertahun-tahun, saya mempelajari kesusastraan, komunikasi, penulisan, analisis, serta berbagai perspektif tentang manusia dan budaya. Saat itu saya mungkin belum menyadari, tetapi banyak hal yang saya pelajari akhirnya menjadi bagian penting dalam perjalanan profesional saya.",
-    about_p2: "Setelah lulus, perjalanan saya membawa saya ke berbagai lingkungan kerja. Saya pernah bekerja di bidang hospitality, melayani pelanggan sebagai barista, mendukung kegiatan operasional dan administrasi, hingga akhirnya bekerja di bidang customer support pada perusahaan teknologi. Setiap pengalaman memberikan saya sudut pandang yang berbeda.",
-    about_p3: "Hospitality mengajarkan saya untuk memahami orang. Customer service mengajarkan saya untuk mendengarkan dan merespons. Administrasi mengajarkan saya untuk terorganisir dan memperhatikan detail. Technical support mengajarkan saya untuk melihat sebuah masalah dari sudut pandang yang berbeda.",
-    about_p4: "Di tengah perjalanan tersebut, saya mulai tertarik pada teknologi. Bukan karena saya tiba-tiba ingin menjadi programmer, tetapi karena saya ingin memahami bagaimana sesuatu di balik layar dapat digunakan untuk membuat pekerjaan menjadi lebih mudah dan efektif. Rasa penasaran itu membawa saya untuk mulai mempelajari Web, UI/UX, dan Artificial Intelligence. Saya masih belajar, masih mencoba berbagai hal, dan masih banyak yang ingin saya pahami. Saya belum menganggap diri saya sebagai seorang ahli di bidang tersebut, dan bagi saya itu bukan masalah. Belajar adalah bagian dari perjalanan.",
-    about_p5: "Saat ini, saya terus mengembangkan pengalaman di bidang Customer Service, Administrasi, Marketing, dan Hospitality, sembari memperluas kemampuan saya di bidang teknologi sebagai keahlian tambahan. Saya mungkin masih mencari tahu ke mana perjalanan ini akan membawa saya. Tetapi saya tahu satu hal: saya menikmati proses belajar, bekerja dengan orang lain, memecahkan masalah, dan mengubah apa yang saya pelajari menjadi sesuatu yang bermanfaat. Dan mungkin, portofolio ini hanyalah salah satu bab dari perjalanan tersebut.",
-    fact_bg: "Latar Belakang", fact_bg_val: "Sastra Inggris",
-    fact_focus: "Fokus Saat Ini", fact_focus_val: "Customer Support, Marketing & Administrasi",
-    fact_strength: "Kekuatan Utama", fact_strength_val: "Empati + Troubleshooting Teknis", 
-    fact_location: "Lokasi", fact_location_val: "Cimahi, Jawa Barat",
-    exp_title: "Pengalaman Kerja & Organisasi", exp_subtitle: "Pengalaman nyata di bidang dukungan teknis, hospitality, operasional, dan kepemimpinan.",
+    skip_link: "Lewati ke konten",
+    nav_home: "Beranda",
+    nav_about: "Tentang",
+    nav_experience: "Pengalaman",
+    nav_skills: "Keahlian",
+    nav_education: "Pendidikan",
+    nav_certifications: "Sertifikat",
+    nav_contact: "Kontak",
+
+    hero_badge: "Customer Support • Operasional • Customer Relations",
+    hero_kicker: "Lulusan Sastra Inggris dengan pengalaman praktis di bidang layanan pelanggan dan operasional.",
+    hero_desc: "Berpengalaman menangani kebutuhan pelanggan, menindaklanjuti permintaan, menjaga dokumentasi, mendukung operasional harian, dan berkoordinasi dengan tim internal. Kemampuan teknis dan digital menjadi kemampuan pendukung untuk customer service berbasis teknologi.",
+    hero_cta_experience: "Lihat Pengalaman",
+    hero_cta_cv: "Lihat CV",
+    hero_cta_contact: "Hubungi Saya",
+    hero_location: "Cimahi, Jawa Barat",
+    hero_degree: "S1 Sastra Inggris",
+    hero_language: "English — Pre-Intermediate",
+
+    focus_label: "Fokus profesional",
+    focus_primary: "Customer Support & Customer Relations",
+    focus_secondary_label: "Kemampuan pendukung",
+    focus_secondary: "Administrasi, Operasional & Technical Support",
+    focus_tertiary_label: "Bidang tambahan",
+    focus_tertiary: "Marketing Support & Customer Engagement",
+
+    about_eyebrow: "Ringkasan Profesional",
+    about_title: "Pengalaman berorientasi pada pelanggan dengan pola pikir operasional.",
+    about_subtitle: "Perjalanan profesional saya menghubungkan hospitality, customer service, administrasi, operasional, dan customer support berbasis teknologi.",
+    summary_title: "Yang saya bawa",
+    summary_text: "Saya memiliki pengalaman praktis dalam menangani kebutuhan dan kendala pelanggan, memberikan informasi dan solusi, menindaklanjuti permintaan, menjaga catatan dan dokumentasi, serta berkoordinasi dengan tim internal.",
+    summary_text_2: "Latar belakang Sastra Inggris mendukung kemampuan komunikasi terstruktur, penulisan, analisis, presentasi, dan dokumentasi. Pengetahuan teknis ditempatkan sebagai kemampuan pendukung untuk peran customer service dan operasional.",
+
+    journey_1_title: "Hospitality",
+    journey_1_text: "Interaksi dengan pelanggan, standar pelayanan, teamwork, dan dukungan acara.",
+    journey_2_title: "Customer Service",
+    journey_2_text: "Mendengarkan, merespons, menangani permintaan, dan menjaga kualitas layanan.",
+    journey_3_title: "Operasional & Administrasi",
+    journey_3_text: "Dokumentasi, pengolahan data, pelaporan, koordinasi, dan dukungan operasional harian.",
+    journey_4_title: "Customer & Technical Support",
+    journey_4_text: "Dukungan berbasis teknologi, troubleshooting, penanganan tiket, follow-up, dan koordinasi dengan tim teknis.",
+
+    facts_eyebrow: "Info singkat",
+    fact_education: "Pendidikan",
+    fact_gpa: "IPK",
+    fact_language: "Bahasa",
+    fact_language_value: "Bahasa Indonesia — Native<br>English — Pre-Intermediate",
+    fact_location_label: "Lokasi",
+
+    experience_eyebrow: "Pengalaman",
+    experience_title: "Pengalaman profesional yang dibangun dari layanan dan operasional.",
+    experience_subtitle: "Pengalaman yang paling relevan ditempatkan lebih dahulu agar mudah dipindai recruiter.",
     sda_role: "Customer & Operational Support",
-    sda_stat_number: "&lt;1 Menit",
-    sda_stat_label: "Rata-rata Waktu Respons Awal",
-    sda_p1: "Menjaga <strong>waktu respons awal di bawah 1 menit</strong> untuk tiket dan komunikasi klien, demi memenuhi standar SLA yang tinggi.",
-    sda_p2: "Melakukan troubleshooting sistematis menggunakan WHMCS, mencatat kendala secara akurat, dan memantau progres tiket.",
-    sda_p3: "Berkoordinasi dengan tim teknis internal untuk penyelesaian masalah server dan hosting secara cepat.",
-    sda_sop_title: "Alur Interaktif SOP Penanganan Tiket",
-    sop_s1: "Tiket Diterima", sop_s2: "Diagnosis / WHMCS", sop_s3: "Resolusi / Eskalasi",
-    sop_click_hint: "Klik langkah mana pun di atas untuk melihat detail operasional.",
-    pasca_role: "Talent Marketing & Konten Brand",
-    pasca_p1: "Berkontribusi pada kampanye pemasaran brand fashion lokal melalui kolaborasi konten foto & video bersama tim kreatif.",
-    pasca_p2: "Mewakili katalog produk (lifestyle & casual wear) untuk mendukung konsistensi brand image dan tujuan pemasaran.",
-    pasca_p3: "Berkolaborasi dengan fotografer dan stylist untuk menyampaikan nilai produk dan identitas brand kepada audiens.",
+    sda_stat_label: "Waktu respons awal",
+    key_responsibilities: "Tanggung jawab utama",
+
+    sda_p1: "Menjaga waktu respons awal <strong>di bawah 1 menit</strong> untuk tiket dan komunikasi pelanggan.",
+    sda_p2: "Menangani pertanyaan, permintaan layanan, dan kendala pelanggan melalui beberapa kanal komunikasi.",
+    sda_p3: "Memberikan informasi, bantuan, dan solusi sesuai SOP serta standar layanan perusahaan.",
+    sda_p4: "Melakukan troubleshooting sistematis menggunakan <strong>WHMCS</strong>, termasuk pencatatan dan pemantauan tiket.",
+    sda_p5: "Menindaklanjuti permintaan pelanggan hingga mencapai penyelesaian yang sesuai dan berkoordinasi dengan tim teknis internal bila diperlukan.",
+    sda_p6: "Mendukung operasional layanan harian serta menjaga catatan terkait permintaan, kendala, dan penyelesaiannya.",
+
+    case_eyebrow: "Pengalaman utama",
+    case_title: "Alur Customer Support",
+    case_subtitle: "Gambaran ringkas tanggung jawab support yang terdokumentasi pada posisi ini.",
+    workflow_1: "Permintaan pelanggan",
+    workflow_2: "Tiket & troubleshooting",
+    workflow_3: "Follow-up & koordinasi",
+    tools_label: "Tools / area dukungan",
+
     prof_role: "Barista & Operational Support",
-    prof_p1: "Melayani <strong>80–100 pelanggan per shift</strong> di lingkungan kerja yang padat sambil tetap menjaga pelayanan prima dan akurasi pesanan.",
-    prof_p2: "Mengoperasikan sistem POS, melakukan rekapitulasi penjualan harian secara akurat, dan memantau persediaan stok.",
-    prof_p3: "Aktif memberikan ide promosi dan konsep acara untuk meningkatkan keterlibatan dan retensi pelanggan.",
-    btn_view_cert: "Lihat Sertifikat Magang",
+    prof_p1: "Melayani sekitar <strong>80–100 pelanggan per shift</strong> di lingkungan pelayanan dengan volume tinggi.",
+    prof_p2: "Menangani kebutuhan pelanggan, mengoperasikan POS, melakukan rekapitulasi penjualan, dan mendukung pemantauan inventori.",
+    prof_p3: "Memberikan ide promosi dan acara untuk mendukung customer engagement dan retention.",
+    tag_customer_service: "Customer Service",
+    tag_operations: "Operasional",
+    tag_pos: "POS",
+    tag_reporting: "Pelaporan",
+
+    pasca_role: "Marketing & Brand Content Talent",
+    pasca_p1: "Berkontribusi dalam kampanye marketing melalui kolaborasi konten foto dan video bersama tim kreatif.",
+    pasca_p2: "Mendukung penyajian katalog produk untuk kebutuhan marketing brand.",
+    pasca_p3: "Berkolaborasi dengan fotografer dan stylist untuk menyampaikan nilai produk serta identitas brand kepada target audience.",
+    tag_marketing: "Marketing Support",
+    tag_content: "Brand Content",
+    tag_engagement: "Customer Engagement",
+
     hotel_role: "F&B Banquet Intern",
-    hotel_stat_number: "3 Bulan",
-    hotel_stat_label: "Magang F&B Banquet",
-    hotel_p1: "Memberikan layanan tamu berkualitas tinggi selama acara corporate dan pernikahan.",
-    hotel_p2: "Menjaga koordinasi yang lancar sesuai standar keramahtamahan internasional.",
-    ccu_role: "Ketua Pelaksana (Cross Cultural Understanding)",
-    ccu_p1: "Memimpin dan mengkoordinasikan <strong>tim beranggotakan 15 orang</strong> untuk menyelenggarakan acara Cross Cultural Understanding (CCU).",
-    ccu_p2: "Mengelola administrasi peserta, pembagian tugas, dan penyelesaian masalah lapangan agar acara berjalan sesuai tujuan.",
-    vac_role: "Staf Admin (Vaksinasi Covid-19)",
-    vac_p1: "Melakukan verifikasi dan pengolahan data peserta secara akurat pada Program Vaksinasi Covid-19.",
-    vac_p2: "Memastikan dokumen dan data tersusun rapi serta berkoordinasi dengan tim medis.",
-    edu_title: "Riwayat Pendidikan", edu_subtitle: "Perjalanan akademis saya dari pendidikan dasar hingga universitas.",
-    edu_univ_role: "S1 Sastra Inggris (IPK 3.30)",
-    edu_sma_name: "SMA Pasundan 1 Cimahi", edu_sma_role: "Jurusan Ilmu Pengetahuan Sosial (IPS)",
-    edu_smp_name: "SMP Negeri 10 Cimahi", edu_smp_role: "Sekolah Menengah Pertama",
-    edu_sd_name: "SDN Karang Mekar Mandiri 1 Cimahi", edu_sd_role: "Sekolah Dasar",
-    cert_title: "Sertifikat",
-    cert_subtitle: "Sertifikat dan pengalaman belajar yang mendukung perjalanan profesional saya.",
+    hotel_p1: "Memberikan layanan kepada tamu selama meeting, wedding, dan acara corporate.",
+    hotel_p2: "Berinteraksi dengan tamu, mendukung persiapan dan pelaksanaan banquet, serta berkoordinasi dengan anggota tim.",
+    btn_view_cert: "Lihat Sertifikat Magang",
+
+    org_eyebrow: "Pengalaman organisasi",
+    org_title: "Bukti tambahan untuk leadership, administrasi, dan koordinasi.",
+    ccu_role: "Event Coordinator / Ketua Pelaksana",
+    ccu_p1: "Memimpin dan mengkoordinasikan <strong>tim beranggotakan 15 orang</strong>.",
+    ccu_p2: "Mengatur pembagian tugas, administrasi peserta, dokumentasi, dan koordinasi acara.",
+    vac_role: "Staf Administrasi",
+    vac_p1: "Melakukan verifikasi dan pengelolaan data peserta secara akurat.",
+    vac_p2: "Menata dokumen peserta dan berkoordinasi dengan panitia serta tim medis.",
+
+    skills_eyebrow: "Kemampuan inti",
+    skills_title: "Keahlian disusun berdasarkan arah karier yang ditargetkan.",
+    skills_subtitle: "Customer Support dan Administrasi & Operasional ditempatkan lebih dahulu; kemampuan teknis dan digital tetap menjadi pendukung.",
+
+    skills_cat_1: "Customer Support & Customer Relations",
+    skills_cat_2: "Administrasi & Operasional",
+    skills_cat_3: "Marketing & Customer Engagement",
+    skills_cat_4: "Teknologi & Tools Digital",
+
+    skills_1: "Customer Support",
+    skills_2: "Customer Service",
+    skills_3: "Helpdesk Support",
+    skills_4: "Customer & Complaint Handling",
+    skills_5: "Customer Relations",
+    skills_6: "Customer Engagement",
+    skills_7: "Customer Satisfaction",
+    skills_8: "Problem Solving",
+    skills_9: "Komunikasi Verbal & Tertulis",
+    skills_10: "Data Entry & Processing",
+    skills_11: "Data Recapitulation",
+    skills_12: "Reporting",
+    skills_13: "Documentation",
+    skills_14: "Document Management",
+    skills_15: "Operational Support",
+    skills_16: "Internal Coordination",
+    skills_17: "Microsoft Word",
+    skills_18: "Microsoft Excel",
+    skills_19: "Microsoft PowerPoint",
+    skills_20: "Marketing Support",
+    skills_21: "Customer Engagement & Retention",
+    skills_22: "Promotional Support",
+    skills_23: "Event Support",
+    skills_24: "Product & Service Presentation",
+    skills_25: "Brand Content Collaboration",
+    skills_26: "WHMCS",
+    skills_27: "Technical Troubleshooting",
+    skills_28: "Proxmox",
+    skills_29: "Linux",
+    skills_30: "VPS",
+    skills_31: "POS Systems",
+    skills_32: "HTML5",
+    skills_33: "CSS3",
+    skills_34: "VS Code",
+    skills_35: "Git / GitHub",
+
+    language_eyebrow: "Bahasa",
+    language_title: "Komunikasi profesional",
+    lang_id: "Bahasa Indonesia",
+    lang_id_level: "Native",
+    lang_en: "English",
+    lang_en_level: "Pre-Intermediate",
+
+    education_eyebrow: "Pendidikan",
+    education_title: "S1 Sastra Inggris.",
+    education_subtitle: "Fondasi akademis dalam komunikasi, penulisan, riset, presentasi, analisis, dan dokumentasi terstruktur.",
+    degree_name: "Bachelor of English Literature / S1 Sastra Inggris",
+    gpa_label: "IPK",
+    education_capabilities_label: "Kemampuan relevan",
+    edu_skill_1: "English Communication",
+    edu_skill_2: "Academic Writing",
+    edu_skill_3: "Research",
+    edu_skill_4: "Presentation",
+    edu_skill_5: "Analysis",
+    edu_skill_6: "Structured Communication",
+    edu_skill_7: "Documentation",
+    edu_skill_8: "Teamwork",
+
+    cert_eyebrow: "Sertifikat",
+    cert_title: "Pendukung pengalaman belajar dan hospitality.",
+    cert_subtitle: "Catatan sertifikat yang sudah ada pada portfolio dipertahankan dan ditampilkan sebagai bukti pendukung.",
     cert_view_btn: "Lihat Sertifikat",
     cert_issued_by: "Diterbitkan oleh",
+
     cert1_title: "Certificate of Attendance – Coffee Mixology & Sequence of Service",
     cert1_venue: "favehotel Hyper Square - Bandung",
     cert2_title: "Certificate of Completion – Hotel Operation Lesson",
@@ -181,195 +379,385 @@ const translations = {
     cert3_venue: "Courtyard by Marriott Bandung Dago",
     cert4_title: "Certificate of Attendance – Barista Class",
     cert4_venue: "favehotel Hyper Square - Bandung",
-    skills_title: "Kompetensi, Teknologi & Pembelajaran AI", skills_subtitle: "Menggabungkan keunggulan soft-skills dengan tools teknologi modern dan alur kerja AI.",
-    skills_cat_1: "Hubungan Pelanggan & Klien",
-    skills_cat_2: "Operasional & Administrasi Data",
-    skills_cat_3: "Sistem Teknis & Web",
-    skills_cat_4: "Sedang Dieksplorasi:",
-    skills_li_1: "Customer Support & Helpdesk",
-    skills_li_2: "Penanganan Keluhan & Resolusi",
-    skills_li_3: "Keterlibatan & Kepuasan Klien",
-    skills_li_4: "Komunikasi Verbal & Tertulis",
-    skills_li_5: "Rekapitulasi Penjualan Harian & Pelaporan",
-    skills_li_6: "Manajemen POS & Inventaris",
-    skills_li_7: "Entri & Pemrosesan Data",
-    skills_li_8: "Microsoft Office Suite",
-    skills_li_9: "WHMCS (Manajemen Web Hosting)",
-    skills_li_10: "Dasar Virtualisasi & Server (Proxmox, Linux, VPS)",
-    skills_li_11: "HTML5, CSS3, VS Code & Git/GitHub",
-    ai_learning_text: "Aktif mempelajari pemanfaatan tools AI untuk efisiensi kerja harian dan optimasi alur kerja.",
-    contact_title: "Hubungi Saya", contact_subtitle: "Jangan ragu untuk terhubung untuk peluang atau kolaborasi.",
-    c_label_email: "Email",
-    c_label_linkedin: "LinkedIn",
-    c_label_phone: "Telepon / WhatsApp",
-    c_label_location: "Lokasi",
-    c_val_location: "Cimahi, Jawa Barat, Indonesia",
+
+    contact_eyebrow: "Kontak",
+    contact_title: "Terbuka untuk peluang yang relevan.",
+    contact_subtitle: "Silakan terhubung untuk peluang Customer Support, Administrasi & Operasional, Customer Relations, atau peran support terkait.",
+    contact_email: "Email",
+    contact_linkedin: "LinkedIn",
+    contact_phone: "Telepon / WhatsApp",
+    contact_location: "Lokasi",
+
+    modal_gallery_title: "Pratinjau sertifikat",
     modal_hotel_title: "Four Points by Sheraton - Sertifikat Magang",
-    modal_gallery_title: "Galeri Gambar",
-    modal_cert_text: "Sertifikat penyelesaian magang F&B Banquet (Feb 2024 - Apr 2024).",
-    footer_text: "&copy; 2026 Ahmad Wahdan Nurjaman. Dibuat dengan VS Code & Dihosting di GitHub Pages."
+    modal_cert_text: "Sertifikat penyelesaian magang F&B Banquet (Feb 2024 – Apr 2024).",
+
+    footer_text: "© 2026 Ahmad Wahdan Nurjaman. Portfolio profesional."
   }
 };
 
-let currentLang = 'EN';
 
-document.querySelectorAll('.nav-item, .nav-trigger').forEach(trigger => {
-  trigger.addEventListener('click', (e) => {
-    e.preventDefault();
-    const targetTab = trigger.getAttribute('data-tab') || trigger.getAttribute('data-target');
-    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-    document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
-    document.getElementById(targetTab).classList.add('active');
-    const activeNav = document.querySelector(`.nav-item[data-tab="${targetTab}"]`);
-    if(activeNav) activeNav.classList.add('active');
-    setTimeout(() => { revealOnScroll(); initTilt(); }, 100);
-  });
-});
+let currentLang = localStorage.getItem("portfolio-language") || "EN";
 
-const langBtn = document.getElementById('lang-toggle');
-const langText = document.getElementById('lang-text');
-langBtn.addEventListener('click', () => {
-  currentLang = currentLang === 'EN' ? 'ID' : 'EN';
-  langText.textContent = currentLang === 'EN' ? 'ID' : 'EN';
-  updateLanguage();
-  // Restart typing effect on language change
-  clearTimeout(timer);
-  document.getElementById('typing-text').innerHTML = '';
-  i = 0;
-  typingEffect();
-});
+if (!translations[currentLang]) {
+  currentLang = "EN";
+}
+
+
+const langToggle = document.getElementById("lang-toggle");
+const langText = document.getElementById("lang-text");
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const navPanel = document.getElementById("nav-panel");
+
+const navLinks = [...document.querySelectorAll(".nav-link")];
+const sections = [...document.querySelectorAll("main section[id]")];
+
 
 function updateLanguage() {
-  document.querySelectorAll('[data-key]').forEach(elem => {
-    const key = elem.getAttribute('data-key');
-    if (translations[currentLang][key]) elem.innerHTML = translations[currentLang][key];
+  document.documentElement.lang = currentLang === "EN" ? "en" : "id";
+
+  document.title = currentLang === "EN"
+    ? "Ahmad Wahdan Nurjaman | Customer Support & Operations"
+    : "Ahmad Wahdan Nurjaman | Customer Support & Operasional";
+
+  document.querySelectorAll("[data-key]").forEach((element) => {
+    const key = element.dataset.key;
+    const value = translations[currentLang][key];
+
+    if (value !== undefined) {
+      element.innerHTML = value;
+    }
   });
+
+  langText.textContent = currentLang === "EN" ? "ID" : "EN";
+
+  langToggle.setAttribute(
+    "aria-label",
+    currentLang === "EN"
+      ? "Switch to Indonesian"
+      : "Switch to English"
+  );
+
+  localStorage.setItem("portfolio-language", currentLang);
+
+  renderWorkflow(activeWorkflowStep);
 }
 
-const wordsEN = ["Customer Support Specialist", "Client Relations Associate", "Marketing & Administration Support", "Operational Support Specialist"];
-const wordsID = ["Spesialis Dukungan Pelanggan", "Spesialis Hubungan Klien", "Staf Marketing & Administrasi", "Spesialis Dukungan Operasional"];
-let i = 0; let timer;
 
-function getTypingWords() {
-  return currentLang === 'EN' ? wordsEN : wordsID;
+let activeWorkflowStep = "step1";
+
+
+const workflowCopy = {
+  step1: {
+    EN: "Receive and understand the customer request, then review the available information and service context before proceeding.",
+    ID: "Menerima dan memahami permintaan pelanggan, lalu meninjau informasi dan konteks layanan yang tersedia sebelum melanjutkan."
+  },
+
+  step2: {
+    EN: "Log and monitor the ticket through WHMCS while performing systematic troubleshooting for server, hosting, or customer-service issues.",
+    ID: "Mencatat dan memantau tiket melalui WHMCS sambil melakukan troubleshooting sistematis untuk kendala server, hosting, atau layanan pelanggan."
+  },
+
+  step3: {
+    EN: "Follow up with the customer, provide an appropriate resolution, or coordinate with the internal technical team when further support is required.",
+    ID: "Menindaklanjuti pelanggan, memberikan penyelesaian yang sesuai, atau berkoordinasi dengan tim teknis internal ketika diperlukan dukungan lanjutan."
+  }
+};
+
+
+function renderWorkflow(step) {
+  activeWorkflowStep = step;
+
+  document.querySelectorAll(".workflow-step").forEach((button) => {
+    button.classList.toggle(
+      "active",
+      button.dataset.step === step
+    );
+  });
+
+  const detail = document.getElementById("workflow-detail");
+
+  if (detail) {
+    detail.textContent = workflowCopy[step][currentLang];
+  }
 }
 
-function typingEffect() {
-  let word = getTypingWords()[i].split("");
-  var loopTyping = function() {
-    if (word.length > 0) {
-      document.getElementById('typing-text').innerHTML += word.shift();
-    } else {
-      // Fix: Assigned timeout to the global timer variable
-      timer = setTimeout(deletingEffect, 2000);
-      return false;
-    }
-    timer = setTimeout(loopTyping, 100);
-  };
-  loopTyping();
+
+function setLanguage() {
+  currentLang = currentLang === "EN" ? "ID" : "EN";
+
+  updateLanguage();
 }
 
-function deletingEffect() {
-  let word = getTypingWords()[i].split("");
-  var loopDeleting = function() {
-    if (word.length > 0) {
-      word.pop();
-      document.getElementById('typing-text').innerHTML = word.join("");
-    } else {
-      if (getTypingWords().length > (i + 1)) i++;
-      else i = 0;
-      // Fix: Assigned timeout to the global timer variable
-      timer = setTimeout(typingEffect, 500);
-      return false;
-    }
-    timer = setTimeout(loopDeleting, 50);
-  };
-  loopDeleting();
-}
-typingEffect();
 
-function showSopDetail(step) {
-  const detailBox = document.getElementById('sop-detail');
-  const sopDetails = {
-    step1: { EN: "Step 1 (Ticket Received): Verify user identity, read problem description, check SLA priority.", ID: "Langkah 1 (Tiket Diterima): Verifikasi identitas pengguna, baca deskripsi kendala, cek prioritas SLA." },
-    step2: { EN: "Step 2 (Diagnosis/WHMCS): Check domain/hosting status, inspect error logs or server responses.", ID: "Langkah 2 (Diagnosis/WHMCS): Cek status domain/hosting pada WHMCS, periksa log error atau respon server." },
-    step3: { EN: "Step 3 (Resolution): Provide clear solution steps or escalate complex bugs to L2 engineers.", ID: "Langkah 3 (Resolusi): Berikan panduan solusi yang jelas atau eskalasi kendala ke tim teknis L2." }
-  };
-  detailBox.textContent = sopDetails[step][currentLang];
-}
+langToggle.addEventListener("click", setLanguage);
 
-// Standard Modals
-document.querySelectorAll('.modal-trigger').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const modalId = btn.getAttribute('data-modal');
-    document.getElementById(modalId).style.display = 'flex';
+
+document.querySelectorAll(".workflow-step").forEach((button) => {
+  button.addEventListener("click", () => {
+    renderWorkflow(button.dataset.step);
   });
 });
 
-// Dynamic Gallery Modal
-function openModal(modalId, imgSrc) {
-  const modal = document.getElementById(modalId);
-  const img = document.getElementById('gallery-img');
-  img.src = imgSrc;
-  modal.style.display = 'flex';
+
+function closeMobileMenu() {
+  navPanel.classList.remove("open");
+
+  mobileMenuBtn.setAttribute(
+    "aria-expanded",
+    "false"
+  );
+
+  mobileMenuBtn.querySelector("i").className =
+    "fa-solid fa-bars";
 }
 
-document.querySelectorAll('.close-modal').forEach(closeBtn => {
-  closeBtn.addEventListener('click', () => {
-    closeBtn.closest('.modal').style.display = 'none';
-  });
-  // Keyboard accessibility: close-modal has role="button" and tabindex="0",
-  // so Enter/Space should activate it like a real button.
-  closeBtn.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
-      e.preventDefault();
-      closeBtn.closest('.modal').style.display = 'none';
-    }
+
+mobileMenuBtn.addEventListener("click", () => {
+  const open = navPanel.classList.toggle("open");
+
+  mobileMenuBtn.setAttribute(
+    "aria-expanded",
+    String(open)
+  );
+
+  mobileMenuBtn.querySelector("i").className = open
+    ? "fa-solid fa-xmark"
+    : "fa-solid fa-bars";
+});
+
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMobileMenu();
   });
 });
 
-window.addEventListener('click', (e) => {
-  if (e.target.classList.contains('modal')) e.target.style.display = 'none';
-});
 
-// Escape key closes any open modal
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    document.querySelectorAll('.modal').forEach(modal => {
-      if (modal.style.display === 'flex') modal.style.display = 'none';
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+
+        const id = entry.target.id;
+
+        if (id) {
+          navLinks.forEach((link) => {
+            link.classList.toggle(
+              "active",
+              link.dataset.section === id
+            );
+          });
+        }
+      }
     });
+  },
+  {
+    rootMargin: "-35% 0px -55% 0px",
+    threshold: 0
+  }
+);
+
+
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.12
+  }
+);
+
+
+document.querySelectorAll(".reveal").forEach((element) => {
+  revealObserver.observe(element);
+});
+
+
+function trapModalFocus(modal) {
+  const focusable = modal.querySelectorAll(
+    "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])"
+  );
+
+  if (!focusable.length) {
+    return;
+  }
+
+  focusable[0].focus();
+}
+
+
+let activeModal = null;
+let lastFocusedElement = null;
+
+
+function openModal(modal) {
+  if (!modal) {
+    return;
+  }
+
+  lastFocusedElement = document.activeElement;
+
+  modal.classList.add("open");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+  activeModal = modal;
+
+  document.body.classList.add("modal-open");
+
+  trapModalFocus(modal);
+}
+
+
+function closeModal(modal) {
+  if (!modal) {
+    return;
+  }
+
+  modal.classList.remove("open");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+  if (activeModal === modal) {
+    activeModal = null;
+  }
+
+  document.body.classList.remove("modal-open");
+
+  if (lastFocusedElement) {
+    lastFocusedElement.focus();
+  }
+}
+
+
+document.querySelectorAll("[data-gallery]").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const modal = document.getElementById("gallery-modal");
+    const image = document.getElementById("gallery-image");
+
+    if (!modal || !image) {
+      return;
+    }
+
+    image.src = trigger.dataset.gallery;
+
+    image.alt =
+      trigger.dataset.alt ||
+      "Certificate preview";
+
+    openModal(modal);
+  });
+});
+
+
+document.querySelectorAll(".modal-trigger").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const modal = document.getElementById(
+      trigger.dataset.modal
+    );
+
+    if (modal) {
+      openModal(modal);
+    }
+  });
+});
+
+
+document.querySelectorAll("[data-close-modal]").forEach((element) => {
+  element.addEventListener("click", () => {
+    closeModal(element.closest(".modal"));
+  });
+});
+
+
+document.addEventListener("keydown", (event) => {
+
+  if (event.key === "Escape" && activeModal) {
+    closeModal(activeModal);
+  }
+
+
+  if (event.key === "Tab" && activeModal) {
+
+    const focusable = [
+      ...activeModal.querySelectorAll(
+        "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])"
+      )
+    ].filter(
+      (element) => !element.hasAttribute("disabled")
+    );
+
+
+    if (!focusable.length) {
+      return;
+    }
+
+
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+
+    if (
+      event.shiftKey &&
+      document.activeElement === first
+    ) {
+      event.preventDefault();
+
+      last.focus();
+
+    } else if (
+      !event.shiftKey &&
+      document.activeElement === last
+    ) {
+      event.preventDefault();
+
+      first.focus();
+    }
   }
 });
 
-function revealOnScroll() {
-  const reveals = document.querySelectorAll('.reveal');
-  reveals.forEach(element => {
-    const elementTop = element.getBoundingClientRect().top;
-    const elementVisible = 100;
-    if (elementTop < window.innerHeight - elementVisible) element.classList.add('active');
-  });
-}
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
 
-function initTilt() {
-  const tiltCards = document.querySelectorAll('.tilt-card');
-  tiltCards.forEach(card => {
-    if (card.dataset.tiltInit === 'true') return;
-    card.dataset.tiltInit = 'true';
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-      const rotateX = (y - centerY) / 15;
-      const rotateY = (centerX - x) / 15;
-      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
-    });
-  });
+const reduceMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+);
+
+
+function handleReducedMotion() {
+  document.documentElement.classList.toggle(
+    "reduce-motion",
+    reduceMotion.matches
+  );
 }
-window.addEventListener('load', initTilt);
+
+
+reduceMotion.addEventListener?.(
+  "change",
+  handleReducedMotion
+);
+
+
+handleReducedMotion();
+
+
+updateLanguage();
+
+renderWorkflow("step1");
