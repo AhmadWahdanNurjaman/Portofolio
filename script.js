@@ -31,7 +31,8 @@ const translations = {
     about_subtitle: "My professional path connects hospitality, customer service, administration, operations, and technology-based customer support.",
     summary_title: "What I bring",
     summary_text: "I have practical experience handling customer needs and issues, providing information and solutions, following up requests, maintaining records and documentation, and coordinating with internal teams.",
-    summary_text_2: "My English Literature background supports structured communication, writing, analysis, presentation, and documentation. Technical knowledge is positioned as a supporting capability for customer and operational roles.",
+    summary_text_2: "My English Literature background supports structured communication, writing, analysis, presentation, and documentation. I also have practical knowledge of digital tools and technology-based services that supports my work in customer service and operations.",
+
     journey_1_title: "Hospitality",
     journey_1_text: "Customer interaction, service standards, teamwork, and event support.",
     journey_2_title: "Customer Service",
@@ -40,6 +41,7 @@ const translations = {
     journey_3_text: "Documentation, data handling, reporting, coordination, and daily operational support.",
     journey_4_title: "Customer & Technical Support",
     journey_4_text: "Technology-based support, troubleshooting, ticket handling, follow-up, and technical team coordination.",
+
     facts_eyebrow: "Quick facts",
     fact_education: "Education",
     fact_gpa: "GPA",
@@ -49,10 +51,11 @@ const translations = {
 
     experience_eyebrow: "Experience",
     experience_title: "Professional experience built around service and operations.",
-    experience_subtitle: "The most relevant experience is intentionally presented first for recruiter-friendly scanning.",
+    experience_subtitle: "Experience across customer support, operations, hospitality, marketing support, and organizational activities.",
     sda_role: "Customer & Operational Support",
     sda_stat_label: "Initial response time",
     key_responsibilities: "Key responsibilities",
+
     sda_p1: "Maintained an initial response time of <strong>under 1 minute</strong> for customer tickets and communications.",
     sda_p2: "Handled customer questions, service requests, and issues through multiple communication channels.",
     sda_p3: "Provided information, assistance, and solutions according to company SOPs and service standards.",
@@ -62,7 +65,7 @@ const translations = {
 
     case_eyebrow: "Featured experience",
     case_title: "Customer Support Workflow",
-    case_subtitle: "A concise view of the support responsibilities documented in this role.",
+    case_subtitle: "An overview of the customer support process and responsibilities handled in this role.",
     workflow_1: "Customer request",
     workflow_2: "Ticket & troubleshooting",
     workflow_3: "Follow-up & coordination",
@@ -91,7 +94,7 @@ const translations = {
     btn_view_cert: "View Internship Certificate",
 
     org_eyebrow: "Organizational experience",
-    org_title: "Additional evidence of leadership, administration, and coordination.",
+    org_title: "Leadership, administration, and coordination experience.",
     ccu_role: "Event Coordinator / Ketua Pelaksana",
     ccu_p1: "Led and coordinated a <strong>15-member team</strong>.",
     ccu_p2: "Managed task distribution, participant administration, documentation, and event coordination.",
@@ -100,8 +103,9 @@ const translations = {
     vac_p2: "Organized participant documents and coordinated with committee members and medical teams.",
 
     skills_eyebrow: "Core capabilities",
-    skills_title: "Skills organized around the roles I am targeting.",
-    skills_subtitle: "Customer Support and Administration & Operations come first; technical and digital skills remain supporting capabilities.",
+    skills_title: "Core skills across customer support, administration, operations, and digital tools.",
+    skills_subtitle: "A combination of customer-facing, administrative, operational, marketing, and technical skills developed through professional experience.",
+
     skills_cat_1: "Customer Support & Customer Relations",
     skills_cat_2: "Administration & Operations",
     skills_cat_3: "Marketing & Customer Engagement",
@@ -167,7 +171,7 @@ const translations = {
 
     cert_eyebrow: "Certificates",
     cert_title: "Supporting learning and hospitality experience.",
-    cert_subtitle: "Existing certificate records from the portfolio are preserved and presented as supporting evidence.",
+    cert_subtitle: "Certificates related to hospitality, food and beverage service, hotel operations, and MICE activities.",
     cert_view_btn: "View Certificate",
     cert_issued_by: "Issued by",
 
@@ -227,7 +231,7 @@ const translations = {
     about_subtitle: "Perjalanan profesional saya menghubungkan hospitality, customer service, administrasi, operasional, dan customer support berbasis teknologi.",
     summary_title: "Yang saya bawa",
     summary_text: "Saya memiliki pengalaman praktis dalam menangani kebutuhan dan kendala pelanggan, memberikan informasi dan solusi, menindaklanjuti permintaan, menjaga catatan dan dokumentasi, serta berkoordinasi dengan tim internal.",
-    summary_text_2: "Latar belakang Sastra Inggris mendukung kemampuan komunikasi terstruktur, penulisan, analisis, presentasi, dan dokumentasi. Pengetahuan teknis ditempatkan sebagai kemampuan pendukung untuk peran customer service dan operasional.",
+    summary_text_2: "Latar belakang Sastra Inggris mendukung kemampuan komunikasi terstruktur, penulisan, analisis, presentasi, dan dokumentasi. Saya juga memiliki pengetahuan praktis mengenai tools digital dan layanan berbasis teknologi yang mendukung pekerjaan di bidang customer service dan operasional.",
 
     journey_1_title: "Hospitality",
     journey_1_text: "Interaksi dengan pelanggan, standar pelayanan, teamwork, dan dukungan acara.",
@@ -247,7 +251,7 @@ const translations = {
 
     experience_eyebrow: "Pengalaman",
     experience_title: "Pengalaman profesional yang dibangun dari layanan dan operasional.",
-    experience_subtitle: "Pengalaman yang paling relevan ditempatkan lebih dahulu agar mudah dipindai recruiter.",
+    experience_subtitle: "Pengalaman di bidang customer support, operasional, hospitality, marketing support, dan kegiatan organisasi.",
     sda_role: "Customer & Operational Support",
     sda_stat_label: "Waktu respons awal",
     key_responsibilities: "Tanggung jawab utama",
@@ -261,7 +265,7 @@ const translations = {
 
     case_eyebrow: "Pengalaman utama",
     case_title: "Alur Customer Support",
-    case_subtitle: "Gambaran ringkas tanggung jawab support yang terdokumentasi pada posisi ini.",
+    case_subtitle: "Gambaran proses dan tanggung jawab customer support yang dijalankan dalam posisi ini.",
     workflow_1: "Permintaan pelanggan",
     workflow_2: "Tiket & troubleshooting",
     workflow_3: "Follow-up & koordinasi",
@@ -290,7 +294,7 @@ const translations = {
     btn_view_cert: "Lihat Sertifikat Magang",
 
     org_eyebrow: "Pengalaman organisasi",
-    org_title: "Bukti tambahan untuk leadership, administrasi, dan koordinasi.",
+    org_title: "Pengalaman leadership, administrasi, dan koordinasi.",
     ccu_role: "Event Coordinator / Ketua Pelaksana",
     ccu_p1: "Memimpin dan mengkoordinasikan <strong>tim beranggotakan 15 orang</strong>.",
     ccu_p2: "Mengatur pembagian tugas, administrasi peserta, dokumentasi, dan koordinasi acara.",
@@ -299,8 +303,8 @@ const translations = {
     vac_p2: "Menata dokumen peserta dan berkoordinasi dengan panitia serta tim medis.",
 
     skills_eyebrow: "Kemampuan inti",
-    skills_title: "Keahlian disusun berdasarkan arah karier yang ditargetkan.",
-    skills_subtitle: "Customer Support dan Administrasi & Operasional ditempatkan lebih dahulu; kemampuan teknis dan digital tetap menjadi pendukung.",
+    skills_title: "Kemampuan utama dalam customer support, administrasi, operasional, dan tools digital.",
+    skills_subtitle: "Kombinasi kemampuan customer-facing, administrasi, operasional, marketing, dan teknis yang dikembangkan melalui pengalaman profesional.",
 
     skills_cat_1: "Customer Support & Customer Relations",
     skills_cat_2: "Administrasi & Operasional",
@@ -367,7 +371,7 @@ const translations = {
 
     cert_eyebrow: "Sertifikat",
     cert_title: "Pendukung pengalaman belajar dan hospitality.",
-    cert_subtitle: "Catatan sertifikat yang sudah ada pada portfolio dipertahankan dan ditampilkan sebagai bukti pendukung.",
+    cert_subtitle: "Sertifikat yang berkaitan dengan hospitality, layanan food and beverage, operasional hotel, dan kegiatan MICE.",
     cert_view_btn: "Lihat Sertifikat",
     cert_issued_by: "Diterbitkan oleh",
 
@@ -431,21 +435,6 @@ function updateLanguage() {
 
   langText.textContent = currentLang === "EN" ? "ID" : "EN";
 
-  mobileMenuBtn.setAttribute(
-  "aria-label",
-  navPanel.classList.contains("open")
-    ? (
-        currentLang === "EN"
-          ? "Close navigation"
-          : "Tutup navigasi"
-      )
-    : (
-        currentLang === "EN"
-          ? "Open navigation"
-          : "Buka navigasi"
-      )
-);
-
   langToggle.setAttribute(
     "aria-label",
     currentLang === "EN"
@@ -492,7 +481,7 @@ function renderWorkflow(step) {
 
   const detail = document.getElementById("workflow-detail");
 
-  if (detail) {
+  if (detail && workflowCopy[step]) {
     detail.textContent = workflowCopy[step][currentLang];
   }
 }
@@ -505,7 +494,9 @@ function setLanguage() {
 }
 
 
-langToggle.addEventListener("click", setLanguage);
+if (langToggle) {
+  langToggle.addEventListener("click", setLanguage);
+}
 
 
 document.querySelectorAll(".workflow-step").forEach((button) => {
@@ -516,18 +507,15 @@ document.querySelectorAll(".workflow-step").forEach((button) => {
 
 
 function closeMobileMenu() {
+  if (!navPanel || !mobileMenuBtn) {
+    return;
+  }
+
   navPanel.classList.remove("open");
 
   mobileMenuBtn.setAttribute(
     "aria-expanded",
     "false"
-  );
-
-  mobileMenuBtn.setAttribute(
-    "aria-label",
-    currentLang === "EN"
-      ? "Open navigation"
-      : "Buka navigasi"
   );
 
   const icon = mobileMenuBtn.querySelector("i");
@@ -538,51 +526,30 @@ function closeMobileMenu() {
 }
 
 
-function openMobileMenu() {
-  navPanel.classList.add("open");
+if (mobileMenuBtn && navPanel) {
+  mobileMenuBtn.addEventListener("click", () => {
+    const open = navPanel.classList.toggle("open");
 
-  mobileMenuBtn.setAttribute(
-    "aria-expanded",
-    "true"
-  );
+    mobileMenuBtn.setAttribute(
+      "aria-expanded",
+      String(open)
+    );
 
-  mobileMenuBtn.setAttribute(
-    "aria-label",
-    currentLang === "EN"
-      ? "Close navigation"
-      : "Tutup navigasi"
-  );
+    const icon = mobileMenuBtn.querySelector("i");
 
-  const icon = mobileMenuBtn.querySelector("i");
-
-  if (icon) {
-    icon.className = "fa-solid fa-xmark";
-  }
+    if (icon) {
+      icon.className = open
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars";
+    }
+  });
 }
-
-
-mobileMenuBtn.addEventListener("click", () => {
-  const isOpen = navPanel.classList.contains("open");
-
-  if (isOpen) {
-    closeMobileMenu();
-  } else {
-    openMobileMenu();
-  }
-});
 
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     closeMobileMenu();
   });
-});
-
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 820) {
-    closeMobileMenu();
-  }
 });
 
 
@@ -638,23 +605,6 @@ document.querySelectorAll(".reveal").forEach((element) => {
 });
 
 
-function trapModalFocus(modal) {
-  const focusable = modal.querySelectorAll(
-    "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])"
-  );
-
-  if (!focusable.length) {
-    return;
-  }
-
-  focusable[0].focus();
-}
-
-
-let activeModal = null;
-let lastFocusedElement = null;
-
-
 function getModalFocusableElements(modal) {
   return [
     ...modal.querySelectorAll(
@@ -680,13 +630,13 @@ function trapModalFocus(modal) {
 }
 
 
+let activeModal = null;
+let lastFocusedElement = null;
+
+
 function openModal(modal) {
   if (!modal) {
     return;
-  }
-
-  if (activeModal && activeModal !== modal) {
-    closeModal(activeModal, false);
   }
 
   lastFocusedElement = document.activeElement;
@@ -702,16 +652,11 @@ function openModal(modal) {
 
   document.body.classList.add("modal-open");
 
-  requestAnimationFrame(() => {
-    trapModalFocus(modal);
-  });
+  trapModalFocus(modal);
 }
 
 
-function closeModal(
-  modal,
-  restoreFocus = true
-) {
+function closeModal(modal) {
   if (!modal) {
     return;
   }
@@ -730,17 +675,15 @@ function closeModal(
   document.body.classList.remove("modal-open");
 
   if (
-    restoreFocus &&
     lastFocusedElement &&
-    document.contains(lastFocusedElement)
+    typeof lastFocusedElement.focus === "function"
   ) {
     lastFocusedElement.focus();
   }
 
-  if (!activeModal) {
-    lastFocusedElement = null;
-  }
+  lastFocusedElement = null;
 }
+
 
 document.querySelectorAll("[data-gallery]").forEach((trigger) => {
   trigger.addEventListener("click", () => {
@@ -784,44 +727,26 @@ document.querySelectorAll("[data-close-modal]").forEach((element) => {
 
 document.addEventListener("keydown", (event) => {
 
-  /*
-   * ESCAPE
-   * Close modal first.
-   * If there is no modal, close mobile navigation.
-   */
-  if (event.key === "Escape") {
-
-    if (activeModal) {
-      closeModal(activeModal);
-      return;
-    }
-
-    if (navPanel.classList.contains("open")) {
-      closeMobileMenu();
-    }
+  if (event.key === "Escape" && activeModal) {
+    closeModal(activeModal);
+    return;
   }
 
 
-  /*
-   * TAB
-   * Keep keyboard focus inside the active modal.
-   */
-  if (
-    event.key === "Tab" &&
-    activeModal
-  ) {
+  if (event.key === "Tab" && activeModal) {
 
-    const focusable =
-      getModalFocusableElements(activeModal);
+    const focusable = getModalFocusableElements(activeModal);
+
 
     if (!focusable.length) {
       event.preventDefault();
+      activeModal.focus();
       return;
     }
 
+
     const first = focusable[0];
-    const last =
-      focusable[focusable.length - 1];
+    const last = focusable[focusable.length - 1];
 
 
     if (
@@ -832,11 +757,7 @@ document.addEventListener("keydown", (event) => {
 
       last.focus();
 
-      return;
-    }
-
-
-    if (
+    } else if (
       !event.shiftKey &&
       document.activeElement === last
     ) {
@@ -861,10 +782,14 @@ function handleReducedMotion() {
 }
 
 
-reduceMotion.addEventListener?.(
-  "change",
-  handleReducedMotion
-);
+if (typeof reduceMotion.addEventListener === "function") {
+  reduceMotion.addEventListener(
+    "change",
+    handleReducedMotion
+  );
+} else if (typeof reduceMotion.addListener === "function") {
+  reduceMotion.addListener(handleReducedMotion);
+}
 
 
 handleReducedMotion();
