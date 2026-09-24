@@ -431,6 +431,21 @@ function updateLanguage() {
 
   langText.textContent = currentLang === "EN" ? "ID" : "EN";
 
+  mobileMenuBtn.setAttribute(
+  "aria-label",
+  navPanel.classList.contains("open")
+    ? (
+        currentLang === "EN"
+          ? "Close navigation"
+          : "Tutup navigasi"
+      )
+    : (
+        currentLang === "EN"
+          ? "Open navigation"
+          : "Buka navigasi"
+      )
+);
+
   langToggle.setAttribute(
     "aria-label",
     currentLang === "EN"
@@ -508,22 +523,52 @@ function closeMobileMenu() {
     "false"
   );
 
-  mobileMenuBtn.querySelector("i").className =
-    "fa-solid fa-bars";
+  mobileMenuBtn.setAttribute(
+    "aria-label",
+    currentLang === "EN"
+      ? "Open navigation"
+      : "Buka navigasi"
+  );
+
+  const icon = mobileMenuBtn.querySelector("i");
+
+  if (icon) {
+    icon.className = "fa-solid fa-bars";
+  }
+}
+
+
+function openMobileMenu() {
+  navPanel.classList.add("open");
+
+  mobileMenuBtn.setAttribute(
+    "aria-expanded",
+    "true"
+  );
+
+  mobileMenuBtn.setAttribute(
+    "aria-label",
+    currentLang === "EN"
+      ? "Close navigation"
+      : "Tutup navigasi"
+  );
+
+  const icon = mobileMenuBtn.querySelector("i");
+
+  if (icon) {
+    icon.className = "fa-solid fa-xmark";
+  }
 }
 
 
 mobileMenuBtn.addEventListener("click", () => {
-  const open = navPanel.classList.toggle("open");
+  const isOpen = navPanel.classList.contains("open");
 
-  mobileMenuBtn.setAttribute(
-    "aria-expanded",
-    String(open)
-  );
-
-  mobileMenuBtn.querySelector("i").className = open
-    ? "fa-solid fa-xmark"
-    : "fa-solid fa-bars";
+  if (isOpen) {
+    closeMobileMenu();
+  } else {
+    openMobileMenu();
+  }
 });
 
 
@@ -531,6 +576,13 @@ navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     closeMobileMenu();
   });
+});
+
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 820) {
+    closeMobileMenu();
+  }
 });
 
 
@@ -603,9 +655,38 @@ let activeModal = null;
 let lastFocusedElement = null;
 
 
+function getModalFocusableElements(modal) {
+  return [
+    ...modal.querySelectorAll(
+      "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])"
+    )
+  ].filter(
+    (element) =>
+      !element.hasAttribute("disabled") &&
+      element.getAttribute("aria-hidden") !== "true"
+  );
+}
+
+
+function trapModalFocus(modal) {
+  const focusable = getModalFocusableElements(modal);
+
+  if (!focusable.length) {
+    modal.focus();
+    return;
+  }
+
+  focusable[0].focus();
+}
+
+
 function openModal(modal) {
   if (!modal) {
     return;
+  }
+
+  if (activeModal && activeModal !== modal) {
+    closeModal(activeModal, false);
   }
 
   lastFocusedElement = document.activeElement;
@@ -621,11 +702,16 @@ function openModal(modal) {
 
   document.body.classList.add("modal-open");
 
-  trapModalFocus(modal);
+  requestAnimationFrame(() => {
+    trapModalFocus(modal);
+  });
 }
 
 
-function closeModal(modal) {
+function closeModal(
+  modal,
+  restoreFocus = true
+) {
   if (!modal) {
     return;
   }
@@ -643,11 +729,18 @@ function closeModal(modal) {
 
   document.body.classList.remove("modal-open");
 
-  if (lastFocusedElement) {
+  if (
+    restoreFocus &&
+    lastFocusedElement &&
+    document.contains(lastFocusedElement)
+  ) {
     lastFocusedElement.focus();
   }
-}
 
+  if (!activeModal) {
+    lastFocusedElement = null;
+  }
+}
 
 document.querySelectorAll("[data-gallery]").forEach((trigger) => {
   trigger.addEventListener("click", () => {
@@ -691,29 +784,44 @@ document.querySelectorAll("[data-close-modal]").forEach((element) => {
 
 document.addEventListener("keydown", (event) => {
 
-  if (event.key === "Escape" && activeModal) {
-    closeModal(activeModal);
-  }
+  /*
+   * ESCAPE
+   * Close modal first.
+   * If there is no modal, close mobile navigation.
+   */
+  if (event.key === "Escape") {
 
-
-  if (event.key === "Tab" && activeModal) {
-
-    const focusable = [
-      ...activeModal.querySelectorAll(
-        "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])"
-      )
-    ].filter(
-      (element) => !element.hasAttribute("disabled")
-    );
-
-
-    if (!focusable.length) {
+    if (activeModal) {
+      closeModal(activeModal);
       return;
     }
 
+    if (navPanel.classList.contains("open")) {
+      closeMobileMenu();
+    }
+  }
+
+
+  /*
+   * TAB
+   * Keep keyboard focus inside the active modal.
+   */
+  if (
+    event.key === "Tab" &&
+    activeModal
+  ) {
+
+    const focusable =
+      getModalFocusableElements(activeModal);
+
+    if (!focusable.length) {
+      event.preventDefault();
+      return;
+    }
 
     const first = focusable[0];
-    const last = focusable[focusable.length - 1];
+    const last =
+      focusable[focusable.length - 1];
 
 
     if (
@@ -724,7 +832,11 @@ document.addEventListener("keydown", (event) => {
 
       last.focus();
 
-    } else if (
+      return;
+    }
+
+
+    if (
       !event.shiftKey &&
       document.activeElement === last
     ) {
