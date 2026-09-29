@@ -1,1768 +1,800 @@
-:root {
-  --bg: #f5f5f3;
-  --surface: #ffffff;
-  --surface-2: #f0f0ed;
-  --text: #1d1d1f;
-  --muted: #66676b;
-  --line: #dedfdd;
-  --accent: #4f46e5;
-  --accent-dark: #3730a3;
-  --accent-soft: #eef2ff;
-  --dark: #171717;
-  --dark-2: #232323;
-  --white: #ffffff;
-  --radius-lg: 28px;
-  --radius-md: 18px;
-  --radius-sm: 12px;
-  --shadow: 0 16px 45px rgba(18, 18, 18, 0.07);
-  --container: 1120px;
+const translations = {
+  EN: {
+    skip_link: "Skip to content",
+    nav_home: "Home",
+    nav_about: "About",
+    nav_experience: "Experience",
+    nav_skills: "Skills",
+    nav_education: "Education",
+    nav_certifications: "Certificates",
+    nav_contact: "Contact",
+
+    hero_badge: "Customer Support • Operations • Customer Relations",
+    hero_kicker: "English Literature graduate with practical customer-facing and operational experience.",
+    hero_desc: "Experienced in handling customer needs, following up requests, maintaining documentation, supporting daily operations, and coordinating with internal teams. Technical and digital skills provide additional support for technology-based customer service.",
+    hero_cta_experience: "View Experience",
+    hero_cta_cv: "View CV",
+    hero_cta_contact: "Contact Me",
+    hero_location: "Cimahi, West Java",
+    hero_degree: "S1 English Literature",
+    hero_language: "English — Pre-Intermediate",
+
+    focus_label: "Professional focus",
+    focus_primary: "Customer Support & Customer Relations",
+    focus_secondary_label: "Supporting capabilities",
+    focus_secondary: "Administration, Operations & Technical Support",
+    focus_tertiary_label: "Additional area",
+    focus_tertiary: "Marketing Support & Customer Engagement",
+
+    about_eyebrow: "Professional Summary",
+    about_title: "Customer-focused experience with an operational mindset.",
+    about_subtitle: "My professional path connects hospitality, customer service, administration, operations, and technology-based customer support.",
+    summary_title: "What I bring",
+    summary_text: "I have practical experience handling customer needs and issues, providing information and solutions, following up requests, maintaining records and documentation, and coordinating with internal teams.",
+    summary_text_2: "My English Literature background supports structured communication, writing, analysis, presentation, and documentation. I also have practical knowledge of digital tools and technology-based services that supports my work in customer service and operations.",
+
+    journey_1_title: "Hospitality",
+    journey_1_text: "Customer interaction, service standards, teamwork, and event support.",
+    journey_2_title: "Customer Service",
+    journey_2_text: "Listening, responding, handling requests, and maintaining service quality.",
+    journey_3_title: "Operations & Administration",
+    journey_3_text: "Documentation, data handling, reporting, coordination, and daily operational support.",
+    journey_4_title: "Customer & Technical Support",
+    journey_4_text: "Technology-based support, troubleshooting, ticket handling, follow-up, and technical team coordination.",
+
+    facts_eyebrow: "Quick facts",
+    fact_education: "Education",
+    fact_gpa: "GPA",
+    fact_language: "Languages",
+    fact_language_value: "Bahasa Indonesia — Native<br>English — Pre-Intermediate",
+    fact_location_label: "Location",
+
+    experience_eyebrow: "Experience",
+    experience_title: "Professional experience built around service and operations.",
+    experience_subtitle: "Experience across customer support, operations, hospitality, marketing support, and organizational activities.",
+    sda_role: "Customer & Operational Support",
+    sda_stat_label: "Initial response time",
+    key_responsibilities: "Key responsibilities",
+
+    sda_p1: "Maintained an initial response time of <strong>under 1 minute</strong> for customer tickets and communications.",
+    sda_p2: "Handled customer questions, service requests, and issues through multiple communication channels.",
+    sda_p3: "Provided information, assistance, and solutions according to company SOPs and service standards.",
+    sda_p4: "Performed systematic troubleshooting using <strong>WHMCS</strong>, including ticket logging and monitoring.",
+    sda_p5: "Followed up customer requests until an appropriate resolution was reached and coordinated with internal technical teams when needed.",
+    sda_p6: "Supported daily service operations and maintained records related to customer requests, issues, and resolutions.",
+
+    case_eyebrow: "Featured experience",
+    case_title: "Customer Support Workflow",
+    case_subtitle: "An overview of the customer support process and responsibilities handled in this role.",
+    workflow_1: "Customer request",
+    workflow_2: "Ticket & troubleshooting",
+    workflow_3: "Follow-up & coordination",
+    tools_label: "Tools / support areas",
+
+    prof_role: "Barista & Operational Support",
+    prof_p1: "Served approximately <strong>80–100 customers per shift</strong> in a high-volume service environment.",
+    prof_p2: "Handled customer needs, operated POS systems, performed sales recapitulation, and supported inventory monitoring.",
+    prof_p3: "Contributed promotional and event ideas to support customer engagement and retention.",
+    tag_customer_service: "Customer Service",
+    tag_operations: "Operations",
+    tag_pos: "POS",
+    tag_reporting: "Reporting",
+
+    pasca_role: "Marketing & Brand Content Talent",
+    pasca_p1: "Contributed to marketing campaigns through photo and video content collaboration with the creative team.",
+    pasca_p2: "Supported product catalog presentation for brand marketing needs.",
+    pasca_p3: "Collaborated with photographers and stylists to communicate product value and brand identity to the target audience.",
+    tag_marketing: "Marketing Support",
+    tag_content: "Brand Content",
+    tag_engagement: "Customer Engagement",
+
+    hotel_role: "F&B Banquet Intern",
+    hotel_p1: "Provided guest service during meetings, weddings, and corporate events.",
+    hotel_p2: "Interacted with guests, supported banquet preparation and event execution, and coordinated with team members.",
+    btn_view_cert: "View Internship Certificate",
+
+    org_eyebrow: "Organizational experience",
+    org_title: "Leadership, administration, and coordination experience.",
+    ccu_role: "Event Coordinator / Ketua Pelaksana",
+    ccu_p1: "Led and coordinated a <strong>15-member team</strong>.",
+    ccu_p2: "Managed task distribution, participant administration, documentation, and event coordination.",
+    vac_role: "Administrative Staff",
+    vac_p1: "Verified and managed participant data accurately.",
+    vac_p2: "Organized participant documents and coordinated with committee members and medical teams.",
+
+    skills_eyebrow: "Core capabilities",
+    skills_title: "Core skills across customer support, administration, operations, and digital tools.",
+    skills_subtitle: "A combination of customer-facing, administrative, operational, marketing, and technical skills developed through professional experience.",
+
+    skills_cat_1: "Customer Support & Customer Relations",
+    skills_cat_2: "Administration & Operations",
+    skills_cat_3: "Marketing & Customer Engagement",
+    skills_cat_4: "Technology & Digital Tools",
+
+    skills_1: "Customer Support",
+    skills_2: "Customer Service",
+    skills_3: "Helpdesk Support",
+    skills_4: "Customer & Complaint Handling",
+    skills_5: "Customer Relations",
+    skills_6: "Customer Engagement",
+    skills_7: "Customer Satisfaction",
+    skills_8: "Problem Solving",
+    skills_9: "Verbal & Written Communication",
+    skills_10: "Data Entry & Processing",
+    skills_11: "Data Recapitulation",
+    skills_12: "Reporting",
+    skills_13: "Documentation",
+    skills_14: "Document Management",
+    skills_15: "Operational Support",
+    skills_16: "Internal Coordination",
+    skills_17: "Microsoft Word",
+    skills_18: "Microsoft Excel",
+    skills_19: "Microsoft PowerPoint",
+    skills_20: "Marketing Support",
+    skills_21: "Customer Engagement & Retention",
+    skills_22: "Promotional Support",
+    skills_23: "Event Support",
+    skills_24: "Product & Service Presentation",
+    skills_25: "Brand Content Collaboration",
+    skills_26: "WHMCS",
+    skills_27: "Technical Troubleshooting",
+    skills_28: "Proxmox",
+    skills_29: "Linux",
+    skills_30: "VPS",
+    skills_31: "POS Systems",
+    skills_32: "HTML5",
+    skills_33: "CSS3",
+    skills_34: "VS Code",
+    skills_35: "Git / GitHub",
+
+    language_eyebrow: "Languages",
+    language_title: "Professional communication",
+    lang_id: "Bahasa Indonesia",
+    lang_id_level: "Native",
+    lang_en: "English",
+    lang_en_level: "Pre-Intermediate",
+
+    education_eyebrow: "Education",
+    education_title: "Bachelor of English Literature.",
+    education_subtitle: "An academic foundation in communication, writing, research, presentation, analysis, and structured documentation.",
+    degree_name: "Bachelor of English Literature / S1 Sastra Inggris",
+    gpa_label: "GPA",
+    education_capabilities_label: "Relevant capabilities",
+    edu_skill_1: "English Communication",
+    edu_skill_2: "Academic Writing",
+    edu_skill_3: "Research",
+    edu_skill_4: "Presentation",
+    edu_skill_5: "Analysis",
+    edu_skill_6: "Structured Communication",
+    edu_skill_7: "Documentation",
+    edu_skill_8: "Teamwork",
+
+    cert_eyebrow: "Certificates",
+    cert_title: "Supporting learning and hospitality experience.",
+    cert_subtitle: "Certificates related to hospitality, food and beverage service, hotel operations, and MICE activities.",
+    cert_view_btn: "View Certificate",
+    cert_issued_by: "Issued by",
+
+    cert1_title: "Certificate of Attendance – Coffee Mixology & Sequence of Service",
+    cert1_venue: "favehotel Hyper Square - Bandung",
+    cert2_title: "Certificate of Completion – Hotel Operation Lesson",
+    cert2_venue: "Courtyard by Marriott Bandung Dago",
+    cert3_title: "Certificate of Completion – MICE Operation Lesson",
+    cert3_venue: "Courtyard by Marriott Bandung Dago",
+    cert4_title: "Certificate of Attendance – Barista Class",
+    cert4_venue: "favehotel Hyper Square - Bandung",
+
+    contact_eyebrow: "Contact",
+    contact_title: "Let's stay connected.",
+    contact_subtitle: "I'm open to new opportunities and always happy to connect with people and explore opportunities that help me grow further.",
+    contact_email: "Email",
+    contact_linkedin: "LinkedIn",
+    contact_phone: "Phone / WhatsApp",
+    contact_location: "Location",
+
+    modal_gallery_title: "Certificate preview",
+    modal_hotel_title: "Four Points by Sheraton - Internship Certificate",
+    modal_cert_text: "Certificate of completion for F&B Banquet Internship (Feb 2024 – Apr 2024).",
+
+    footer_text: "© 2026 Ahmad Wahdan Nurjaman. Professional portfolio."
+  },
+
+  ID: {
+    skip_link: "Lewati ke konten",
+    nav_home: "Beranda",
+    nav_about: "Tentang",
+    nav_experience: "Pengalaman",
+    nav_skills: "Keahlian",
+    nav_education: "Pendidikan",
+    nav_certifications: "Sertifikat",
+    nav_contact: "Kontak",
+
+    hero_badge: "Customer Support • Operasional • Customer Relations",
+    hero_kicker: "Lulusan Sastra Inggris dengan pengalaman praktis di bidang layanan pelanggan dan operasional.",
+    hero_desc: "Berpengalaman menangani kebutuhan pelanggan, menindaklanjuti permintaan, menjaga dokumentasi, mendukung operasional harian, dan berkoordinasi dengan tim internal. Kemampuan teknis dan digital menjadi kemampuan pendukung untuk customer service berbasis teknologi.",
+    hero_cta_experience: "Lihat Pengalaman",
+    hero_cta_cv: "Lihat CV",
+    hero_cta_contact: "Hubungi Saya",
+    hero_location: "Cimahi, Jawa Barat",
+    hero_degree: "S1 Sastra Inggris",
+    hero_language: "English — Pre-Intermediate",
+
+    focus_label: "Fokus profesional",
+    focus_primary: "Customer Support & Customer Relations",
+    focus_secondary_label: "Kemampuan pendukung",
+    focus_secondary: "Administrasi, Operasional & Technical Support",
+    focus_tertiary_label: "Bidang tambahan",
+    focus_tertiary: "Marketing Support & Customer Engagement",
+
+    about_eyebrow: "Ringkasan Profesional",
+    about_title: "Pengalaman berorientasi pada pelanggan dengan pola pikir operasional.",
+    about_subtitle: "Perjalanan profesional saya menghubungkan hospitality, customer service, administrasi, operasional, dan customer support berbasis teknologi.",
+    summary_title: "Yang saya bawa",
+    summary_text: "Saya memiliki pengalaman praktis dalam menangani kebutuhan dan kendala pelanggan, memberikan informasi dan solusi, menindaklanjuti permintaan, menjaga catatan dan dokumentasi, serta berkoordinasi dengan tim internal.",
+    summary_text_2: "Latar belakang Sastra Inggris mendukung kemampuan komunikasi terstruktur, penulisan, analisis, presentasi, dan dokumentasi. Saya juga memiliki pengetahuan praktis mengenai tools digital dan layanan berbasis teknologi yang mendukung pekerjaan di bidang customer service dan operasional.",
+
+    journey_1_title: "Hospitality",
+    journey_1_text: "Interaksi dengan pelanggan, standar pelayanan, teamwork, dan dukungan acara.",
+    journey_2_title: "Customer Service",
+    journey_2_text: "Mendengarkan, merespons, menangani permintaan, dan menjaga kualitas layanan.",
+    journey_3_title: "Operasional & Administrasi",
+    journey_3_text: "Dokumentasi, pengolahan data, pelaporan, koordinasi, dan dukungan operasional harian.",
+    journey_4_title: "Customer & Technical Support",
+    journey_4_text: "Dukungan berbasis teknologi, troubleshooting, penanganan tiket, follow-up, dan koordinasi dengan tim teknis.",
+
+    facts_eyebrow: "Info singkat",
+    fact_education: "Pendidikan",
+    fact_gpa: "IPK",
+    fact_language: "Bahasa",
+    fact_language_value: "Bahasa Indonesia — Native<br>English — Pre-Intermediate",
+    fact_location_label: "Lokasi",
+
+    experience_eyebrow: "Pengalaman",
+    experience_title: "Pengalaman profesional yang dibangun dari layanan dan operasional.",
+    experience_subtitle: "Pengalaman di bidang customer support, operasional, hospitality, marketing support, dan kegiatan organisasi.",
+    sda_role: "Customer & Operational Support",
+    sda_stat_label: "Waktu respons awal",
+    key_responsibilities: "Tanggung jawab utama",
+
+    sda_p1: "Menjaga waktu respons awal <strong>di bawah 1 menit</strong> untuk tiket dan komunikasi pelanggan.",
+    sda_p2: "Menangani pertanyaan, permintaan layanan, dan kendala pelanggan melalui beberapa kanal komunikasi.",
+    sda_p3: "Memberikan informasi, bantuan, dan solusi sesuai SOP serta standar layanan perusahaan.",
+    sda_p4: "Melakukan troubleshooting sistematis menggunakan <strong>WHMCS</strong>, termasuk pencatatan dan pemantauan tiket.",
+    sda_p5: "Menindaklanjuti permintaan pelanggan hingga mencapai penyelesaian yang sesuai dan berkoordinasi dengan tim teknis internal bila diperlukan.",
+    sda_p6: "Mendukung operasional layanan harian serta menjaga catatan terkait permintaan, kendala, dan penyelesaiannya.",
+
+    case_eyebrow: "Pengalaman utama",
+    case_title: "Alur Customer Support",
+    case_subtitle: "Gambaran proses dan tanggung jawab customer support yang dijalankan dalam posisi ini.",
+    workflow_1: "Permintaan pelanggan",
+    workflow_2: "Tiket & troubleshooting",
+    workflow_3: "Follow-up & koordinasi",
+    tools_label: "Tools / area dukungan",
+
+    prof_role: "Barista & Operational Support",
+    prof_p1: "Melayani sekitar <strong>80–100 pelanggan per shift</strong> di lingkungan pelayanan dengan volume tinggi.",
+    prof_p2: "Menangani kebutuhan pelanggan, mengoperasikan POS, melakukan rekapitulasi penjualan, dan mendukung pemantauan inventori.",
+    prof_p3: "Memberikan ide promosi dan acara untuk mendukung customer engagement dan retention.",
+    tag_customer_service: "Customer Service",
+    tag_operations: "Operasional",
+    tag_pos: "POS",
+    tag_reporting: "Pelaporan",
+
+    pasca_role: "Marketing & Brand Content Talent",
+    pasca_p1: "Berkontribusi dalam kampanye marketing melalui kolaborasi konten foto dan video bersama tim kreatif.",
+    pasca_p2: "Mendukung penyajian katalog produk untuk kebutuhan marketing brand.",
+    pasca_p3: "Berkolaborasi dengan fotografer dan stylist untuk menyampaikan nilai produk serta identitas brand kepada target audience.",
+    tag_marketing: "Marketing Support",
+    tag_content: "Brand Content",
+    tag_engagement: "Customer Engagement",
+
+    hotel_role: "F&B Banquet Intern",
+    hotel_p1: "Memberikan layanan kepada tamu selama meeting, wedding, dan acara corporate.",
+    hotel_p2: "Berinteraksi dengan tamu, mendukung persiapan dan pelaksanaan banquet, serta berkoordinasi dengan anggota tim.",
+    btn_view_cert: "Lihat Sertifikat Magang",
+
+    org_eyebrow: "Pengalaman organisasi",
+    org_title: "Pengalaman leadership, administrasi, dan koordinasi.",
+    ccu_role: "Event Coordinator / Ketua Pelaksana",
+    ccu_p1: "Memimpin dan mengkoordinasikan <strong>tim beranggotakan 15 orang</strong>.",
+    ccu_p2: "Mengatur pembagian tugas, administrasi peserta, dokumentasi, dan koordinasi acara.",
+    vac_role: "Staf Administrasi",
+    vac_p1: "Melakukan verifikasi dan pengelolaan data peserta secara akurat.",
+    vac_p2: "Menata dokumen peserta dan berkoordinasi dengan panitia serta tim medis.",
+
+    skills_eyebrow: "Kemampuan inti",
+    skills_title: "Kemampuan utama dalam customer support, administrasi, operasional, dan tools digital.",
+    skills_subtitle: "Kombinasi kemampuan customer-facing, administrasi, operasional, marketing, dan teknis yang dikembangkan melalui pengalaman profesional.",
+
+    skills_cat_1: "Customer Support & Customer Relations",
+    skills_cat_2: "Administrasi & Operasional",
+    skills_cat_3: "Marketing & Customer Engagement",
+    skills_cat_4: "Teknologi & Tools Digital",
+
+    skills_1: "Customer Support",
+    skills_2: "Customer Service",
+    skills_3: "Helpdesk Support",
+    skills_4: "Customer & Complaint Handling",
+    skills_5: "Customer Relations",
+    skills_6: "Customer Engagement",
+    skills_7: "Customer Satisfaction",
+    skills_8: "Problem Solving",
+    skills_9: "Komunikasi Verbal & Tertulis",
+    skills_10: "Data Entry & Processing",
+    skills_11: "Data Recapitulation",
+    skills_12: "Reporting",
+    skills_13: "Documentation",
+    skills_14: "Document Management",
+    skills_15: "Operational Support",
+    skills_16: "Internal Coordination",
+    skills_17: "Microsoft Word",
+    skills_18: "Microsoft Excel",
+    skills_19: "Microsoft PowerPoint",
+    skills_20: "Marketing Support",
+    skills_21: "Customer Engagement & Retention",
+    skills_22: "Promotional Support",
+    skills_23: "Event Support",
+    skills_24: "Product & Service Presentation",
+    skills_25: "Brand Content Collaboration",
+    skills_26: "WHMCS",
+    skills_27: "Technical Troubleshooting",
+    skills_28: "Proxmox",
+    skills_29: "Linux",
+    skills_30: "VPS",
+    skills_31: "POS Systems",
+    skills_32: "HTML5",
+    skills_33: "CSS3",
+    skills_34: "VS Code",
+    skills_35: "Git / GitHub",
+
+    language_eyebrow: "Bahasa",
+    language_title: "Komunikasi profesional",
+    lang_id: "Bahasa Indonesia",
+    lang_id_level: "Native",
+    lang_en: "English",
+    lang_en_level: "Pre-Intermediate",
+
+    education_eyebrow: "Pendidikan",
+    education_title: "S1 Sastra Inggris.",
+    education_subtitle: "Fondasi akademis dalam komunikasi, penulisan, riset, presentasi, analisis, dan dokumentasi terstruktur.",
+    degree_name: "Bachelor of English Literature / S1 Sastra Inggris",
+    gpa_label: "IPK",
+    education_capabilities_label: "Kemampuan relevan",
+    edu_skill_1: "English Communication",
+    edu_skill_2: "Academic Writing",
+    edu_skill_3: "Research",
+    edu_skill_4: "Presentation",
+    edu_skill_5: "Analysis",
+    edu_skill_6: "Structured Communication",
+    edu_skill_7: "Documentation",
+    edu_skill_8: "Teamwork",
+
+    cert_eyebrow: "Sertifikat",
+    cert_title: "Pendukung pengalaman belajar dan hospitality.",
+    cert_subtitle: "Sertifikat yang berkaitan dengan hospitality, layanan food and beverage, operasional hotel, dan kegiatan MICE.",
+    cert_view_btn: "Lihat Sertifikat",
+    cert_issued_by: "Diterbitkan oleh",
+
+    cert1_title: "Certificate of Attendance – Coffee Mixology & Sequence of Service",
+    cert1_venue: "favehotel Hyper Square - Bandung",
+    cert2_title: "Certificate of Completion – Hotel Operation Lesson",
+    cert2_venue: "Courtyard by Marriott Bandung Dago",
+    cert3_title: "Certificate of Completion – MICE Operation Lesson",
+    cert3_venue: "Courtyard by Marriott Bandung Dago",
+    cert4_title: "Certificate of Attendance – Barista Class",
+    cert4_venue: "favehotel Hyper Square - Bandung",
+
+    contact_eyebrow: "Kontak",
+    contact_title: "Mari tetap terhubung.",
+    contact_subtitle: "Saya terbuka untuk kesempatan baru dan senang terhubung dengan orang-orang serta menemukan peluang yang dapat membantu saya berkembang lebih jauh.",
+    contact_email: "Email",
+    contact_linkedin: "LinkedIn",
+    contact_phone: "Telepon / WhatsApp",
+    contact_location: "Lokasi",
+
+    modal_gallery_title: "Pratinjau sertifikat",
+    modal_hotel_title: "Four Points by Sheraton - Sertifikat Magang",
+    modal_cert_text: "Sertifikat penyelesaian magang F&B Banquet (Feb 2024 – Apr 2024).",
+
+    footer_text: "© 2026 Ahmad Wahdan Nurjaman. Portfolio profesional."
+  }
+};
+
+
+let currentLang = localStorage.getItem("portfolio-language") || "EN";
+
+if (!translations[currentLang]) {
+  currentLang = "EN";
+}
+
+
+const langToggle = document.getElementById("lang-toggle");
+const langText = document.getElementById("lang-text");
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const navPanel = document.getElementById("nav-panel");
+
+const navLinks = [...document.querySelectorAll(".nav-link")];
+const sections = [...document.querySelectorAll("main section[id]")];
+
+
+function updateLanguage() {
+  document.documentElement.lang = currentLang === "EN" ? "en" : "id";
+
+  document.title = currentLang === "EN"
+    ? "Ahmad Wahdan Nurjaman | Customer Support & Operations"
+    : "Ahmad Wahdan Nurjaman | Customer Support & Operasional";
+
+  document.querySelectorAll("[data-key]").forEach((element) => {
+    const key = element.dataset.key;
+    const value = translations[currentLang][key];
+
+    if (value !== undefined) {
+      element.innerHTML = value;
+    }
+  });
+
+  langText.textContent = currentLang === "EN" ? "ID" : "EN";
+
+  langToggle.setAttribute(
+    "aria-label",
+    currentLang === "EN"
+      ? "Switch to Indonesian"
+      : "Switch to English"
+  );
+
+  localStorage.setItem("portfolio-language", currentLang);
+
+  renderWorkflow(activeWorkflowStep);
+}
+
+
+let activeWorkflowStep = "step1";
+
+
+const workflowCopy = {
+  step1: {
+    EN: "Receive and understand the customer request, then review the available information and service context before proceeding.",
+    ID: "Menerima dan memahami permintaan pelanggan, lalu meninjau informasi dan konteks layanan yang tersedia sebelum melanjutkan."
+  },
+
+  step2: {
+    EN: "Log and monitor the ticket through WHMCS while performing systematic troubleshooting for server, hosting, or customer-service issues.",
+    ID: "Mencatat dan memantau tiket melalui WHMCS sambil melakukan troubleshooting sistematis untuk kendala server, hosting, atau layanan pelanggan."
+  },
+
+  step3: {
+    EN: "Follow up with the customer, provide an appropriate resolution, or coordinate with the internal technical team when further support is required.",
+    ID: "Menindaklanjuti pelanggan, memberikan penyelesaian yang sesuai, atau berkoordinasi dengan tim teknis internal ketika diperlukan dukungan lanjutan."
+  }
+};
+
+
+function renderWorkflow(step) {
+  activeWorkflowStep = step;
+
+  document.querySelectorAll(".workflow-step").forEach((button) => {
+    button.classList.toggle(
+      "active",
+      button.dataset.step === step
+    );
+  });
+
+  const detail = document.getElementById("workflow-detail");
+
+  if (detail && workflowCopy[step]) {
+    detail.textContent = workflowCopy[step][currentLang];
+  }
+}
+
+
+function setLanguage() {
+  currentLang = currentLang === "EN" ? "ID" : "EN";
+
+  updateLanguage();
+}
+
+
+if (langToggle) {
+  langToggle.addEventListener("click", setLanguage);
+}
+
+
+document.querySelectorAll(".workflow-step").forEach((button) => {
+  button.addEventListener("click", () => {
+    renderWorkflow(button.dataset.step);
+  });
+});
+
+
+function closeMobileMenu() {
+  if (!navPanel || !mobileMenuBtn) {
+    return;
+  }
+
+  navPanel.classList.remove("open");
+
+  mobileMenuBtn.setAttribute(
+    "aria-expanded",
+    "false"
+  );
+
+  const icon = mobileMenuBtn.querySelector("i");
+
+  if (icon) {
+    icon.className = "fa-solid fa-bars";
+  }
+}
+
+
+if (mobileMenuBtn && navPanel) {
+  mobileMenuBtn.addEventListener("click", () => {
+    const open = navPanel.classList.toggle("open");
+
+    mobileMenuBtn.setAttribute(
+      "aria-expanded",
+      String(open)
+    );
+
+    const icon = mobileMenuBtn.querySelector("i");
+
+    if (icon) {
+      icon.className = open
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars";
+    }
+  });
+}
+
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMobileMenu();
+  });
+});
+
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+
+        const id = entry.target.id;
+
+        if (id) {
+          navLinks.forEach((link) => {
+            link.classList.toggle(
+              "active",
+              link.dataset.section === id
+            );
+          });
+        }
+      }
+    });
+  },
+  {
+    rootMargin: "-35% 0px -55% 0px",
+    threshold: 0
+  }
+);
+
+
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.12
+  }
+);
+
+
+document.querySelectorAll(".reveal").forEach((element) => {
+  revealObserver.observe(element);
+});
+
+
+function getModalFocusableElements(modal) {
+  return [
+    ...modal.querySelectorAll(
+      "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])"
+    )
+  ].filter(
+    (element) =>
+      !element.hasAttribute("disabled") &&
+      element.getAttribute("aria-hidden") !== "true"
+  );
+}
+
+
+function trapModalFocus(modal) {
+  const focusable = getModalFocusableElements(modal);
+
+  if (!focusable.length) {
+    modal.focus();
+    return;
+  }
+
+  focusable[0].focus();
+}
+
+
+let activeModal = null;
+let lastFocusedElement = null;
+
+
+function openModal(modal) {
+  if (!modal) {
+    return;
+  }
+
+  lastFocusedElement = document.activeElement;
+
+  modal.classList.add("open");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+  activeModal = modal;
+
+  document.body.classList.add("modal-open");
+
+  trapModalFocus(modal);
+}
+
+
+function closeModal(modal) {
+  if (!modal) {
+    return;
+  }
+
+  modal.classList.remove("open");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+  if (activeModal === modal) {
+    activeModal = null;
+  }
+
+  document.body.classList.remove("modal-open");
+
+  if (
+    lastFocusedElement &&
+    typeof lastFocusedElement.focus === "function"
+  ) {
+    lastFocusedElement.focus();
+  }
+
+  lastFocusedElement = null;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px;
-}
-
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: "Inter", sans-serif;
-  line-height: 1.65;
-  overflow-x: hidden;
-}
-
-body.modal-open {
-  overflow: hidden;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-button,
-a {
-  font: inherit;
-}
-
-button {
-  border: 0;
-}
-
-a {
-  color: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-.brand {
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-}
-
-h2 {
-  letter-spacing: -0.035em;
-}
-
-::selection {
-  background: var(--accent);
-  color: var(--white);
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-.skip-link {
-  position: fixed;
-  left: 16px;
-  top: -60px;
-  z-index: 5000;
-  background: var(--dark);
-  color: var(--white);
-  padding: 10px 14px;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: top 0.2s ease;
-}
-
-.skip-link:focus {
-  top: 16px;
-}
-
-.container {
-  width: min(calc(100% - 40px), var(--container));
-  margin-inline: auto;
-}
-
-.container.narrow {
-  width: min(calc(100% - 40px), 900px);
-}
-
-.section {
-  padding: 100px 0;
-  scroll-margin-top: 80px;
-}
-
-.section-muted {
-  background: var(--surface-2);
-}
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 14px 20px 0;
-  pointer-events: none;
-}
-
-.navbar {
-  width: min(100%, var(--container));
-  margin-inline: auto;
-  min-height: 64px;
-  padding: 9px 10px 9px 22px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  border-radius: 999px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  pointer-events: auto;
-}
-
-.brand {
-  flex: 0 0 auto;
-  text-decoration: none;
-  color: var(--text);
-  font-size: 1.12rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-}
-
-.brand strong {
-  color: var(--accent);
-}
-
-.nav-panel {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
-
-.nav-link {
-  display: inline-flex;
-  align-items: center;
-  min-height: 40px;
-  padding: 8px 11px;
-  border-radius: 999px;
-  color: var(--muted);
-  text-decoration: none;
-  font-size: 0.84rem;
-  font-weight: 600;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  background: var(--accent-soft);
-  color: var(--accent);
-}
-
-.language-btn,
-.mobile-menu-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  cursor: pointer;
-}
-
-.language-btn {
-  flex: 0 0 auto;
-  min-height: 40px;
-  padding: 8px 13px;
-  border-radius: 999px;
-  background: var(--dark);
-  color: var(--white);
-  font-size: 0.82rem;
-  font-weight: 700;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.language-btn:hover {
-  background: var(--accent);
-  transform: translateY(-1px);
-}
-
-.mobile-menu-btn {
-  display: none;
-  width: 42px;
-  height: 42px;
-  margin-left: auto;
-  background: var(--dark);
-  color: var(--white);
-  border-radius: 12px;
-}
-
-.hero-section {
-  padding-top: 32px;
-}
-
-.hero-card {
-  position: relative;
-  min-height: 600px;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  border-radius: var(--radius-lg);
-  background: var(--dark);
-  box-shadow: var(--shadow);
-}
-
-.hero-image-layer,
-.hero-shade {
-  position: absolute;
-  inset: 0;
-}
-
-.hero-image-layer {
-  z-index: 0;
-}
-
-.hero-image-layer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.82;
-}
-
-.hero-shade {
-  z-index: 1;
-  background:
-    linear-gradient(90deg, rgba(15, 15, 15, 0.94) 0%, rgba(15, 15, 15, 0.82) 43%, rgba(15, 15, 15, 0.34) 100%),
-    linear-gradient(0deg, rgba(15, 15, 15, 0.88) 0%, rgba(15, 15, 15, 0.04) 65%);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  padding: 74px 64px 56px;
-  color: var(--white);
-}
-
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  margin-bottom: 14px;
-  color: var(--accent);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.11em;
-  line-height: 1.3;
-  text-transform: uppercase;
-}
-
-.hero-eyebrow {
-  padding: 7px 11px;
-  border-radius: 999px;
-  background: rgba(79, 70, 229, 0.94);
-  color: var(--white);
-}
-
-.hero-kicker {
-  max-width: 650px;
-  margin-bottom: 18px;
-  color: rgba(255, 255, 255, 0.74);
-  font-size: 0.96rem;
-}
-
-.hero-content h1 {
-  margin-bottom: 10px;
-  color: var(--white);
-  font-size: clamp(2.5rem, 6vw, 4.9rem);
-  line-height: 1.02;
-  letter-spacing: -0.055em;
-}
-
-.hero-role {
-  max-width: 760px;
-  margin-bottom: 22px;
-  color: #c9c8ff;
-  font-size: clamp(1.08rem, 2vw, 1.42rem);
-  line-height: 1.45;
-  letter-spacing: -0.02em;
-}
-
-.hero-role span {
-  color: rgba(255, 255, 255, 0.4);
-  padding-inline: 3px;
-}
-
-.hero-description {
-  max-width: 700px;
-  margin-bottom: 28px;
-  color: rgba(255, 255, 255, 0.78);
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 30px;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  min-height: 46px;
-  padding: 11px 17px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-size: 0.88rem;
-  font-weight: 700;
-  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.btn-primary {
-  background: var(--accent);
-  color: var(--white);
-}
-
-.btn-primary:hover {
-  background: #635bff;
-}
-
-.btn-light {
-  background: var(--white);
-  color: var(--dark);
-}
-
-.btn-ghost {
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--white);
-}
-
-.btn-ghost:hover {
-  background: rgba(255, 255, 255, 0.12);
-}
-
-.hero-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px 22px;
-  color: rgba(255, 255, 255, 0.66);
-  font-size: 0.78rem;
-}
-
-.hero-meta span {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-}
-
-.hero-meta i {
-  color: #a8a4ff;
-}
-
-.focus-strip {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 16px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow);
-}
-
-.focus-strip > div {
-  padding: 22px 24px;
-}
-
-.focus-strip > div + div {
-  border-left: 1px solid var(--line);
-}
-
-.strip-label {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--muted);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
-.focus-strip strong {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 0.92rem;
-}
-
-.section-heading {
-  max-width: 780px;
-  margin-bottom: 44px;
-}
-
-.section-heading h2 {
-  max-width: 760px;
-  margin-bottom: 12px;
-  font-size: clamp(2rem, 4vw, 3.25rem);
-  line-height: 1.08;
-}
-
-.section-heading p {
-  max-width: 720px;
-  margin-bottom: 0;
-  color: var(--muted);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 1.35fr 0.8fr;
-  gap: 18px;
-  align-items: stretch;
-}
-
-.summary-card,
-.journey-card,
-.facts-card,
-.skill-card,
-.education-card,
-.certificate-card,
-.experience-card,
-.supporting-experience {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow);
-}
-
-.summary-card,
-.journey-card,
-.facts-card {
-  padding: 26px;
-}
-
-.card-icon {
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  background: var(--accent-soft);
-  color: var(--accent);
-}
-
-.summary-card h3 {
-  margin-bottom: 12px;
-  font-size: 1.22rem;
-}
-
-.summary-card p {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.summary-card p:last-child {
-  margin-bottom: 0;
-}
-
-.journey-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.journey-step {
-  display: grid;
-  grid-template-columns: 38px 1fr;
-  gap: 14px;
-  align-items: start;
-}
-
-.journey-step > span {
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 0.75rem;
-  font-weight: 800;
-}
-
-.journey-step strong {
-  display: block;
-  margin-bottom: 4px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 0.93rem;
-}
-
-.journey-step p {
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 0.82rem;
-}
-
-.journey-line {
-  width: 1px;
-  height: 18px;
-  margin: 4px 0 4px 16px;
-  background: var(--line);
-}
-
-.facts-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.fact-row {
-  padding: 15px 0;
-  border-top: 1px solid var(--line);
-}
-
-.fact-row span {
-  display: block;
-  margin-bottom: 3px;
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.fact-row strong {
-  font-size: 0.84rem;
-}
-
-.featured-experience {
-  padding: 32px;
-  background: var(--surface);
-  border: 1px solid rgba(79, 70, 229, 0.18);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-}
-
-.featured-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 30px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid var(--line);
-}
-
-.experience-date,
-.org-date {
-  display: inline-block;
-  margin-bottom: 7px;
-  color: var(--muted);
-  font-size: 0.73rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.featured-top h3,
-.experience-card h3 {
-  margin-bottom: 4px;
-  font-size: clamp(1.45rem, 3vw, 2rem);
-  letter-spacing: -0.035em;
-}
-
-.experience-role {
-  margin-bottom: 0;
-  color: var(--accent);
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.response-stat {
-  min-width: 145px;
-  padding: 15px 17px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: var(--surface-2);
-  text-align: right;
-}
-
-.stat-value {
-  display: block;
-  color: var(--accent);
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 1.75rem;
-  font-weight: 800;
-  line-height: 1;
-}
-
-.stat-label {
-  display: block;
-  margin-top: 5px;
-  color: var(--muted);
-  font-size: 0.68rem;
-}
-
-.featured-grid {
-  display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  gap: 34px;
-  padding-top: 30px;
-}
-
-.featured-grid h4 {
-  margin-bottom: 14px;
-  font-size: 0.92rem;
-}
-
-.check-list,
-.compact-list,
-.skill-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.check-list li,
-.compact-list li {
-  position: relative;
-  padding-left: 25px;
-  margin-bottom: 12px;
-  color: #4d4e52;
-  font-size: 0.88rem;
-}
-
-.check-list li::before {
-  content: "\f058";
-  position: absolute;
-  left: 0;
-  top: 2px;
-  color: var(--accent);
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-}
-
-.check-list li:last-child,
-.compact-list li:last-child {
-  margin-bottom: 0;
-}
-
-.case-study {
-  padding: 22px;
-  border-radius: 18px;
-  background: #fafafa;
-  border: 1px solid var(--line);
-}
-
-.case-study-header h4 {
-  margin-bottom: 6px;
-  font-size: 1.12rem;
-}
-
-.case-study-header p {
-  margin-bottom: 18px;
-  color: var(--muted);
-  font-size: 0.78rem;
-}
-
-.workflow {
-  display: grid;
-  gap: 8px;
-}
-
-.workflow-step {
-  display: grid;
-  grid-template-columns: 34px 1fr auto;
-  align-items: center;
-  gap: 9px;
-  width: 100%;
-  padding: 11px 12px;
-  border: 1px solid var(--line);
-  border-radius: 11px;
-  background: var(--white);
-  color: var(--text);
-  text-align: left;
-  cursor: pointer;
-  transition: border-color 0.2s ease, background 0.2s ease;
-}
-
-.workflow-step:hover,
-.workflow-step.active {
-  border-color: rgba(79, 70, 229, 0.35);
-  background: var(--accent-soft);
-}
-
-.workflow-step > span {
-  color: var(--accent);
-  font-size: 0.68rem;
-  font-weight: 800;
-}
-
-.workflow-step strong {
-  font-size: 0.78rem;
-}
-
-.workflow-step i {
-  color: var(--muted);
-  font-size: 0.7rem;
-}
-
-.workflow-detail {
-  min-height: 88px;
-  margin-top: 10px;
-  padding: 14px;
-  border-radius: 11px;
-  background: var(--dark);
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 0.78rem;
-}
-
-.tool-row {
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid var(--line);
-}
-
-.tool-row > span {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--muted);
-  font-size: 0.68rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.tool-row div,
-.tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.tool-row div span,
-.tag-row span {
-  padding: 5px 8px;
-  border-radius: 999px;
-  background: var(--surface-2);
-  color: #55565a;
-  font-size: 0.68rem;
-  font-weight: 600;
-}
-
-.experience-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 18px;
-}
-
-.experience-card {
-  display: grid;
-  grid-template-columns: 38px 1fr;
-  gap: 14px;
-  padding: 23px;
-}
-
-.experience-index {
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 0.7rem;
-  font-weight: 800;
-}
-
-.experience-card h3 {
-  font-size: 1.25rem;
-}
-
-.compact-list {
-  margin-top: 15px;
-}
-
-.compact-list li {
-  padding-left: 18px;
-  font-size: 0.79rem;
-  line-height: 1.55;
-}
-
-.compact-list li::before {
-  content: "";
-  position: absolute;
-  left: 2px;
-  top: 9px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--accent);
-}
-
-.text-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  margin-top: 16px;
-  padding: 0;
-  background: transparent;
-  color: var(--accent);
-  cursor: pointer;
-  font-size: 0.78rem;
-  font-weight: 800;
-}
-
-.text-button:hover {
-  color: var(--accent-dark);
-}
-
-.supporting-experience {
-  margin-top: 18px;
-  padding: 28px;
-}
-
-.supporting-heading {
-  max-width: 700px;
-  margin-bottom: 20px;
-}
-
-.supporting-heading h3 {
-  margin-bottom: 0;
-  font-size: 1.35rem;
-}
-
-.org-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-}
-
-.org-grid article {
-  padding: 20px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: #fafafa;
-}
-
-.org-grid h4 {
-  margin-bottom: 5px;
-  font-size: 0.96rem;
-}
-
-.org-grid p {
-  margin-bottom: 12px;
-  color: var(--accent);
-  font-size: 0.76rem;
-  font-weight: 700;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-
-.skill-card {
-  padding: 26px;
-}
-
-.skill-card.primary {
-  border-top: 3px solid var(--accent);
-}
-
-.skill-heading {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.skill-heading i {
-  flex: 0 0 auto;
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: var(--accent-soft);
-  color: var(--accent);
-}
-
-.skill-heading h3 {
-  margin: 3px 0 0;
-  font-size: 1.04rem;
-}
-
-.skill-card ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 7px 10px;
-}
-
-.skill-card li {
-  padding: 8px 10px;
-  border: 1px solid var(--line);
-  border-radius: 9px;
-  color: #55565a;
-  font-size: 0.74rem;
-}
-
-.skill-card.supporting {
-  background: #fbfbfa;
-}
-
-.language-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
-  margin-top: 16px;
-  padding: 20px 24px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: var(--surface);
-  box-shadow: var(--shadow);
-}
-
-.language-card > div:first-child {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-}
-
-.language-card > div:first-child > i {
-  color: var(--accent);
-  font-size: 1.35rem;
-}
-
-.language-card .eyebrow {
-  margin-bottom: 3px;
-}
-
-.language-card h3 {
-  margin-bottom: 0;
-  font-size: 0.98rem;
-}
-
-.language-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-}
-
-.language-list span {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 11px;
-  border-radius: 10px;
-  background: var(--surface-2);
-  font-size: 0.76rem;
-}
-
-.language-list em {
-  color: var(--muted);
-  font-style: normal;
-  font-size: 0.7rem;
-}
-
-.education-card {
-  padding: 30px;
-}
-
-.education-main {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.education-icon {
-  width: 52px;
-  height: 52px;
-  flex: 0 0 auto;
-  display: grid;
-  place-items: center;
-  border-radius: 14px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 1.15rem;
-}
-
-.education-main h3 {
-  margin-bottom: 5px;
-  font-size: 1.25rem;
-}
-
-.education-main p {
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
-.gpa-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 24px;
-  padding: 15px 17px;
-  border-radius: 12px;
-  background: var(--dark);
-  color: var(--white);
-}
-
-.gpa-box span {
-  color: rgba(255, 255, 255, 0.62);
-  font-size: 0.75rem;
-}
-
-.gpa-box strong {
-  color: #d5d2ff;
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-.education-capabilities {
-  margin-top: 22px;
-}
-
-.education-capabilities > span {
-  display: block;
-  margin-bottom: 9px;
-  color: var(--muted);
-  font-size: 0.73rem;
-  font-weight: 700;
-}
-
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-}
-
-.certificate-card {
-  overflow: hidden;
-}
-
-.certificate-image {
-  display: block;
-  width: 100%;
-  padding: 0;
-  background: var(--surface-2);
-  cursor: pointer;
-}
-
-.certificate-image img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.certificate-image:hover img {
-  transform: scale(1.025);
-}
-
-.certificate-body {
-  padding: 18px;
-}
-
-.certificate-body h3 {
-  min-height: 70px;
-  margin-bottom: 11px;
-  font-size: 0.9rem;
-  line-height: 1.35;
-}
-
-.certificate-body p {
-  min-height: 42px;
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 0.7rem;
-}
-
-.certificate-body p strong {
-  color: var(--text);
-}
-
-.section-dark {
-  background: var(--dark);
-}
-
-.contact-card {
-  padding: 58px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius-lg);
-  background: var(--dark-2);
-  color: var(--white);
-}
-
-.eyebrow-light {
-  color: #aaa6ff;
-}
-
-.contact-card h2 {
-  max-width: 650px;
-  margin-bottom: 12px;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-}
-
-.contact-card > p {
-  max-width: 700px;
-  margin-bottom: 30px;
-  color: rgba(255, 255, 255, 0.68);
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  min-height: 76px;
-  padding: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 13px;
-  background: rgba(255, 255, 255, 0.035);
-  color: var(--white);
-  text-decoration: none;
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-
-a.contact-item:hover {
-  border-color: rgba(167, 163, 255, 0.45);
-  background: rgba(255, 255, 255, 0.065);
-}
-
-.contact-item > i {
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: rgba(167, 163, 255, 0.12);
-  color: #b6b2ff;
-}
-
-.contact-item small,
-.contact-item strong {
-  display: block;
-}
-
-.contact-item small {
-  margin-bottom: 2px;
-  color: rgba(255, 255, 255, 0.48);
-  font-size: 0.66rem;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-}
-
-.contact-item strong {
-  overflow-wrap: anywhere;
-  font-size: 0.78rem;
-}
-
-.site-footer {
-  padding: 22px 20px 28px;
-  background: var(--dark);
-  color: rgba(255, 255, 255, 0.4);
-  text-align: center;
-  font-size: 0.7rem;
-}
-
-.site-footer p {
-  margin: 0;
-}
-
-.modal {
-  position: fixed;
-  inset: 0;
-  z-index: 4000;
-  display: grid;
-  place-items: center;
-  padding: 20px;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
-}
-
-.modal.open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.modal-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.78);
-}
-
-.modal-content {
-  position: relative;
-  z-index: 1;
-  width: min(900px, 100%);
-  max-height: calc(100vh - 40px);
-  padding: 18px;
-  overflow: auto;
-  border-radius: 18px;
-  background: var(--surface);
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.28);
-}
-
-.modal-content img {
-  width: 100%;
-  max-height: calc(100vh - 90px);
-  object-fit: contain;
-  border-radius: 10px;
-}
-
-.small-modal {
-  width: min(560px, 100%);
-  padding: 32px;
-}
-
-.small-modal h2 {
-  margin-bottom: 10px;
-  font-size: 1.45rem;
-}
-
-.small-modal p {
-  margin-bottom: 0;
-  color: var(--muted);
-}
-
-.modal-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 2;
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: var(--dark);
-  color: var(--white);
-  cursor: pointer;
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.reduce-motion *,
-.reduce-motion *::before,
-.reduce-motion *::after {
-  scroll-behavior: auto !important;
-  animation-duration: 0.01ms !important;
-  animation-iteration-count: 1 !important;
-  transition-duration: 0.01ms !important;
-}
-
-@media (max-width: 1050px) {
-  .nav-link {
-    padding-inline: 8px;
-    font-size: 0.78rem;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr 1.2fr;
-  }
-
-  .facts-card {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
-  }
-
-  .facts-card .eyebrow {
-    grid-column: 1 / -1;
-    margin-bottom: -4px;
-  }
-
-  .fact-row {
-    padding: 0;
-    border-top: 0;
-  }
-
-  .experience-list {
-    grid-template-columns: 1fr;
-  }
-
-  .cert-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 820px) {
-  .site-header {
-    padding: 10px 12px 0;
-  }
-
-  .navbar {
-    border-radius: 18px;
-    padding: 9px 10px 9px 16px;
-  }
-
-  .mobile-menu-btn {
-    display: inline-flex;
-  }
-
-  .nav-panel {
-    position: absolute;
-    top: calc(100% + 8px);
-    left: 0;
-    right: 0;
-    display: none;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 10px;
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: var(--shadow);
-  }
 
-  .nav-panel.open {
-    display: flex;
-  }
-
-  .nav-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-  }
-
-  .nav-link {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .language-btn {
-    width: 100%;
-  }
-
-  .hero-content {
-    padding: 58px 34px 38px;
-  }
-
-  .hero-card {
-    min-height: 650px;
-  }
-
-  .hero-image-layer img {
-    object-position: 62% center;
-  }
-
-  .hero-shade {
-    background:
-      linear-gradient(90deg, rgba(15, 15, 15, 0.96), rgba(15, 15, 15, 0.67)),
-      linear-gradient(0deg, rgba(15, 15, 15, 0.92), rgba(15, 15, 15, 0.05));
-  }
-
-  .focus-strip,
-  .about-grid,
-  .featured-grid,
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .focus-strip > div + div {
-    border-left: 0;
-    border-top: 1px solid var(--line);
-  }
-
-  .facts-card {
-    grid-column: auto;
-    display: flex;
-  }
-
-  .facts-card .eyebrow {
-    margin-bottom: 14px;
-  }
-
-  .fact-row {
-    padding: 15px 0;
-    border-top: 1px solid var(--line);
-  }
-
-  .featured-top {
-    flex-direction: column;
-  }
-
-  .response-stat {
-    width: 100%;
-    text-align: left;
-  }
-
-  .org-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .language-card {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 560px) {
-  html {
-    scroll-padding-top: 82px;
-  }
-
-  .container,
-  .container.narrow {
-    width: min(calc(100% - 24px), var(--container));
-  }
-
-  .section {
-    padding: 76px 0;
-  }
-
-  .hero-section {
-    padding-top: 20px;
-  }
-
-  .hero-card {
-    min-height: 690px;
-    border-radius: 22px;
-  }
-
-  .hero-content {
-    padding: 38px 22px 28px;
-  }
-
-  .hero-content h1 {
-    font-size: 2.45rem;
-  }
+document.querySelectorAll("[data-gallery]").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const modal = document.getElementById("gallery-modal");
+    const image = document.getElementById("gallery-image");
+
+    if (!modal || !image) {
+      return;
+    }
 
-  .hero-role {
-    font-size: 1.05rem;
-  }
-
-  .hero-actions {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .hero-meta {
-    display: grid;
-    gap: 9px;
-  }
-
-  .section-heading {
-    margin-bottom: 30px;
-  }
-
-  .section-heading h2 {
-    font-size: 2rem;
-  }
-
-  .featured-experience,
-  .summary-card,
-  .journey-card,
-  .facts-card,
-  .supporting-experience,
-  .education-card,
-  .contact-card {
-    padding: 21px;
-  }
+    image.src = trigger.dataset.gallery;
 
-  .featured-grid {
-    gap: 24px;
-  }
+    image.alt =
+      trigger.dataset.alt ||
+      "Certificate preview";
 
-  .skill-card ul {
-    grid-template-columns: 1fr;
-  }
+    openModal(modal);
+  });
+});
 
-  .cert-grid {
-    grid-template-columns: 1fr;
-  }
 
-  .certificate-body h3,
-  .certificate-body p {
-    min-height: auto;
-  }
+document.querySelectorAll(".modal-trigger").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const modal = document.getElementById(
+      trigger.dataset.modal
+    );
 
-  .education-main {
-    align-items: flex-start;
-  }
+    if (modal) {
+      openModal(modal);
+    }
+  });
+});
 
-  .education-main h3 {
-    font-size: 1.03rem;
-  }
 
-  .contact-card h2 {
-    font-size: 2rem;
-  }
-}
+document.querySelectorAll("[data-close-modal]").forEach((element) => {
+  element.addEventListener("click", () => {
+    closeModal(element.closest(".modal"));
+  });
+});
 
-@media (max-width: 360px) {
-  .nav-links {
-    grid-template-columns: 1fr;
-  }
 
-  .hero-content h1 {
-    font-size: 2.15rem;
-  }
+document.addEventListener("keydown", (event) => {
 
-  .hero-card {
-    min-height: 735px;
+  if (event.key === "Escape" && activeModal) {
+    closeModal(activeModal);
+    return;
   }
-}
 
-/* =========================================================
-   FINAL PORTFOLIO REFINEMENTS
-   Ahmad Wahdan Nurjaman
-   ========================================================= */
 
+  if (event.key === "Tab" && activeModal) {
 
-/* ---------------------------------------------------------
-   GLOBAL INTERACTION
-   --------------------------------------------------------- */
+    const focusable = getModalFocusableElements(activeModal);
 
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
 
-button:focus-visible,
-a:focus-visible {
-  outline: 3px solid rgba(28, 28, 28, 0.28);
-  outline-offset: 3px;
-}
+    if (!focusable.length) {
+      event.preventDefault();
+      activeModal.focus();
+      return;
+    }
 
 
-/* ---------------------------------------------------------
-   MOBILE NAVIGATION
-   --------------------------------------------------------- */
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
 
-@media (max-width: 820px) {
 
-  .nav-panel {
-    max-height: calc(100vh - 95px);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-  }
+    if (
+      event.shiftKey &&
+      document.activeElement === first
+    ) {
+      event.preventDefault();
 
-  .nav-links {
-    gap: 4px;
-  }
+      last.focus();
 
-  .nav-link {
-    min-height: 46px;
-  }
+    } else if (
+      !event.shiftKey &&
+      document.activeElement === last
+    ) {
+      event.preventDefault();
 
-  .language-btn {
-    min-height: 46px;
+      first.focus();
+    }
   }
-}
-
-
-/* ---------------------------------------------------------
-   CERTIFICATE CARDS
-   --------------------------------------------------------- */
-
-.certificate-image {
-  overflow: hidden;
-}
-
-.certificate-image img {
-  display: block;
-  transition:
-    transform 0.35s ease,
-    filter 0.35s ease;
-}
-
-.certificate-image:hover img {
-  transform: scale(1.025);
-}
-
-
-/* ---------------------------------------------------------
-   MODAL
-   --------------------------------------------------------- */
-
-body.modal-open {
-  overflow: hidden;
-}
-
-.modal {
-  overscroll-behavior: contain;
-}
-
-.modal-backdrop {
-  cursor: pointer;
-}
-
-.modal-content {
-  overscroll-behavior: contain;
-}
+});
 
-.modal-close {
-  transition:
-    transform 0.2s ease,
-    background-color 0.2s ease;
-}
-
-.modal-close:hover {
-  transform: scale(1.05);
-}
-
-
-/* ---------------------------------------------------------
-   HERO IMAGE
-   --------------------------------------------------------- */
-
-.hero-image-layer img {
-  display: block;
-}
-
 
-/* ---------------------------------------------------------
-   REDUCED MOTION
-   --------------------------------------------------------- */
+const reduceMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+);
 
-@media (prefers-reduced-motion: reduce) {
 
-  .certificate-image img,
-  .modal-close {
-    transition: none;
-  }
-
-  .certificate-image:hover img {
-    transform: none;
-  }
+function handleReducedMotion() {
+  document.documentElement.classList.toggle(
+    "reduce-motion",
+    reduceMotion.matches
+  );
 }
-
-
-/* ---------------------------------------------------------
-   SMALL MOBILE DEVICES
-   --------------------------------------------------------- */
-
-@media (max-width: 560px) {
-
-  .nav-links {
-    grid-template-columns: 1fr;
-  }
 
-  .nav-link {
-    justify-content: flex-start;
-    padding-inline: 14px;
-  }
-
-  .language-btn {
-    justify-content: center;
-  }
-
-  .modal {
-    padding: 12px;
-  }
-
-  .modal-content {
-    max-height: calc(100vh - 24px);
-    padding: 14px;
-    border-radius: 16px;
-  }
-
-  .small-modal {
-    padding: 26px 20px;
-  }
 
-  .modal-close {
-    width: 36px;
-    height: 36px;
-  }
+if (typeof reduceMotion.addEventListener === "function") {
+  reduceMotion.addEventListener(
+    "change",
+    handleReducedMotion
+  );
+} else if (typeof reduceMotion.addListener === "function") {
+  reduceMotion.addListener(handleReducedMotion);
 }
-
-
-/* ---------------------------------------------------------
-   VERY SMALL SCREENS
-   --------------------------------------------------------- */
 
-@media (max-width: 360px) {
 
-  .hero-content h1 {
-    font-size: 2.15rem;
-  }
+handleReducedMotion();
 
-  .hero-role {
-    font-size: 0.98rem;
-  }
 
-  .hero-content {
-    padding-inline: 18px;
-  }
+updateLanguage();
 
-  .section-heading h2 {
-    font-size: 1.8rem;
-  }
-}
+renderWorkflow("step1");
